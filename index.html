@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Absolute Insight — Football Tips</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #F5C518;
+    --gold-light: #FFDA3D;
+    --blue: #1A3A8F;
+    --blue-mid: #2B4DC9;
+    --blue-light: #3558D6;
+    --green: #00C896;
+    --red: #FF4D6A;
+    --bg: #1A2E9E;
+    --card: #1E35B5;
+    --card2: #2040CC;
+    --text: #FFFFFF;
+    --muted: #A0B0D8;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(ellipse at 20% 20%, rgba(245,197,24,0.08) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 80%, rgba(43,77,201,0.15) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 16px 80px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* HEADER */
+  .header {
+    text-align: center;
+    padding: 32px 0 20px;
+  }
+
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 4px;
+  }
+
+  .header-logo {
+    width: 52px;
+    height: 52px;
+    background: var(--blue-mid);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    letter-spacing: -1px;
+    box-shadow: 0 4px 16px rgba(43,77,201,0.4);
+    flex-shrink: 0;
+  }
+
+  .header-text h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 26px;
+    letter-spacing: 2px;
+    line-height: 1;
+    text-align: left;
+  }
+
+  .header-text h1 span { color: var(--gold); }
+
+  .header-text p {
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 2px;
+    text-align: left;
+    margin-top: 2px;
+  }
+
+  .live-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(0,200,150,0.12);
+    border: 1px solid rgba(0,200,150,0.3);
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 11px;
+    color: var(--green);
+    font-weight: 600;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+  }
+
+  .live-dot {
+    width: 6px; height: 6px;
+    background: var(--green);
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.8); }
+  }
+
+  /* TABS */
+  .tabs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: rgba(0,0,0,0.2);
+    border-radius: 14px;
+    padding: 4px;
+    margin: 16px 0 20px;
+    gap: 2px;
+  }
+
+  .tab-btn {
+    padding: 9px 4px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--muted);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+    letter-spacing: 0.3px;
+    font-family: 'DM Sans', sans-serif;
+    border: none;
+    background: none;
+    line-height: 1.3;
+  }
+
+  .tab-btn.active {
+    background: var(--blue-mid);
+    color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+
+  .tab-btn .tab-icon { display: block; font-size: 14px; margin-bottom: 2px; }
+
+  /* TAB CONTENT */
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
+  /* SECTION TITLE */
+  .section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: white;
+    margin: 20px 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+  }
+
+  /* STATS */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+
+  .stat-card {
+    background: var(--card);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 14px;
+    padding: 14px 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+  }
+
+  .stat-value {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    line-height: 1;
+    margin-bottom: 3px;
+  }
+
+  .stat-value.green { color: var(--green); }
+  .stat-value.gold { color: var(--gold); }
+  .stat-value.white { color: white; }
+  .stat-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; }
+
+  /* WIN RATE */
+  .winrate-card {
+    background: var(--card);
+    border: 1px solid rgba(245,197,24,0.2);
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .winrate-circle { width: 76px; height: 76px; flex-shrink: 0; position: relative; }
+  .winrate-circle svg { transform: rotate(-90deg); width: 76px; height: 76px; }
+  .winrate-circle .bg { fill: none; stroke: rgba(255,255,255,0.08); stroke-width: 6; }
+  .winrate-circle .fill { fill: none; stroke: var(--gold); stroke-width: 6; stroke-linecap: round;
+    stroke-dasharray: 219.9; stroke-dashoffset: 110; transition: stroke-dashoffset 1.5s ease; }
+  .winrate-text { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .winrate-pct { font-family: 'Bebas Neue', sans-serif; font-size: 20px; color: var(--gold); line-height: 1; }
+  .winrate-lbl { font-size: 9px; color: var(--muted); font-weight: 600; letter-spacing: 0.5px; }
+  .winrate-info h3 { font-size: 15px; font-weight: 700; color: white; margin-bottom: 3px; }
+  .winrate-info p { font-size: 12px; color: var(--muted); line-height: 1.4; }
+  .winrate-record { display: flex; gap: 8px; margin-top: 7px; }
+  .rec-w { background: rgba(0,200,150,0.15); border: 1px solid rgba(0,200,150,0.3); color: var(--green); font-size: 12px; font-weight: 700; padding: 2px 10px; border-radius: 6px; }
+  .rec-l { background: rgba(255,77,106,0.15); border: 1px solid rgba(255,77,106,0.3); color: var(--red); font-size: 12px; font-weight: 700; padding: 2px 10px; border-radius: 6px; }
+
+  /* RESULTS */
+  .results-card { background: var(--card); border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; overflow: hidden; margin-bottom: 14px; }
+  .results-header { display: grid; grid-template-columns: 1fr 72px 56px; padding: 9px 14px; background: rgba(255,255,255,0.04); font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; }
+  .result-row { display: grid; grid-template-columns: 1fr 72px 56px; padding: 11px 14px; border-top: 1px solid rgba(255,255,255,0.05); align-items: center; }
+  .result-match { font-size: 12px; font-weight: 600; color: white; margin-bottom: 2px; }
+  .result-tip { font-size: 11px; color: var(--muted); }
+  .result-score { font-size: 13px; font-weight: 600; color: var(--text); text-align: center; }
+  .result-badge { text-align: right; font-size: 10px; font-weight: 700; padding: 3px 7px; border-radius: 6px; display: inline-block; margin-left: auto; }
+  .badge-win { background: rgba(0,200,150,0.15); color: var(--green); border: 1px solid rgba(0,200,150,0.25); }
+  .badge-loss { background: rgba(255,77,106,0.15); color: var(--red); border: 1px solid rgba(255,77,106,0.25); }
+  .badge-pending { background: rgba(245,197,24,0.15); color: var(--gold); border: 1px solid rgba(245,197,24,0.25); }
+  .day-divider { padding: 7px 14px; background: rgba(255,255,255,0.02); font-size: 11px; color: var(--gold); font-weight: 600; letter-spacing: 0.5px; border-top: 1px solid rgba(255,255,255,0.05); }
+
+  /* CALCULATOR */
+  .calc-card { background: var(--card); border: 1px solid rgba(245,197,24,0.15); border-radius: 16px; padding: 18px; margin-bottom: 14px; }
+  .calc-title { font-size: 15px; font-weight: 700; color: white; margin-bottom: 3px; }
+  .calc-sub { font-size: 12px; color: var(--muted); margin-bottom: 14px; }
+  .stake-buttons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 10px; }
+  .stake-btn { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 9px 4px; text-align: center; font-size: 14px; font-weight: 600; color: var(--text); cursor: pointer; transition: all 0.2s; font-family: 'DM Sans', sans-serif; }
+  .stake-btn:hover, .stake-btn.active { background: rgba(245,197,24,0.2); border-color: var(--gold); color: var(--gold); }
+  .custom-stake { display: flex; align-items: center; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 9px 14px; margin-bottom: 14px; gap: 8px; }
+  .custom-stake span { color: var(--muted); font-size: 14px; font-weight: 600; }
+  .custom-stake input { background: none; border: none; outline: none; color: white; font-size: 16px; font-weight: 600; font-family: 'DM Sans', sans-serif; width: 100%; }
+  .custom-stake input::placeholder { color: rgba(255,255,255,0.2); }
+  .calc-results { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .calc-box { background: rgba(255,255,255,0.04); border-radius: 12px; padding: 12px; }
+  .calc-box-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; margin-bottom: 5px; }
+  .calc-box-value { font-family: 'Bebas Neue', sans-serif; font-size: 24px; line-height: 1; color: var(--green); }
+  .calc-box-value.gold { color: var(--gold); }
+  .calc-box-sub { font-size: 10px; color: var(--muted); margin-top: 2px; }
+  .disclaimer { font-size: 10px; color: var(--muted); text-align: center; margin-top: 10px; line-height: 1.5; opacity: 0.7; }
+
+  /* HOW WE PICK */
+  .how-hero { margin-bottom: 20px; }
+  .how-hero h2 { font-family: 'Bebas Neue', sans-serif; font-size: 48px; letter-spacing: 2px; line-height: 1; color: white; }
+  .how-hero h2 span { color: var(--gold); display: block; }
+  .how-hero p { font-size: 14px; color: var(--muted); margin-top: 8px; }
+
+  .step-card { background: var(--card); border: 1px solid rgba(255,255,255,0.06); border-radius: 14px; padding: 16px; margin-bottom: 10px; display: flex; align-items: flex-start; gap: 14px; }
+  .step-num { width: 36px; height: 36px; border-radius: 50%; background: rgba(245,197,24,0.15); border: 1px solid rgba(245,197,24,0.4); display: flex; align-items: center; justify-content: center; font-family: 'Bebas Neue', sans-serif; font-size: 18px; color: var(--gold); flex-shrink: 0; }
+  .step-title { font-size: 14px; font-weight: 700; color: white; margin-bottom: 3px; }
+  .step-desc { font-size: 13px; color: var(--muted); line-height: 1.4; }
+
+  /* BUILT DIFFERENT */
+  .built-hero { margin-bottom: 20px; }
+  .built-hero h2 { font-family: 'Bebas Neue', sans-serif; font-size: 44px; letter-spacing: 2px; line-height: 1; color: white; }
+  .built-hero h2 span { color: var(--gold); display: block; }
+  .built-hero p { font-size: 14px; color: var(--muted); margin-top: 8px; }
+
+  .feature-card { background: var(--card); border: 1px solid rgba(255,255,255,0.06); border-radius: 14px; padding: 16px; margin-bottom: 10px; display: flex; align-items: flex-start; gap: 14px; }
+  .feature-icon { width: 44px; height: 44px; border-radius: 12px; background: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; }
+  .feature-title { font-size: 14px; font-weight: 700; color: white; margin-bottom: 3px; }
+  .feature-desc { font-size: 13px; color: var(--muted); line-height: 1.4; }
+
+  .price-bar { background: linear-gradient(135deg, rgba(245,197,24,0.15), rgba(43,77,201,0.2)); border: 1px solid rgba(245,197,24,0.25); border-radius: 14px; padding: 16px; margin-top: 16px; display: flex; justify-content: space-between; align-items: center; }
+  .price-bar-left { font-size: 13px; color: var(--muted); }
+  .price-bar-left strong { display: block; font-size: 16px; color: white; margin-bottom: 2px; }
+  .price-tag { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--gold); }
+  .price-tag span { font-size: 14px; color: var(--muted); font-family: 'DM Sans', sans-serif; font-weight: 400; }
+
+  /* JOIN US */
+  .join-hero { margin-bottom: 20px; }
+  .join-hero h2 { font-family: 'Bebas Neue', sans-serif; font-size: 44px; letter-spacing: 2px; line-height: 1; color: white; }
+  .join-hero h2 span { color: var(--gold); }
+  .join-hero p { font-size: 14px; color: var(--muted); margin-top: 8px; }
+
+  .channel-card { background: var(--card); border: 1px solid rgba(255,255,255,0.06); border-radius: 14px; padding: 16px; margin-bottom: 10px; display: flex; align-items: center; gap: 14px; text-decoration: none; transition: all 0.2s; }
+  .channel-card:hover { background: var(--card2); border-color: rgba(245,197,24,0.3); }
+  .channel-card.vip { border-color: rgba(245,197,24,0.3); background: var(--card); }
+  .channel-icon { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; flex-shrink: 0; }
+  .channel-icon.blue { background: var(--blue-mid); }
+  .channel-icon.gold-bg { background: rgba(245,197,24,0.2); }
+  .channel-icon.grey { background: rgba(255,255,255,0.08); }
+  .channel-icon.green-bg { background: rgba(0,200,150,0.15); }
+  .channel-info { flex: 1; }
+  .channel-name { font-size: 15px; font-weight: 700; color: white; margin-bottom: 2px; }
+  .channel-handle { font-size: 12px; color: var(--muted); }
+  .channel-badge { font-size: 12px; font-weight: 700; padding: 5px 12px; border-radius: 8px; white-space: nowrap; flex-shrink: 0; }
+  .badge-gold { background: var(--gold); color: #1A1A1A; }
+  .badge-blue { background: var(--blue-mid); color: white; }
+  .badge-green { background: rgba(0,200,150,0.2); color: var(--green); border: 1px solid rgba(0,200,150,0.4); }
+
+  /* CTA */
+  .cta-card { background: linear-gradient(135deg, rgba(245,197,24,0.15), rgba(43,77,201,0.3)); border: 1px solid rgba(245,197,24,0.3); border-radius: 16px; padding: 22px 18px; text-align: center; margin-top: 8px; }
+  .cta-card h3 { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 1.5px; color: white; margin-bottom: 5px; }
+  .cta-card p { font-size: 13px; color: var(--muted); margin-bottom: 14px; line-height: 1.5; }
+  .cta-btn { display: block; background: linear-gradient(135deg, var(--gold), #C8A010); color: #1A1A1A; font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 700; padding: 14px 24px; border-radius: 12px; text-decoration: none; letter-spacing: 0.5px; box-shadow: 0 4px 20px rgba(245,197,24,0.3); }
+  .cta-trial { font-size: 11px; color: var(--muted); margin-top: 8px; }
+
+  .footer { text-align: center; padding: 20px 0 0; font-size: 11px; color: var(--muted); opacity: 0.6; line-height: 1.6; }
+
+  .fade-up { opacity: 0; transform: translateY(12px); animation: fadeUp 0.4s ease forwards; }
+  @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+
+  .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.8); z-index: 1000; overflow-y: auto; padding: 20px; }
+  .modal-overlay.active { display: block; }
+  .modal-box { background: #1E35B5; border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 24px; max-width: 480px; margin: 0 auto; position: relative; }
+  .modal-close { position: absolute; top: 16px; right: 16px; background: rgba(255,255,255,0.1); border: none; color: white; width: 32px; height: 32px; border-radius: 50%; font-size: 16px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-family: 'DM Sans', sans-serif; }
+  .modal-title { font-family: 'Bebas Neue', sans-serif; font-size: 24px; color: white; margin-bottom: 16px; letter-spacing: 1.5px; }
+  .modal-body { font-size: 12px; color: #A0B0D8; line-height: 1.8; }
+  .modal-body h3 { font-size: 13px; font-weight: 700; color: white; margin: 14px 0 6px; }
+  .footer-links { display: flex; justify-content: center; gap: 16px; margin-top: 8px; }
+  .footer-link { font-size: 11px; color: #A0B0D8; text-decoration: underline; cursor: pointer; opacity: 0.7; background: none; border: none; font-family: 'DM Sans', sans-serif; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-top">
+      <div class="header-logo">
+        <span style="color:white">A</span><span style="color:#F5C518">I</span>
+      </div>
+      <div class="header-text">
+        <h1>ABSOLUTE · <span>INSIGHT</span></h1>
+        <p>FOOTBALL TIPS</p>
+      </div>
+    </div>
+    <div class="live-badge">
+      <div class="live-dot"></div>
+      LIVE · FULLY AUTOMATED · AI-POWERED
+    </div>
+  </div>
+
+  <!-- TABS -->
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchTab('results', this)">
+      <span class="tab-icon">📊</span>Results
+    </button>
+    <button class="tab-btn" onclick="switchTab('how', this)">
+      <span class="tab-icon">⚽</span>How We Pick
+    </button>
+    <button class="tab-btn" onclick="switchTab('built', this)">
+      <span class="tab-icon">🔥</span>Built Different
+    </button>
+    <button class="tab-btn" onclick="switchTab('join', this)">
+      <span class="tab-icon">💎</span>Join Us
+    </button>
+  </div>
+
+  <!-- TAB: RESULTS -->
+  <div class="tab-content active" id="tab-results">
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-value green">8</div>
+        <div class="stat-label">Wins</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value gold">15</div>
+        <div class="stat-label">Tips</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value white">3</div>
+        <div class="stat-label">Days Live</div>
+      </div>
+    </div>
+
+    <div class="winrate-card">
+      <div class="winrate-circle">
+        <svg viewBox="0 0 76 76">
+          <circle class="bg" cx="38" cy="38" r="33"/>
+          <circle class="fill" cx="38" cy="38" r="33" id="winrate-arc"/>
+        </svg>
+        <div class="winrate-text">
+          <div class="winrate-pct" id="winrate-pct">—</div>
+          <div class="winrate-lbl">WIN</div>
+        </div>
+      </div>
+      <div class="winrate-info">
+        <h3>Track Record</h3>
+        <p>Every tip published before kickoff. Wins and losses — nothing hidden.</p>
+        <div class="winrate-record">
+          <span class="rec-w" id="rec-w">10W</span>
+          <span class="rec-l" id="rec-l">4L</span>
+          <span style="background:rgba(245,197,24,0.15);border:1px solid rgba(245,197,24,0.3);color:#F5C518;font-size:12px;font-weight:700;padding:2px 10px;border-radius:6px;">1P</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="https://whop.com/ai-absolute-insight-football-tips/" style="display:block; text-decoration:none; margin-bottom:14px;">
+      <div style="background:linear-gradient(135deg, #1E35B5, #2B4DC9); border:1px solid rgba(245,197,24,0.3); border-radius:16px; padding:14px 16px; display:flex; align-items:center; justify-content:space-between;">
+        <div>
+          <div style="font-size:13px; font-weight:700; color:white; margin-bottom:2px;">7 Days Free — Then £9.99/month</div>
+          <div style="font-size:12px; color:rgba(160,176,216,0.9);">5 tips daily · AI Double · Bonus tip at 5pm</div>
+        </div>
+        <div style="background:var(--gold); color:#1a1a2e; font-size:12px; font-weight:800; padding:8px 14px; border-radius:10px; white-space:nowrap;">JOIN VIP 🔥</div>
+      </div>
+    </a>
+
+    <div class="section-title">⚽ Results</div>
+
+    <div class="results-card">
+      <div class="results-header">
+        <div>Match & Tip</div>
+        <div style="text-align:center">Score</div>
+        <div style="text-align:right">Result</div>
+      </div>
+
+      <div class="day-divider">📅 Mon 25 May 2026</div>
+
+      <div class="result-row">
+        <div><div class="result-match">Notts County vs Salford City</div><div class="result-tip">Away Win</div></div>
+        <div class="result-score">3 — 0</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">SC Paderborn vs VfL Wolfsburg</div><div class="result-tip">BTTS Yes</div></div>
+        <div class="result-score">1 — 1</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">ST Mirren vs Partick Thistle</div><div class="result-tip">BTTS Yes</div></div>
+        <div class="result-score">1 — 0</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Coritiba vs Bahia</div><div class="result-tip">Over 2.5</div></div>
+        <div class="result-score">—</div>
+        <div><span class="result-badge badge-pending">PENDING</span></div>
+      </div>
+
+      <div class="day-divider">📅 Sun 24 May 2026</div>
+
+      <div class="result-row">
+        <div><div class="result-match">Liverpool vs Brentford</div><div class="result-tip">BTTS Yes</div></div>
+        <div class="result-score">1 — 1</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Man City vs Aston Villa</div><div class="result-tip">Over 2.5 Goals</div></div>
+        <div class="result-score">1 — 2</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Tottenham vs Everton</div><div class="result-tip">Spurs Win</div></div>
+        <div class="result-score">1 — 0</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Napoli vs Udinese</div><div class="result-tip">Napoli Win</div></div>
+        <div class="result-score">1 — 0</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">AC Milan vs Cagliari</div><div class="result-tip">Milan Win</div></div>
+        <div class="result-score">1 — 2</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+
+      <div class="day-divider">⚡ Bonus Tip — Sun 24 May 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Corinthians vs Atletico-MG</div><div class="result-tip">BTTS Yes (80%)</div></div>
+        <div class="result-score">1 — 0</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+
+      <div id="older-results" style="display:none">
+        <div class="day-divider">📅 Sat 23 May 2026 — Day 1</div>
+        <div class="result-row">
+          <div><div class="result-match">Real Betis vs Levante</div><div class="result-tip">BTTS + Over 2.5</div></div>
+          <div class="result-score">2 — 1</div>
+          <div><span class="result-badge badge-win">WIN</span></div>
+        </div>
+        <div class="result-row">
+          <div><div class="result-match">Espanyol vs Real Sociedad</div><div class="result-tip">BTTS Yes</div></div>
+          <div class="result-score">1 — 1</div>
+          <div><span class="result-badge badge-win">WIN</span></div>
+        </div>
+        <div class="result-row">
+          <div><div class="result-match">Real Madrid vs Athletic Club</div><div class="result-tip">BTTS + Over 2.5</div></div>
+          <div class="result-score">4 — 2</div>
+          <div><span class="result-badge badge-win">WIN</span></div>
+        </div>
+        <div class="result-row">
+          <div><div class="result-match">Valencia vs Barcelona</div><div class="result-tip">BTTS + Over 2.5</div></div>
+          <div class="result-score">3 — 1</div>
+          <div><span class="result-badge badge-win">WIN</span></div>
+        </div>
+        <div class="result-row">
+          <div><div class="result-match">Getafe vs Osasuna</div><div class="result-tip">Over 2.5 Goals</div></div>
+          <div class="result-score">1 — 0</div>
+          <div><span class="result-badge badge-loss">LOSS</span></div>
+        </div>
+      </div>
+      <div style="text-align:center; padding: 12px 0;">
+        <button onclick="toggleOlder(this)" style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.15); border-radius:20px; color:var(--muted); font-size:13px; font-family:'DM Sans',sans-serif; padding:8px 20px; cursor:pointer;">
+          📋 View all results
+        </button>
+      </div>
+    </div>
+
+    <div class="section-title">💰 Stake Calculator</div>
+
+    <div class="calc-card">
+      <div class="calc-title">What could you have made?</div>
+      <div class="calc-sub">Every tip includes Outright, BTTS and Over 2.5 markets. Mix and match across all 5 tips — up to 15 markets to choose from. Based on avg odds of 5/1.</div>
+      <div class="stake-buttons">
+        <button class="stake-btn" onclick="setStake(2, this)">£2</button>
+        <button class="stake-btn" onclick="setStake(5, this)">£5</button>
+        <button class="stake-btn active" onclick="setStake(10, this)">£10</button>
+        <button class="stake-btn" onclick="setStake(25, this)">£25</button>
+      </div>
+      <div class="custom-stake">
+        <span>£</span>
+        <input type="number" id="custom-input" placeholder="Custom stake" oninput="customStake(this.value)"/>
+      </div>
+      <div class="calc-results">
+        <div class="calc-box">
+          <div class="calc-box-label">Est. Monthly Profit</div>
+          <div class="calc-box-value" id="monthly-profit">£168</div>
+          <div class="calc-box-sub" id="calc-winrate">Live win rate</div>
+        </div>
+        <div class="calc-box">
+          <div class="calc-box-label">Subscription ROI</div>
+          <div class="calc-box-value gold" id="sub-roi">16.8x</div>
+          <div class="calc-box-sub">vs £9.99/month</div>
+        </div>
+        <div class="calc-box">
+          <div class="calc-box-label">Winning Bet</div>
+          <div class="calc-box-value" id="win-return">£80</div>
+          <div class="calc-box-sub">Per winning bet</div>
+        </div>
+        <div class="calc-box">
+          <div class="calc-box-label">Monthly Stake</div>
+          <div class="calc-box-value gold" id="monthly-stake">£300</div>
+          <div class="calc-box-sub">30 bets/month</div>
+        </div>
+      </div>
+      <div class="disclaimer">⚠️ Estimated figures based on our live win rate and avg odds of 5/1. Past performance does not guarantee future returns. Bet responsibly. 18+</div>
+    </div>
+
+    <div class="cta-card">
+      <h3>JOIN VIP TODAY</h3>
+      <p>5 AI tips every morning. Daily double. Bonus tip at 5pm. Full results every night.</p>
+      <a href="https://whop.com/ai-absolute-insight-football-tips/" class="cta-btn">Start Your Free Trial 🔥</a>
+      <div class="cta-trial">7 days free — then just £9.99/month. Cancel anytime.</div>
+    </div>
+
+  </div>
+
+  <!-- TAB: HOW WE PICK -->
+  <div class="tab-content" id="tab-how">
+
+    <div class="how-hero">
+      <h2>HOW WE PICK<span>EVERY TIP</span></h2>
+      <p>Real data. No guesswork. Every single day.</p>
+    </div>
+
+    <div class="step-card">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-title">Live fixture data pulled from football API</div>
+        <div class="step-desc">Today's matches only — top priority leagues across Europe and beyond, analysed fresh every morning.</div>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-title">Real form & H2H — last 5 games for both teams</div>
+        <div class="step-desc">Goals scored, goals conceded, BTTS rate and Over 2.5 rate for every team, every day.</div>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-title">AI probability model calculates the edge</div>
+        <div class="step-desc">Claude AI analyses Home/Draw/Away, BTTS and Over 2.5 probabilities for every fixture and assigns a confidence score.</div>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-num">4</div>
+      <div>
+        <div class="step-title">Top 5 by confidence selected — no filler</div>
+        <div class="step-desc">Only the highest confidence picks make it through. No league cap — best 5 from anywhere, every day.</div>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-num">5</div>
+      <div>
+        <div class="step-title">AI Double</div>
+        <div class="step-desc">Our AI picks the best 2 High confidence selections as a daily double. You'll always get a message — if no double is posted, it means our AI couldn't find two picks meeting the confidence threshold. Quality over quantity.</div>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-num">6</div>
+      <div>
+        <div class="step-title">Bonus Tip</div>
+        <div class="step-desc">Every tip includes Outright, BTTS and Over 2.5 markets — up to 15 markets to build your own acca. Bonus tip at 5pm if a High confidence pick hits 75%+ probability.</div>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-num">7</div>
+      <div>
+        <div class="step-title">Full results at 11pm every night</div>
+        <div class="step-desc">Every result checked and posted automatically. Nothing hidden — wins and losses both on the record.</div>
+      </div>
+    </div>
+
+    <div class="cta-card" style="margin-top:20px">
+      <h3>SEE IT IN ACTION</h3>
+      <p>All 5 tips, full analysis and AI Double — every morning at 9am UK.</p>
+      <a href="https://whop.com/ai-absolute-insight-football-tips/" class="cta-btn">Start Your Free Trial 🔥</a>
+      <div class="cta-trial">7 days free — then just £9.99/month. Cancel anytime.</div>
+    </div>
+
+  </div>
+
+  <!-- TAB: BUILT DIFFERENT -->
+  <div class="tab-content" id="tab-built">
+
+    <div class="built-hero">
+      <h2>BUILT DIFFERENT.<span>HERE'S WHY.</span></h2>
+      <p>We don't guess. Every tip is evidence-backed.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">🤖</div>
+      <div>
+        <div class="feature-title">AI-Powered Analysis</div>
+        <div class="feature-desc">Our model analyses every match using real data — not opinion. Probability scores on every single tip.</div>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">📊</div>
+      <div>
+        <div class="feature-title">Real Form & H2H Data</div>
+        <div class="feature-desc">Last 5 games, head to head records, BTTS and Over 2.5 rates — all factored in, every day.</div>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">🎯</div>
+      <div>
+        <div class="feature-title">High Confidence Only</div>
+        <div class="feature-desc">Only the top 5 by AI confidence score make it through. No weak picks, no filler — quality over quantity always.</div>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">💎</div>
+      <div>
+        <div class="feature-title">5 Tips Every Morning</div>
+        <div class="feature-desc">VIP members get the full picture daily — analysis, probabilities, AI Double and a 5pm bonus tip.</div>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">✅</div>
+      <div>
+        <div class="feature-title">Transparent Track Record</div>
+        <div class="feature-desc">Every tip published before kickoff. Every result tracked. Wins and losses — nothing hidden.</div>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">💷</div>
+      <div>
+        <div class="feature-title">Just £9.99/month</div>
+        <div class="feature-desc">Less than 33p a day. One winning double covers your membership. Cancel anytime.</div>
+      </div>
+    </div>
+
+    <div class="price-bar">
+      <div class="price-bar-left">
+        <strong>VIP Membership</strong>
+        7 day free trial included
+      </div>
+      <div>
+        <div class="price-tag">£9.99 <span>/mo</span></div>
+      </div>
+    </div>
+
+    <div class="cta-card" style="margin-top:14px">
+      <h3>JOIN THE MOVEMENT</h3>
+      <p>Be on the right side of probability every single day.</p>
+      <a href="https://whop.com/ai-absolute-insight-football-tips/" class="cta-btn">Start Your Free Trial 🔥</a>
+      <div class="cta-trial">7 days free — then just £9.99/month. Cancel anytime.</div>
+    </div>
+
+  </div>
+
+  <!-- TAB: JOIN US -->
+  <div class="tab-content" id="tab-join">
+
+    <div class="join-hero">
+      <h2>JOIN THE <span>COMMUNITY</span></h2>
+      <p>Everything you need — all in one place on Telegram.</p>
+    </div>
+
+    <a href="https://whop.com/ai-absolute-insight-football-tips/" class="channel-card vip">
+      <div class="channel-icon blue">💎</div>
+      <div class="channel-info">
+        <div class="channel-name">VIP Tips Channel</div>
+        <div class="channel-handle">@absoluteinsight_tips · Full analysis daily</div>
+      </div>
+      <div class="channel-badge badge-gold">£9.99/mo</div>
+    </a>
+
+    <a href="https://t.me/absoluteinsight_free" class="channel-card">
+      <div class="channel-icon gold-bg">⚡</div>
+      <div class="channel-info">
+        <div class="channel-name">Free Daily Tip</div>
+        <div class="channel-handle">@absoluteinsight_free · Best tip every morning</div>
+      </div>
+      <div class="channel-badge badge-blue">FREE</div>
+    </a>
+
+    <a href="https://t.me/AbsoluteInsightSupport_bot" class="channel-card">
+      <div class="channel-icon grey">🔧</div>
+      <div class="channel-info">
+        <div class="channel-name">Member Support</div>
+        <div class="channel-handle">@AbsoluteInsightSupport_bot · We're here to help</div>
+      </div>
+      <div class="channel-badge badge-blue">24/7</div>
+    </a>
+
+    <a href="https://whop.com/ai-absolute-insight-football-tips/" class="channel-card">
+      <div class="channel-icon green-bg">💰</div>
+      <div class="channel-info">
+        <div class="channel-name">Earn 10% Commission</div>
+        <div class="channel-handle">Refer a friend — earn every month they stay</div>
+      </div>
+      <div class="channel-badge badge-green">AFFILIATE</div>
+    </a>
+
+    <div class="cta-card" style="margin-top:8px">
+      <h3>START FOR FREE</h3>
+      <p>7 day free trial. No payment until your trial ends. Cancel anytime.</p>
+      <a href="https://whop.com/ai-absolute-insight-football-tips/" class="cta-btn">Start Your Free Trial 🔥</a>
+      <div class="cta-trial">Then just £9.99/month · 5 tips daily · AI Double · Bonus tip</div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    Absolute Insight · @absoluteinsight_tips<br>
+    18+ · Please gamble responsibly · BeGambleAware.org<br><br>
+    <div class="footer-links"><button class="footer-link" onclick="openModal('privacy-modal')">Privacy Policy</button><button class="footer-link" onclick="openModal('terms-modal')">Terms & Conditions</button></div><br>
+    <span style="font-size:10px;opacity:0.5;line-height:1.6;">Absolute Insight provides AI-powered statistical analysis and tips for informational and entertainment purposes only. We are not a licensed bookmaker or gambling operator. We do not guarantee any financial returns. Never bet more than you can afford to lose. If gambling is having a negative impact on your life, call the GamCare helpline: 0808 8020 133. 18+ only. BeGambleAware.org</span>
+  </div>
+
+
+  <!-- Privacy Policy Modal -->
+  <div class="modal-overlay" id="privacy-modal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('privacy-modal')">✕</button>
+      <div class="modal-title">Privacy Policy</div>
+      <div class="modal-body">
+        <p>Last updated: 24 May 2026</p>
+        <h3>Who We Are</h3>
+        <p>Absolute Insight is an AI-powered football tips service operated by Absolute Insight. We deliver daily football tips via Telegram to paying subscribers.</p>
+        <h3>Information We Collect</h3>
+        <p>We collect your Telegram username and email address when you subscribe via Whop. We do not collect payment card details — all payments are processed securely by Whop.</p>
+        <h3>How We Use Your Information</h3>
+        <p>Your information is used solely to provide access to our Telegram channels and to communicate service updates. We do not sell or share your data with third parties.</p>
+        <h3>Data Storage</h3>
+        <p>Subscriber data is stored securely by Whop in accordance with their privacy policy. We do not store personal data independently.</p>
+        <h3>Your Rights</h3>
+        <p>You can cancel your subscription and request deletion of your data at any time by contacting us via @AbsoluteInsightSupport_bot on Telegram.</p>
+        <h3>Cookies</h3>
+        <p>This website does not use cookies or tracking technologies.</p>
+        <h3>Contact</h3>
+        <p>For any privacy queries contact us via @AbsoluteInsightSupport_bot on Telegram.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Terms & Conditions Modal -->
+  <div class="modal-overlay" id="terms-modal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('terms-modal')">✕</button>
+      <div class="modal-title">Terms & Conditions</div>
+      <div class="modal-body">
+        <p>Last updated: 24 May 2026</p>
+        <h3>Service Description</h3>
+        <p>Absolute Insight provides AI-powered football tips and statistical analysis for informational and entertainment purposes only. We are not a licensed bookmaker or gambling operator.</p>
+        <h3>No Financial Guarantee</h3>
+        <p>We do not guarantee any financial returns. Past performance does not guarantee future results. All tips are provided for entertainment purposes only. Never bet more than you can afford to lose.</p>
+        <h3>Eligibility</h3>
+        <p>You must be 18 years or older to subscribe. By subscribing you confirm you are of legal gambling age in your jurisdiction.</p>
+        <h3>Subscription & Cancellation</h3>
+        <p>Subscriptions are billed monthly via Whop. A 7-day free trial is available for new members. You may cancel at any time. No refunds are provided for partial months.</p>
+        <h3>Responsible Gambling</h3>
+        <p>Absolute Insight encourages responsible gambling. If gambling is affecting your life please call the GamCare helpline: 0808 8020 133 or visit BeGambleAware.org.</p>
+        <h3>Intellectual Property</h3>
+        <p>All content provided by Absolute Insight including tips, analysis and branding is the property of Absolute Insight and may not be reproduced or shared without permission.</p>
+        <h3>Limitation of Liability</h3>
+        <p>Absolute Insight accepts no liability for any financial losses incurred as a result of acting on our tips or analysis. Use of our service is entirely at your own risk.</p>
+        <h3>Changes to Terms</h3>
+        <p>We reserve the right to update these terms at any time. Continued use of the service constitutes acceptance of the updated terms.</p>
+        <h3>Contact</h3>
+        <p>For any queries contact us via @AbsoluteInsightSupport_bot on Telegram.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function switchTab(tab, btn) {
+    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('tab-' + tab).classList.add('active');
+    btn.classList.add('active');
+  }
+
+  let currentStake = 10;
+
+  function setStake(amount, btn) {
+    currentStake = amount;
+    document.getElementById('custom-input').value = '';
+    document.querySelectorAll('.stake-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    updateCalc();
+  }
+
+  function customStake(val) {
+    if (val && val > 0) {
+      currentStake = parseFloat(val);
+      document.querySelectorAll('.stake-btn').forEach(b => b.classList.remove('active'));
+      updateCalc();
+    }
+  }
+
+  function updateCalc() {
+    const stake = currentStake;
+    const avgOdds = 5;
+    const winRate = liveWinRate || 0.73;
+    const days = 30;
+    const winReturn = stake * avgOdds;
+    const wins = Math.round(days * winRate);
+    const monthlyProfit = Math.round((wins * winReturn) - (days * stake));
+    const roi = (monthlyProfit / 9.99).toFixed(1);
+    document.getElementById('win-return').textContent = '£' + winReturn.toLocaleString();
+    document.getElementById('monthly-profit').textContent = '£' + Math.max(0, monthlyProfit).toLocaleString();
+    document.getElementById('monthly-stake').textContent = '£' + (stake * days).toLocaleString();
+    document.getElementById('sub-roi').textContent = roi + 'x';
+    // Update win rate label on calculator
+    const winPct = Math.round(winRate * 100);
+    if (document.getElementById('calc-winrate')) document.getElementById('calc-winrate').textContent = 'At ' + winPct + '% win rate';
+  }
+
+  let liveWinRate = 0.71; // fallback until results.json loads
+
+  window.addEventListener('load', () => {
+    // Fetch live results from results.json
+    fetch('results.json?v=' + Date.now())
+      .then(r => r.json())
+      .then(data => {
+        const allTips = data.tips || [];
+        const settled = allTips.filter(t => t.result === 'WIN' || t.result === 'LOSS');
+        const wins = settled.filter(t => t.result === 'WIN').length;
+        const losses = settled.length - wins;
+        const pending = allTips.filter(t => t.result === 'PENDING').length;
+        const pct = settled.length > 0 ? Math.round((wins / settled.length) * 100) : 0;
+        liveWinRate = settled.length > 0 ? wins / settled.length : 0.73;
+
+        const circumference = 2 * Math.PI * 33;
+        const offset = circumference - (pct / 100) * circumference;
+        setTimeout(() => {
+          document.getElementById('winrate-arc').style.strokeDashoffset = offset;
+          document.getElementById('winrate-pct').textContent = pct + '%';
+          document.getElementById('rec-w').textContent = wins + 'W';
+          document.getElementById('rec-l').textContent = losses + 'L';
+          if (document.getElementById('rec-p')) document.getElementById('rec-p').textContent = pending + 'P';
+          // Update stats bar
+          if (document.getElementById('stat-wins')) document.getElementById('stat-wins').textContent = wins;
+          if (document.getElementById('stat-tips')) document.getElementById('stat-tips').textContent = allTips.length;
+        }, 400);
+        updateCalc();
+      })
+      .catch(() => {
+        // fallback to hardcoded if fetch fails
+        const wins = 10, settled = 14;
+        const pct = Math.round((wins / settled) * 100);
+        const circumference = 2 * Math.PI * 33;
+        const offset = circumference - (pct / 100) * circumference;
+        setTimeout(() => {
+          document.getElementById('winrate-arc').style.strokeDashoffset = offset;
+          document.getElementById('winrate-pct').textContent = pct + '%';
+          document.getElementById('rec-w').textContent = wins + 'W';
+          document.getElementById('rec-l').textContent = (settled - wins) + 'L';
+        }, 400);
+        updateCalc();
+      });
+  });
+  function toggleOlder(btn) {
+    const el = document.getElementById('older-results');
+    const showing = el.style.display !== 'none';
+    el.style.display = showing ? 'none' : 'block';
+    btn.textContent = showing ? '📋 View all results' : '📋 Hide older results';
+  }
+
+  function openModal(id) { document.getElementById(id).classList.add('active'); document.body.style.overflow = 'hidden'; }
+  function closeModal(id) { document.getElementById(id).classList.remove('active'); document.body.style.overflow = ''; }
+</script>
+</body>
+</html>
