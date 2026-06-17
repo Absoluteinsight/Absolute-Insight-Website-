@@ -1,0 +1,1719 @@
+{
+  "date": "2026-06-17",
+  "wins": 155,
+  "losses": 8,
+  "settled": 163,
+  "pending": 52,
+  "tips": [
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Portugal",
+      "away": "Congo DR",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "England",
+      "away": "Croatia",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Ghana",
+      "away": "Panama",
+      "league": "World Cup",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Arsenal Tula",
+      "away": "Volga Ulyanovsk",
+      "league": "Friendlies Clubs",
+      "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Marke",
+      "away": "Kortrijk",
+      "league": "Friendlies Clubs",
+      "verdict": "Over 2.5",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    }
+  ]
+}
