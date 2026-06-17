@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Absolute Insight — Football Tips</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #F5C800;
+    --gold-light: #FFD700;
+    --blue: #1A3A8F;
+    --blue-mid: #1a5fc8;
+    --blue-light: #2470d4;
+    --green: #00C896;
+    --red: #FF4D6A;
+    --bg: #1A2E9E;
+    --card: #1E35B5;
+    --card2: #2040CC;
+    --text: #FFFFFF;
+    --muted: #A0B0D8;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(ellipse at 20% 20%, rgba(245,197,24,0.08) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 80%, rgba(43,77,201,0.15) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 0 80px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* HEADER */
+  .header {
+    text-align: center;
+    padding: 20px 0 10px;
+  }
+
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 4px;
+  }
+
+  .header-logo {
+    width: 52px;
+    height: 52px;
+    background: var(--blue-mid);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    letter-spacing: -1px;
+    box-shadow: 0 4px 16px rgba(43,77,201,0.4);
+    flex-shrink: 0;
+  }
+
+  .header-text h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 26px;
+    letter-spacing: 2px;
+    line-height: 1;
+    text-align: left;
+  }
+
+  .header-text h1 span { color: var(--gold); }
+
+  .header-text p {
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 2px;
+    text-align: left;
+    margin-top: 2px;
+  }
+
+  .live-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(0,200,150,0.12);
+    border: 1px solid rgba(0,200,150,0.3);
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 11px;
+    color: var(--green);
+    font-weight: 600;
+    margin-top: 6px;
+    letter-spacing: 0.5px;
+  }
+
+  .live-dot {
+    width: 6px; height: 6px;
+    background: var(--green);
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.8); }
+  }
+
+  /* TABS */
+  .tabs {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background: rgba(0,0,0,0.2);
+    border-radius: 14px;
+    padding: 4px;
+    margin: 4px 16px 8px;
+    gap: 2px;
+  }
+
+  .tab-btn {
+    font-size: 9px;
+    padding: 7px 2px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--muted);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+    letter-spacing: 0.3px;
+    font-family: 'DM Sans', sans-serif;
+    border: none;
+    background: none;
+    line-height: 1.3;
+  }
+
+  .tab-btn.active {
+    background: var(--blue-mid);
+    color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+
+  .tab-btn .tab-icon { display: block; font-size: 12px; margin-bottom: 1px; }
+
+  /* TAB CONTENT */
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
+  /* SECTION TITLE */
+  .section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: white;
+    margin: 20px 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+  }
+
+  /* STATS */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+
+  .stat-card {
+    background: var(--card);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 14px;
+    padding: 14px 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+  }
+
+  .stat-value {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    line-height: 1;
+    margin-bottom: 3px;
+  }
+
+  .stat-value.green { color: var(--green); }
+  .stat-value.gold { color: var(--gold); }
+  .stat-value.white { color: white; }
+  .stat-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; }
+
+  /* WIN RATE */
+  .winrate-card {
+    background: var(--card);
+    border: 1px solid rgba(245,197,24,0.2);
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .winrate-circle { width: 76px; height: 76px; flex-shrink: 0; position: relative; }
+  .winrate-circle svg { transform: rotate(-90deg); width: 76px; height: 76px; }
+  .winrate-circle .bg { fill: none; stroke: rgba(255,255,255,0.08); stroke-width: 6; }
+  .winrate-circle .fill { fill: none; stroke: var(--gold); stroke-width: 6; stroke-linecap: round;
+    stroke-dasharray: 219.9; stroke-dashoffset: 110; transition: stroke-dashoffset 1.5s ease; }
+  .winrate-text { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .winrate-pct { font-family: 'Bebas Neue', sans-serif; font-size: 20px; color: var(--gold); line-height: 1; }
+  .winrate-lbl { font-size: 9px; color: var(--muted); font-weight: 600; letter-spacing: 0.5px; }
+  .winrate-info h3 { font-size: 15px; font-weight: 700; color: white; margin-bottom: 3px; }
+  .winrate-info p { font-size: 12px; color: var(--muted); line-height: 1.4; }
+  .winrate-record { display: flex; gap: 8px; margin-top: 7px; }
+  .rec-w { background: rgba(0,200,150,0.15); border: 1px solid rgba(0,200,150,0.3); color: var(--green); font-size: 12px; font-weight: 700; padding: 2px 10px; border-radius: 6px; }
+  .rec-l { background: rgba(255,77,106,0.15); border: 1px solid rgba(255,77,106,0.3); color: var(--red); font-size: 12px; font-weight: 700; padding: 2px 10px; border-radius: 6px; }
+
+  /* RESULTS */
+  .results-card { background: var(--card); border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; overflow: hidden; margin-bottom: 14px; }
+  .results-header { display: grid; grid-template-columns: 1fr 72px 56px; padding: 9px 14px; background: rgba(255,255,255,0.04); font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; }
+  .result-row { display: grid; grid-template-columns: 1fr 72px 56px; padding: 11px 14px; border-top: 1px solid rgba(255,255,255,0.05); align-items: center; }
+  .result-match { font-size: 12px; font-weight: 600; color: white; margin-bottom: 2px; }
+  .result-tip { font-size: 11px; color: var(--muted); }
+  .result-score { font-size: 13px; font-weight: 600; color: var(--text); text-align: center; }
+  .result-badge { text-align: right; font-size: 10px; font-weight: 700; padding: 3px 7px; border-radius: 6px; display: inline-block; margin-left: auto; }
+  .badge-win { background: rgba(0,200,150,0.15); color: var(--green); border: 1px solid rgba(0,200,150,0.25); }
+  .badge-loss { background: rgba(255,77,106,0.15); color: var(--red); border: 1px solid rgba(255,77,106,0.25); }
+  .badge-pending { background: rgba(245,197,24,0.15); color: var(--gold); border: 1px solid rgba(245,197,24,0.25); }
+  .day-divider { padding: 7px 14px; background: rgba(255,255,255,0.02); font-size: 11px; color: var(--gold); font-weight: 600; letter-spacing: 0.5px; border-top: 1px solid rgba(255,255,255,0.05); }
+
+  /* CALCULATOR */
+  .calc-card { background: var(--card); border: 1px solid rgba(245,197,24,0.15); border-radius: 16px; padding: 18px; margin-bottom: 14px; }
+  .calc-title { font-size: 15px; font-weight: 700; color: white; margin-bottom: 3px; }
+  .calc-sub { font-size: 12px; color: var(--muted); margin-bottom: 14px; }
+  .stake-buttons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 10px; }
+  .stake-btn { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 9px 4px; text-align: center; font-size: 14px; font-weight: 600; color: var(--text); cursor: pointer; transition: all 0.2s; font-family: 'DM Sans', sans-serif; }
+  .stake-btn:hover, .stake-btn.active { background: rgba(245,197,24,0.2); border-color: var(--gold); color: var(--gold); }
+  .custom-stake { display: flex; align-items: center; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 9px 14px; margin-bottom: 14px; gap: 8px; }
+  .custom-stake span { color: var(--muted); font-size: 14px; font-weight: 600; }
+  .custom-stake input { background: none; border: none; outline: none; color: white; font-size: 16px; font-weight: 600; font-family: 'DM Sans', sans-serif; width: 100%; }
+  .custom-stake input::placeholder { color: rgba(255,255,255,0.2); }
+  .calc-results { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .calc-box { background: rgba(255,255,255,0.04); border-radius: 12px; padding: 12px; }
+  .calc-box-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; margin-bottom: 5px; }
+  .calc-box-value { font-family: 'Bebas Neue', sans-serif; font-size: 24px; line-height: 1; color: var(--green); }
+  .calc-box-value.gold { color: var(--gold); }
+  .calc-box-sub { font-size: 10px; color: var(--muted); margin-top: 2px; }
+  .disclaimer { font-size: 10px; color: var(--muted); text-align: center; margin-top: 10px; line-height: 1.5; opacity: 0.7; }
+
+  /* HOW WE PICK */
+  .how-hero { margin-bottom: 20px; }
+  .how-hero h2 { font-family: 'Bebas Neue', sans-serif; font-size: 48px; letter-spacing: 2px; line-height: 1; color: white; }
+  .how-hero h2 span { color: var(--gold); display: block; }
+  .how-hero p { font-size: 14px; color: var(--muted); margin-top: 8px; }
+
+  .step-card { background: var(--card); border: 1px solid rgba(255,255,255,0.06); border-radius: 14px; padding: 16px; margin-bottom: 10px; display: flex; align-items: flex-start; gap: 14px; }
+  .step-num { width: 36px; height: 36px; border-radius: 50%; background: rgba(245,197,24,0.15); border: 1px solid rgba(245,197,24,0.4); display: flex; align-items: center; justify-content: center; font-family: 'Bebas Neue', sans-serif; font-size: 18px; color: var(--gold); flex-shrink: 0; }
+  .step-title { font-size: 14px; font-weight: 700; color: white; margin-bottom: 3px; }
+  .step-desc { font-size: 13px; color: var(--muted); line-height: 1.4; }
+
+  /* BUILT DIFFERENT */
+  .built-hero { margin-bottom: 20px; }
+  .built-hero h2 { font-family: 'Bebas Neue', sans-serif; font-size: 44px; letter-spacing: 2px; line-height: 1; color: white; }
+  .built-hero h2 span { color: var(--gold); display: block; }
+  .built-hero p { font-size: 14px; color: var(--muted); margin-top: 8px; }
+
+  .feature-card { background: var(--card); border: 1px solid rgba(255,255,255,0.06); border-radius: 14px; padding: 16px; margin-bottom: 10px; display: flex; align-items: flex-start; gap: 14px; }
+  .feature-icon { width: 44px; height: 44px; border-radius: 12px; background: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; }
+  .feature-title { font-size: 14px; font-weight: 700; color: white; margin-bottom: 3px; }
+  .feature-desc { font-size: 13px; color: var(--muted); line-height: 1.4; }
+
+  .price-bar { background: linear-gradient(135deg, rgba(245,197,24,0.15), rgba(43,77,201,0.2)); border: 1px solid rgba(245,197,24,0.25); border-radius: 14px; padding: 16px; margin-top: 16px; display: flex; justify-content: space-between; align-items: center; }
+  .price-bar-left { font-size: 13px; color: var(--muted); }
+  .price-bar-left strong { display: block; font-size: 16px; color: white; margin-bottom: 2px; }
+  .price-tag { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--gold); }
+  .price-tag span { font-size: 14px; color: var(--muted); font-family: 'DM Sans', sans-serif; font-weight: 400; }
+
+  /* JOIN US */
+  .join-hero { margin-bottom: 20px; }
+  .join-hero h2 { font-family: 'Bebas Neue', sans-serif; font-size: 44px; letter-spacing: 2px; line-height: 1; color: white; }
+  .join-hero h2 span { color: var(--gold); }
+  .join-hero p { font-size: 14px; color: var(--muted); margin-top: 8px; }
+
+  .channel-card { background: var(--card); border: 1px solid rgba(255,255,255,0.06); border-radius: 14px; padding: 16px; margin-bottom: 10px; display: flex; align-items: center; gap: 14px; text-decoration: none; transition: all 0.2s; }
+  .channel-card:hover { background: var(--card2); border-color: rgba(245,197,24,0.3); }
+  .channel-card.vip { border-color: rgba(245,197,24,0.3); background: var(--card); }
+  .channel-icon { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; flex-shrink: 0; }
+  .channel-icon.blue { background: var(--blue-mid); }
+  .channel-icon.gold-bg { background: rgba(245,197,24,0.2); }
+  .channel-icon.grey { background: rgba(255,255,255,0.08); }
+  .channel-icon.green-bg { background: rgba(0,200,150,0.15); }
+  .channel-info { flex: 1; }
+  .channel-name { font-size: 15px; font-weight: 700; color: white; margin-bottom: 2px; }
+  .channel-handle { font-size: 12px; color: var(--muted); }
+  .channel-badge { font-size: 12px; font-weight: 700; padding: 5px 12px; border-radius: 8px; white-space: nowrap; flex-shrink: 0; }
+  .badge-gold { background: var(--gold); color: #1A1A1A; }
+  .badge-blue { background: var(--blue-mid); color: white; }
+  .badge-green { background: rgba(0,200,150,0.2); color: var(--green); border: 1px solid rgba(0,200,150,0.4); }
+
+  /* CTA */
+  .cta-card { background: linear-gradient(135deg, rgba(245,197,24,0.15), rgba(43,77,201,0.3)); border: 1px solid rgba(245,197,24,0.3); border-radius: 16px; padding: 22px 18px; text-align: center; margin-top: 8px; }
+  .cta-card h3 { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 1.5px; color: white; margin-bottom: 5px; }
+  .cta-card p { font-size: 13px; color: var(--muted); margin-bottom: 14px; line-height: 1.5; }
+  .cta-btn { display: block; background: linear-gradient(135deg, var(--gold), #C8A010); color: #1A1A1A; font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 700; padding: 14px 24px; border-radius: 12px; text-decoration: none; letter-spacing: 0.5px; box-shadow: 0 4px 20px rgba(245,197,24,0.3); }
+  .cta-trial { font-size: 11px; color: var(--muted); margin-top: 8px; }
+
+  .footer { text-align: center; padding: 20px 0 0; font-size: 11px; color: var(--muted); opacity: 0.6; line-height: 1.6; }
+
+
+  /* COUNTDOWNS */
+  .countdown-wrap { display: flex; flex-direction: column; gap: 6px; margin: 8px 16px 4px; }
+  .countdown-card { display: flex; align-items: center; gap: 10px; border-radius: 14px; padding: 10px 14px; }
+  .countdown-card.wc { background: linear-gradient(135deg, #1a5fc8, #0d3a8a); border: 2px solid #F5C800; }
+  .countdown-card.ucl { background: linear-gradient(135deg, #1a5fc8, #2470d4); border: 2px solid rgba(255,255,255,0.25); }
+  .countdown-card.ucl .cd-num { color: #c0a060; }
+  .countdown-card.pl { background: linear-gradient(135deg, #0d2a6e, #1a5fc8); border: 2px solid rgba(255,255,255,0.2); }
+  .cd-icon { font-size: 22px; flex-shrink: 0; }
+  .cd-info { flex: 1; }
+  .cd-title { font-family: 'Bebas Neue', sans-serif; font-size: 14px; letter-spacing: 1.5px; color: white; line-height: 1; }
+  .cd-sub { font-size: 9px; color: var(--muted); font-weight: 600; letter-spacing: 0.5px; margin-top: 2px; }
+  .cd-timer { display: flex; gap: 6px; flex-shrink: 0; }
+  .cd-unit { text-align: center; }
+  .cd-num { display: block; font-family: 'Bebas Neue', sans-serif; font-size: 20px; color: var(--gold); line-height: 1; }
+  .countdown-card.pl .cd-num { color: #6fa3ef; }
+  .cd-lbl { display: block; font-size: 7px; color: var(--muted); font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; }
+
+
+  .cd-writeup { display: none; background: rgba(13,42,110,0.95); border: 1px solid rgba(255,255,255,0.15); border-radius: 12px; padding: 14px 16px; margin-top: -4px; margin-bottom: 4px; }
+  .cd-writeup.open { display: block; }
+  .cd-writeup-title { font-family: 'Bebas Neue', sans-serif; font-size: 15px; color: var(--gold); letter-spacing: 1px; margin-bottom: 10px; }
+  .cd-writeup p { font-size: 12px; color: rgba(255,255,255,0.95); line-height: 1.6; margin-bottom: 8px; }
+  .cd-writeup-tag { display: inline-block; background: rgba(245,200,0,0.15); border: 1px solid rgba(245,200,0,0.3); color: var(--gold); font-size: 10px; font-weight: 700; padding: 4px 12px; border-radius: 20px; margin-top: 4px; }
+
+
+  /* BIG GAMES TAB */
+  .section-header { padding: 16px 16px 8px; }
+  .section-title { font-family: 'Bebas Neue', sans-serif; font-size: 20px; color: var(--gold); letter-spacing: 2px; }
+  .section-sub { font-size: 11px; color: var(--muted); margin-top: 4px; line-height: 1.4; }
+
+  .fixture-card { background: var(--card); border-radius: 14px; padding: 12px 14px; margin: 0 0 8px; cursor: pointer; border: 1px solid rgba(255,255,255,0.08); transition: border-color 0.2s; }
+  .fixture-card:active { border-color: var(--gold); }
+  .fix-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+  .fix-badge { font-size: 10px; font-weight: 700; padding: 3px 10px; border-radius: 20px; letter-spacing: 0.5px; }
+  .fix-badge.gold { background: rgba(245,200,0,0.15); color: var(--gold); border: 1px solid rgba(245,200,0,0.3); }
+  .fix-badge.blue { background: rgba(26,95,200,0.2); color: #6fa3ef; border: 1px solid rgba(26,95,200,0.3); }
+  .fix-date { font-size: 10px; color: var(--muted); font-weight: 600; }
+  .fix-teams { font-family: 'Bebas Neue', sans-serif; font-size: 18px; color: white; letter-spacing: 1px; margin-bottom: 3px; }
+  .fix-venue { font-size: 10px; color: var(--muted); margin-bottom: 8px; }
+  .fix-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+  .fix-tag { font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 20px; background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.6); }
+  .fix-tag.special { background: rgba(245,200,0,0.12); color: var(--gold); }
+
+
+  .fixture-card { background: var(--card); border-radius: 14px; padding: 12px 14px; margin: 0 16px 8px; cursor: pointer; border: 1px solid rgba(255,255,255,0.08); }
+  .fix-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+  .fix-badge { font-size: 10px; font-weight: 700; padding: 3px 10px; border-radius: 20px; letter-spacing: 0.5px; }
+  .fix-badge.gold { background: rgba(245,200,0,0.15); color: #F5C800; border: 1px solid rgba(245,200,0,0.3); }
+  .fix-badge.blue { background: rgba(26,95,200,0.2); color: #6fa3ef; border: 1px solid rgba(26,95,200,0.3); }
+  .fix-date { font-size: 10px; color: var(--muted); font-weight: 600; }
+  .fix-teams { font-family: 'Bebas Neue', sans-serif; font-size: 18px; color: white; letter-spacing: 1px; margin-bottom: 3px; }
+  .fix-venue { font-size: 10px; color: var(--muted); margin-bottom: 8px; }
+  .fix-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+  .fix-tag { font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 20px; background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.6); }
+  .fix-tag.special { background: rgba(245,200,0,0.12); color: #F5C800; }
+
+
+
+  .past-events-wrap { margin: 4px 16px 4px; }
+  .past-events-toggle { display: flex; align-items: center; justify-content: space-between; padding: 6px 12px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; cursor: pointer; }
+  .past-events-label { font-family: 'Bebas Neue', sans-serif; font-size: 12px; color: rgba(255,255,255,0.35); letter-spacing: 2px; }
+  .past-events-arrow { font-size: 10px; color: rgba(255,255,255,0.3); transition: transform 0.2s; }
+  .past-events-arrow.open { transform: rotate(180deg); }
+  .past-events-list { display: none; margin-top: 6px; }
+  .past-events-list.open { display: block; }
+  .past-empty { font-size: 11px; color: var(--muted); text-align: center; padding: 16px; font-style: italic; }
+  .past-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 14px; padding: 10px 14px; margin-bottom: 6px; cursor: pointer; opacity: 0.7; }
+  .past-card-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px; }
+  .past-card-title { font-family: 'Bebas Neue', sans-serif; font-size: 14px; color: rgba(255,255,255,0.7); letter-spacing: 1px; }
+  .past-card-date { font-size: 10px; color: var(--muted); font-weight: 600; }
+  .past-card-result { font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 20px; }
+  .past-card-result.win { background: rgba(0,200,150,0.15); color: #00C896; }
+  .past-card-result.loss { background: rgba(230,57,70,0.15); color: #e63946; }
+  .past-card-result.pending { background: rgba(245,200,0,0.15); color: #F5C800; }
+
+  .archive-card { opacity: 0.75; border-color: rgba(255,255,255,0.05); }
+  .archive-card:active { border-color: rgba(255,255,255,0.2); }
+
+  .fade-up { opacity: 0; transform: translateY(12px); animation: fadeUp 0.4s ease forwards; }
+  @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+
+  .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.8); z-index: 1000; overflow-y: auto; padding: 20px; }
+  .modal-overlay.active { display: block; }
+  .modal-box { background: #1E35B5; border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 24px; max-width: 480px; margin: 0 auto; position: relative; }
+  .modal-close { position: absolute; top: 16px; right: 16px; background: rgba(255,255,255,0.1); border: none; color: white; width: 32px; height: 32px; border-radius: 50%; font-size: 16px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-family: 'DM Sans', sans-serif; }
+  .modal-title { font-family: 'Bebas Neue', sans-serif; font-size: 24px; color: white; margin-bottom: 16px; letter-spacing: 1.5px; }
+  .modal-body { font-size: 12px; color: #A0B0D8; line-height: 1.8; }
+  .modal-body h3 { font-size: 13px; font-weight: 700; color: white; margin: 14px 0 6px; }
+  .footer-links { display: flex; justify-content: center; gap: 16px; margin-top: 8px; }
+  .footer-link { font-size: 11px; color: #A0B0D8; text-decoration: underline; cursor: pointer; opacity: 0.7; background: none; border: none; font-family: 'DM Sans', sans-serif; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-top">
+      <div class="header-logo" style="position:relative;padding-bottom:12px;background:none;display:flex;align-items:flex-end;">
+        <span style="font-family:'Bebas Neue',sans-serif;font-size:52px;line-height:1;color:white;text-shadow:3px 3px 0 rgba(0,0,0,0.15);">A</span>
+        <span style="font-family:'Bebas Neue',sans-serif;font-size:52px;line-height:1;color:#F5C800;text-shadow:3px 3px 0 rgba(0,0,0,0.15);">I</span>
+        <span style="position:absolute;bottom:-6px;left:50%;transform:translateX(-50%);font-size:22px;filter:drop-shadow(2px 2px 3px rgba(0,0,0,0.2));">⚽</span>
+      </div>
+      <div class="header-text">
+        <h1>ABSOLUTE · <span>INSIGHT</span></h1>
+        <p>FOOTBALL TIPS</p>
+      </div>
+    </div>
+    <div class="live-badge">
+      <div class="live-dot"></div>
+      LIVE · FULLY AUTOMATED · AI-POWERED
+    </div>
+  </div>
+
+
+  <!-- COUNTDOWNS -->
+  <div class="countdown-wrap">
+
+    <div class="countdown-card ucl" id="cd-ucl" data-date="2026-05-30" onclick="toggleWriteup('ucl-writeup')" style="cursor:pointer;">
+      <div class="cd-icon">🏆</div>
+      <div class="cd-info">
+        <div class="cd-title">UCL FINAL</div>
+        <div class="cd-sub">PSG vs Arsenal · Munich · Tap to read more</div>
+      </div>
+      <div class="cd-timer">
+        <div class="cd-unit"><span class="cd-num" id="ucl-days">--</span><span class="cd-lbl">days</span></div>
+        <div class="cd-unit"><span class="cd-num" id="ucl-hrs">--</span><span class="cd-lbl">hrs</span></div>
+        <div class="cd-unit"><span class="cd-num" id="ucl-mins">--</span><span class="cd-lbl">min</span></div>
+      </div>
+    </div>
+    <div class="cd-writeup" id="ucl-writeup" data-for="cd-ucl">
+      <div class="cd-writeup-title">🏆 Champions League Final — PSG vs Arsenal</div>
+      <p>The biggest club game on the planet. Saturday 30 May. Allianz Arena, Munich. 5pm UK. Two of European football's most exciting sides go head to head for the ultimate prize.</p>
+      <p>Arsenal were the standout side all season — finishing 1st in the league phase with 24 points. PSG came through in 11th with 14 points. On paper Arsenal deserve to be favourites. But finals don't care about league tables.</p>
+      <p>Our AI has run the numbers. PSG edge it at 54% — but the margin is razor thin. Arsenal conceded just once in their last 5 games and have the best defensive record in the tournament. This is as tight as finals get.</p>
+      <p>Over 2.5 sits at 52%. Both managers know each other's systems inside out. Expect a cagey opening decided by moments of quality. Our full Special Analysis drops Saturday morning 9am — VIP only.</p>
+      <div class="cd-writeup-tag">🎯 Full Special Analysis — Saturday 9am VIP</div>
+    </div>
+
+    <div class="countdown-card wc" id="cd-wc" data-date="2026-06-11" onclick="toggleWriteup('wc-writeup')" style="cursor:pointer;">
+      <div class="cd-icon">🌍</div>
+      <div class="cd-info">
+        <div class="cd-title">WORLD CUP 2026</div>
+        <div class="cd-sub">USA · Canada · Mexico · Tap to read more</div>
+      </div>
+      <div class="cd-timer">
+        <div class="cd-unit"><span class="cd-num" id="wc-days">--</span><span class="cd-lbl">days</span></div>
+        <div class="cd-unit"><span class="cd-num" id="wc-hrs">--</span><span class="cd-lbl">hrs</span></div>
+        <div class="cd-unit"><span class="cd-num" id="wc-mins">--</span><span class="cd-lbl">min</span></div>
+      </div>
+    </div>
+    <div class="cd-writeup" id="wc-writeup" data-for="cd-wc">
+      <div class="cd-writeup-title">🌍 World Cup 2026 — The Biggest Tournament in History</div>
+      <p>This summer, football comes to North America for the first time. 48 teams. 104 games. USA, Canada and Mexico hosting together. The expanded format means more fixtures, more data, and more opportunities to find value.</p>
+      <p><strong style="color:#F5C800;">Tournament Stages:</strong><br>
+      📅 11 Jun – 28 Jun · Group Stage<br>
+      📅 28 Jun – 04 Jul · Round of 32<br>
+      📅 04 Jul – 07 Jul · Round of 16<br>
+      📅 09 Jul – 12 Jul · Quarter Finals<br>
+      📅 14 Jul – 15 Jul · Semi Finals<br>
+      📅 18 Jul · 3rd Place Match<br>
+      📅 19 Jul · <strong style="color:#F5C800;">THE FINAL</strong></p>
+      <p>Our AI runs analysis on every high profile fixture throughout. Gold tier members get Special Analysis on every standout game. No league form bias — just pure data from international form and H2H records.</p>
+      <div class="cd-writeup-tag">🎯 Gold tier — Special Analysis on every major game</div>
+    </div>
+
+    <div class="countdown-card pl" id="cd-pl" data-date="2026-08-22" onclick="toggleWriteup('pl-writeup')" style="cursor:pointer;">
+      <div class="cd-icon">🏴󠁧󠁢󠁥󠁮󠁧󠁿</div>
+      <div class="cd-info">
+        <div class="cd-title">NEW PL SEASON</div>
+        <div class="cd-sub">Premier League 2026/27 · Tap to read more</div>
+      </div>
+      <div class="cd-timer">
+        <div class="cd-unit"><span class="cd-num" id="pl-days">--</span><span class="cd-lbl">days</span></div>
+        <div class="cd-unit"><span class="cd-num" id="pl-hrs">--</span><span class="cd-lbl">hrs</span></div>
+        <div class="cd-unit"><span class="cd-num" id="pl-mins">--</span><span class="cd-lbl">min</span></div>
+      </div>
+    </div>
+    <div class="cd-writeup" id="pl-writeup" data-for="cd-pl">
+      <div class="cd-writeup-title">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League 2026/27 — Fresh Season, Fresh Data</div>
+      <p>The new Premier League season kicks off 22 August 2026 — a week later than usual to give players recovery time after the World Cup. Fixtures are released on 19 June.</p>
+      <p><strong style="color:#F5C800;">25/26 Final Standings (top 6):</strong><br>
+      🥇 Arsenal — 85pts 🏆⭐ Champions<br>
+      🥈 Man City — 78pts<br>
+      🥉 Man United — 71pts<br>
+      4️⃣ Aston Villa — 65pts<br>
+      5️⃣ Liverpool — 60pts<br>
+      6️⃣ Bournemouth — 57pts<br>
+      <span style="font-size:10px;color:rgba(255,255,255,0.5);">Top 5 → Champions League · 6th-7th → Europa League · 8th → Conference League</span></p>
+      <p>Arsenal were dominant. Man City pushed them hard. Liverpool fell away. Wolves, Burnley and West Ham all went down. The 26/27 title race is wide open — and our AI will be tracking every team from day one.</p>
+      <p>Top scorer: Erling Haaland — 27 goals. BTTS and Over 2.5 tip gold throughout the season. Expect more of the same next year.</p>
+      <div class="cd-writeup-tag">🎯 Daily tips from opening weekend — 22 August</div>
+    </div>
+
+
+  <!-- PAST EVENTS -->
+  <div class="past-events-wrap">
+    <div class="past-events-toggle" onclick="togglePastEvents()">
+      <span class="past-events-label">📁 Past Events</span>
+      <span class="past-events-arrow" id="past-arrow">▼</span>
+    </div>
+    <div class="past-events-list" id="past-events-list">
+
+      <!-- No past events yet — will populate as countdowns pass -->
+      <div class="past-empty">No past events yet — check back after the UCL Final on Saturday 👀</div>
+
+    </div>
+  </div>
+
+  <!-- TABS -->
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchTab('results', this)">
+      <span class="tab-icon">📊</span>Results
+    </button>
+    <button class="tab-btn" onclick="switchTab('how', this)">
+      <span class="tab-icon">👀</span>How We Pick
+    </button>
+    <button class="tab-btn" onclick="switchTab('built', this)">
+      <span class="tab-icon">🔥</span>Built Different
+    </button>
+    <button class="tab-btn" onclick="switchTab('biggames', this)">
+      <span class="tab-icon">⚽</span>Big Games
+    </button>
+    <button class="tab-btn" onclick="switchTab('join', this)">
+      <span class="tab-icon">💎</span>Join Us
+    </button>
+  </div>
+
+  <!-- TAB: RESULTS -->
+  <div class="tab-content active" id="tab-results">
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-value green" id="stat-wins">19</div>
+        <div class="stat-label">Wins</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value gold" id="stat-tips">27</div>
+        <div class="stat-label">Tips</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value white" id="days-live">4</div>
+        <div class="stat-label">Days Live</div>
+      </div>
+    </div>
+
+    <div class="winrate-card">
+      <div class="winrate-circle">
+        <svg viewBox="0 0 76 76">
+          <circle class="bg" cx="38" cy="38" r="33"/>
+          <circle class="fill" cx="38" cy="38" r="33" id="winrate-arc"/>
+        </svg>
+        <div class="winrate-text">
+          <div class="winrate-pct" id="winrate-pct">—</div>
+          <div class="winrate-lbl">WIN</div>
+        </div>
+      </div>
+      <div class="winrate-info">
+        <h3>Track Record</h3>
+        <p>Every tip published before kickoff. Wins and losses — nothing hidden.</p>
+        <div class="winrate-record">
+          <span class="rec-w" id="rec-w">19W</span>
+          <span class="rec-l" id="rec-l">8L</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="https://whop.com/ai-absolute-insight-football-tips/" style="display:block; text-decoration:none; margin-bottom:14px;">
+      <div style="background:linear-gradient(135deg, #1E35B5, #1a5fc8); border:1px solid rgba(245,200,0,0.3); border-radius:16px; padding:14px 16px; display:flex; align-items:center; justify-content:space-between;">
+        <div>
+          <div style="font-size:13px; font-weight:700; color:white; margin-bottom:2px;">7 Days Free — Then £9.99/month</div>
+          <div style="font-size:12px; color:rgba(160,176,216,0.9);">Up to 5 tips daily · AI Double · Bonus tip at 5pm</div>
+        </div>
+        <div style="background:var(--gold); color:#1a1a2e; font-size:12px; font-weight:800; padding:8px 14px; border-radius:10px; white-space:nowrap;">JOIN VIP 🔥</div>
+      </div>
+    </a>
+
+    <div class="section-title">⚽ Results</div>
+
+    <div class="results-card">
+      <div class="results-header">
+        <div>Match & Tip</div>
+        <div style="text-align:center">Score</div>
+        <div style="text-align:right">Result</div>
+      </div>
+
+      <div class="day-divider">📅 Tue 16 Jun 2026</div>
+
+      <div class="result-row">
+        <div><div class="result-match">France vs Senegal</div><div class="result-tip">BTTS Yes</div></div>
+        <div class="result-score">3 — 1</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+
+      <div class="result-row">
+        <div><div class="result-match">Iraq vs Norway</div><div class="result-tip">BTTS Yes</div></div>
+        <div class="result-score">1 — 4</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+
+      <div class="day-divider">📅 Mon 15 Jun 2026</div>
+
+      <div class="result-row">
+        <div><div class="result-match">Saudi Arabia vs Uruguay</div><div class="result-tip">Over 2.5 Goals</div></div>
+        <div class="result-score">1 — 1</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+
+      <div class="day-divider">📅 Sat 13 Jun 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Qatar vs Switzerland</div><div class="result-tip">BTTS Yes</div></div>
+        <div class="result-score">1 — 1</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Brazil vs Morocco</div><div class="result-tip">BTTS Yes</div></div>
+        <div class="result-score">1 — 1</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+
+      <div id="older-results" style="display:none">
+
+      <div class="day-divider">📅 Wed 10 Jun 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Trelleborg vs Osters IF</div><div class="result-tip">Over 2.5 Goals</div></div>
+        <div class="result-score">1 — 2</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+
+            <div class="day-divider">📅 Sat 30 May 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">PSG vs Arsenal</div><div class="result-tip">BTTS Yes</div></div>
+        <div class="result-score">1 — 1</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+
+      <div class="day-divider">📅 Fri 29 May 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Nice vs Saint Etienne</div><div class="result-tip">BTTS Yes</div></div>
+        <div class="result-score">4 — 1</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+
+      <div class="day-divider">📅 Wed 27 May 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Crystal Palace vs Rayo Vallecano</div><div class="result-tip">BTTS Yes</div></div>
+        <div class="result-score">1 — 0</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Medeama vs Basake Holy Stars</div><div class="result-tip">BTTS Yes</div></div>
+        <div class="result-score">2 — 1</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+
+            <div class="day-divider">📅 Tue 26 May 2026</div>
+
+      <div class="result-row">
+        <div><div class="result-match">Saint Etienne vs Nice</div><div class="result-tip">BTTS Yes</div></div>
+        <div class="result-score">0 — 0</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+
+        <div class="day-divider">📅 Mon 25 May 2026</div>
+        <div class="result-row">
+          <div><div class="result-match">Notts County vs Salford City</div><div class="result-tip">Away Win</div></div>
+          <div class="result-score">3 — 0</div>
+          <div><span class="result-badge badge-loss">LOSS</span></div>
+        </div>
+        <div class="result-row">
+          <div><div class="result-match">SC Paderborn vs VfL Wolfsburg</div><div class="result-tip">BTTS Yes</div></div>
+          <div class="result-score">1 — 1</div>
+          <div><span class="result-badge badge-win">WIN</span></div>
+        </div>
+        <div class="result-row">
+          <div><div class="result-match">ST Mirren vs Partick Thistle</div><div class="result-tip">BTTS Yes</div></div>
+          <div class="result-score">1 — 0</div>
+          <div><span class="result-badge badge-loss">LOSS</span></div>
+        </div>
+        <div class="result-row">
+          <div><div class="result-match">Coritiba vs Bahia</div><div class="result-tip">BTTS Yes</div></div>
+          <div class="result-score">3 — 2</div>
+          <div><span class="result-badge badge-win">WIN</span></div>
+        </div>
+
+        <div class="day-divider">📅 Sun 24 May 2026</div>
+        <div class="result-row">
+          <div><div class="result-match">Liverpool vs Brentford</div><div class="result-tip">BTTS Yes</div></div>
+          <div class="result-score">1 — 1</div>
+          <div><span class="result-badge badge-win">WIN</span></div>
+        </div>
+        <div class="result-row">
+          <div><div class="result-match">Man City vs Aston Villa</div><div class="result-tip">Over 2.5 Goals</div></div>
+          <div class="result-score">1 — 2</div>
+          <div><span class="result-badge badge-win">WIN</span></div>
+        </div>
+        <div class="result-row">
+          <div><div class="result-match">Tottenham vs Everton</div><div class="result-tip">Spurs Win</div></div>
+          <div class="result-score">1 — 0</div>
+          <div><span class="result-badge badge-win">WIN</span></div>
+        </div>
+        <div class="result-row">
+          <div><div class="result-match">Napoli vs Udinese</div><div class="result-tip">Napoli Win</div></div>
+          <div class="result-score">1 — 0</div>
+          <div><span class="result-badge badge-win">WIN</span></div>
+        </div>
+        <div class="result-row">
+          <div><div class="result-match">AC Milan vs Cagliari</div><div class="result-tip">Milan Win</div></div>
+          <div class="result-score">1 — 2</div>
+          <div><span class="result-badge badge-loss">LOSS</span></div>
+        </div>
+
+        <div class="day-divider">⚡ Bonus Tip — Sun 24 May 2026</div>
+        <div class="result-row">
+          <div><div class="result-match">Corinthians vs Atletico-MG</div><div class="result-tip">BTTS Yes (80%)</div></div>
+          <div class="result-score">1 — 0</div>
+          <div><span class="result-badge badge-loss">LOSS</span></div>
+        </div>
+
+        <div class="day-divider">📅 Sat 23 May 2026 — Day 1</div>
+        <div class="result-row">
+          <div><div class="result-match">Real Betis vs Levante</div><div class="result-tip">BTTS + Over 2.5</div></div>
+          <div class="result-score">2 — 1</div>
+          <div><span class="result-badge badge-win">WIN</span></div>
+        </div>
+        <div class="result-row">
+          <div><div class="result-match">Espanyol vs Real Sociedad</div><div class="result-tip">BTTS Yes</div></div>
+          <div class="result-score">1 — 1</div>
+          <div><span class="result-badge badge-win">WIN</span></div>
+        </div>
+        <div class="result-row">
+          <div><div class="result-match">Real Madrid vs Athletic Club</div><div class="result-tip">BTTS + Over 2.5</div></div>
+          <div class="result-score">4 — 2</div>
+          <div><span class="result-badge badge-win">WIN</span></div>
+        </div>
+        <div class="result-row">
+          <div><div class="result-match">Valencia vs Barcelona</div><div class="result-tip">BTTS + Over 2.5</div></div>
+          <div class="result-score">3 — 1</div>
+          <div><span class="result-badge badge-win">WIN</span></div>
+        </div>
+        <div class="result-row">
+          <div><div class="result-match">Getafe vs Osasuna</div><div class="result-tip">Over 2.5 Goals</div></div>
+          <div class="result-score">1 — 0</div>
+          <div><span class="result-badge badge-loss">LOSS</span></div>
+        </div>
+      </div>
+      <div style="text-align:center; padding: 4px 0 8px;">
+        <button onclick="toggleOlder(this)" style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.15); border-radius:20px; color:var(--muted); font-size:13px; font-family:'DM Sans',sans-serif; padding:8px 20px; cursor:pointer;">
+          📋 View all results
+        </button>
+      </div>
+    </div>
+
+    <div class="section-title">💰 Stake Calculator</div>
+
+    <div class="calc-card">
+      <div class="calc-title">What could you have made?</div>
+      <div class="calc-sub">Every tip includes Outright, BTTS and Over 2.5 markets. Mix and match across all tips — up to 15 markets to choose from. Based on avg odds of 5/1.</div>
+      <div class="stake-buttons">
+        <button class="stake-btn" onclick="setStake(2, this)">£2</button>
+        <button class="stake-btn" onclick="setStake(5, this)">£5</button>
+        <button class="stake-btn active" onclick="setStake(10, this)">£10</button>
+        <button class="stake-btn" onclick="setStake(25, this)">£25</button>
+      </div>
+      <div class="custom-stake">
+        <span>£</span>
+        <input type="number" id="custom-input" placeholder="Custom stake" oninput="customStake(this.value)"/>
+      </div>
+      <div class="calc-results">
+        <div class="calc-box">
+          <div class="calc-box-label">Est. Monthly Profit</div>
+          <div class="calc-box-value" id="monthly-profit">£168</div>
+          <div class="calc-box-sub" id="calc-winrate">Live win rate</div>
+        </div>
+        <div class="calc-box">
+          <div class="calc-box-label">Subscription ROI</div>
+          <div class="calc-box-value gold" id="sub-roi">16.8x</div>
+          <div class="calc-box-sub">vs £9.99/month</div>
+        </div>
+        <div class="calc-box">
+          <div class="calc-box-label">Winning Bet</div>
+          <div class="calc-box-value" id="win-return">£80</div>
+          <div class="calc-box-sub">Per winning bet</div>
+        </div>
+        <div class="calc-box">
+          <div class="calc-box-label">Monthly Stake</div>
+          <div class="calc-box-value gold" id="monthly-stake">£300</div>
+          <div class="calc-box-sub">30 bets/month</div>
+        </div>
+      </div>
+      <div class="disclaimer">⚠️ Estimated figures based on our live win rate and avg odds of 5/1. Past performance does not guarantee future returns. Bet responsibly. 18+</div>
+    </div>
+
+    <div class="cta-card">
+      <h3>JOIN VIP TODAY</h3>
+      <p>5 AI tips every morning. Daily double. Bonus tip at 5pm. Full results every night.</p>
+      <a href="https://whop.com/ai-absolute-insight-football-tips/" class="cta-btn">Start Your Free Trial 🔥</a>
+      <div class="cta-trial">7 days free — then just £9.99/month. Cancel anytime.</div>
+    </div>
+
+  </div>
+
+
+  <!-- TAB: HOW WE PICK -->
+  <div class="tab-content" id="tab-how">
+
+    <div class="how-hero">
+      <h2>HOW WE PICK<span>EVERY TIP</span></h2>
+      <p>Real data. No guesswork. Every single day.</p>
+    </div>
+
+    <div class="step-card">
+      <div class="step-num">1</div>
+      <div>
+        <div class="step-title">Live fixture data pulled from football API</div>
+        <div class="step-desc">Today's matches only — top priority leagues across Europe and beyond, analysed fresh every morning.</div>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-num">2</div>
+      <div>
+        <div class="step-title">Real form & H2H — last 5 games for both teams</div>
+        <div class="step-desc">Goals scored, goals conceded, BTTS rate and Over 2.5 rate for every team, every day.</div>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-num">3</div>
+      <div>
+        <div class="step-title">AI probability model calculates the edge</div>
+        <div class="step-desc">Claude AI analyses Home/Draw/Away, BTTS and Over 2.5 probabilities for every fixture and assigns a confidence score.</div>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-num">4</div>
+      <div>
+        <div class="step-title">Top 5 by confidence selected — no filler</div>
+        <div class="step-desc">Only the highest confidence picks make it through. No league cap — best 5 from anywhere, every day.</div>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-num">5</div>
+      <div>
+        <div class="step-title">AI Double</div>
+        <div class="step-desc">Our AI picks the best 2 High confidence selections as a daily double. You'll always get a message — if no double is posted, it means our AI couldn't find two picks meeting the confidence threshold. Quality over quantity.</div>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-num">6</div>
+      <div>
+        <div class="step-title">Bonus Tip</div>
+        <div class="step-desc">Every tip includes Outright, BTTS and Over 2.5 markets — up to 15 markets to build your own acca. Bonus tip at 5pm if a High confidence pick hits 75%+ probability.</div>
+      </div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-num">7</div>
+      <div>
+        <div class="step-title">Full results at 11pm every night</div>
+        <div class="step-desc">Every result checked and posted automatically. Nothing hidden — wins and losses both on the record.</div>
+      </div>
+    </div>
+
+    <div class="cta-card" style="margin-top:20px">
+      <h3>SEE IT IN ACTION</h3>
+      <p>Up to 5 tips, full analysis and AI Double — every morning at 9am UK.</p>
+      <a href="https://whop.com/ai-absolute-insight-football-tips/" class="cta-btn">Start Your Free Trial 🔥</a>
+      <div class="cta-trial">7 days free — then just £9.99/month. Cancel anytime.</div>
+    </div>
+
+  </div>
+
+  <!-- TAB: BUILT DIFFERENT -->
+  <div class="tab-content" id="tab-built">
+
+    <div class="built-hero">
+      <h2>BUILT DIFFERENT.<span>HERE'S WHY.</span></h2>
+      <p>We don't guess. Every tip is evidence-backed.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">🤖</div>
+      <div>
+        <div class="feature-title">AI-Powered Analysis</div>
+        <div class="feature-desc">Our model analyses every match using real data — not opinion. Probability scores on every single tip.</div>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">📊</div>
+      <div>
+        <div class="feature-title">Real Form & H2H Data</div>
+        <div class="feature-desc">Last 5 games, head to head records, BTTS and Over 2.5 rates — all factored in, every day.</div>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">🎯</div>
+      <div>
+        <div class="feature-title">High Confidence Only</div>
+        <div class="feature-desc">Only the top 5 by AI confidence score make it through. No weak picks, no filler — quality over quantity always.</div>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">💎</div>
+      <div>
+        <div class="feature-title">5 Tips Every Morning</div>
+        <div class="feature-desc">VIP members get the full picture daily — analysis, probabilities, AI Double and a 5pm bonus tip.</div>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">✅</div>
+      <div>
+        <div class="feature-title">Transparent Track Record</div>
+        <div class="feature-desc">Every tip published before kickoff. Every result tracked. Wins and losses — nothing hidden.</div>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">💷</div>
+      <div>
+        <div class="feature-title">Just £9.99/month</div>
+        <div class="feature-desc">Less than 33p a day. One winning double covers your membership. Cancel anytime.</div>
+      </div>
+    </div>
+
+    <div class="price-bar">
+      <div class="price-bar-left">
+        <strong>VIP Membership</strong>
+        7 day free trial included
+      </div>
+      <div>
+        <div class="price-tag">£9.99 <span>/mo</span></div>
+      </div>
+    </div>
+
+    <div class="cta-card" style="margin-top:14px">
+      <h3>JOIN THE MOVEMENT</h3>
+      <p>Be on the right side of probability every single day.</p>
+      <a href="https://whop.com/ai-absolute-insight-football-tips/" class="cta-btn">Start Your Free Trial 🔥</a>
+      <div class="cta-trial">7 days free — then just £9.99/month. Cancel anytime.</div>
+    </div>
+
+  </div>
+
+  <!-- TAB: BIG GAMES -->
+  <div class="tab-content" id="tab-biggames">
+
+    <div style="padding:16px 16px 8px;">
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:20px;color:#F5C800;letter-spacing:2px;">⚽ BIG GAMES</div>
+      <div style="font-size:11px;color:var(--muted);margin-top:4px;line-height:1.4;">High profile fixtures on our radar — potential Special Analysis for Gold tier members</div>
+    </div>
+
+    <div style="padding:0 16px 8px;">
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:15px;color:rgba(255,255,255,0.6);letter-spacing:2px;">🔜 UPCOMING</div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- ENGLAND VS CROATIA -->
+    <div class="fixture-card" onclick="toggleWriteup('fix-eng-cro')">
+      <div class="fix-top">
+        <div class="fix-badge gold">🌍 WORLD CUP · GROUP L</div>
+        <div class="fix-date">17 Jun · 21:00 UK</div>
+      </div>
+      <div class="fix-teams">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England vs Croatia 🇭🇷</div>
+      <div class="fix-venue">📍 World Cup 2026 · USA</div>
+      <div class="fix-tags">
+        <span class="fix-tag special">⭐ Special Analysis</span>
+        <span class="fix-tag">Analysis drops closer to kickoff</span>
+      </div>
+    </div>
+    <div class="cd-writeup" id="fix-eng-cro">
+      <div class="cd-writeup-title">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England vs Croatia — World Cup Group L</div>
+      <p>A rematch of the 2018 World Cup semi-final and Euro 2020 group stage. England beat Croatia 1-0 at Euro 2020 — Croatia knocked England out at Russia 2018. History between these two runs deep.</p>
+      <p>England will be under pressure to win their opening game. Full Special Analysis with all market probabilities drops closer to kickoff.</p>
+      <div class="cd-writeup-tag">🎯 Special Analysis — Coming 17 June</div>
+    </div>
+
+    <!-- ENGLAND VS GHANA -->
+    <div class="fixture-card" onclick="toggleWriteup('fix-eng-gha')">
+      <div class="fix-top">
+        <div class="fix-badge gold">🌍 WORLD CUP · GROUP L</div>
+        <div class="fix-date">23 Jun · 21:00 UK</div>
+      </div>
+      <div class="fix-teams">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England vs Ghana 🇬🇭</div>
+      <div class="fix-venue">📍 World Cup 2026 · USA</div>
+      <div class="fix-tags">
+        <span class="fix-tag special">⭐ Special Analysis</span>
+        <span class="fix-tag">Analysis drops closer to kickoff</span>
+      </div>
+    </div>
+    <div class="cd-writeup" id="fix-eng-gha">
+      <div class="cd-writeup-title">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England vs Ghana — World Cup Group L</div>
+      <p>England's second group game. Ghana are a dangerous side — fast, direct and capable of upsets. England will be expected to win but Ghana have quality throughout.</p>
+      <p>Full Special Analysis with all market probabilities drops closer to kickoff.</p>
+      <div class="cd-writeup-tag">🎯 Special Analysis — Coming 23 June</div>
+    </div>
+
+    <!-- PANAMA VS ENGLAND -->
+    <div class="fixture-card" onclick="toggleWriteup('fix-pan-eng')">
+      <div class="fix-top">
+        <div class="fix-badge gold">🌍 WORLD CUP · GROUP L</div>
+        <div class="fix-date">27 Jun · 22:00 UK</div>
+      </div>
+      <div class="fix-teams">🇵🇦 Panama vs England 🏴󠁧󠁢󠁥󠁮󠁧󠁿</div>
+      <div class="fix-venue">📍 World Cup 2026 · USA</div>
+      <div class="fix-tags">
+        <span class="fix-tag special">⭐ Special Analysis</span>
+        <span class="fix-tag">Analysis drops closer to kickoff</span>
+      </div>
+    </div>
+    <div class="cd-writeup" id="fix-pan-eng">
+      <div class="cd-writeup-title">🇵🇦 Panama vs England — World Cup Group L</div>
+      <p>England's final group game. Panama are a host nation neighbour with incredible support. England beat Panama 6-1 at the 2018 World Cup — but tournament football is never straightforward.</p>
+      <p>Full Special Analysis with all probabilities drops closer to kickoff.</p>
+      <div class="cd-writeup-tag">🎯 Special Analysis — Coming 27 June</div>
+    </div>
+
+    <!-- ARCHIVE SECTION -->
+    <div style="margin:8px 16px 0;">
+      <div class="past-events-toggle" onclick="toggleBigGamesArchive()">
+        <span class="past-events-label">📁 Archive</span>
+        <span class="past-events-arrow" id="bga-arrow">▼</span>
+      </div>
+    </div>
+    <div class="past-events-list" id="big-games-archive-list" style="padding:0 16px;">
+
+
+        <!-- WORLD CUP OPENER -->
+        <div class="fixture-card archive-card" onclick="toggleWriteup('arch-wc-open')">
+          <div class="fix-top"><div class="fix-badge gold">🌍 WC OPENER · GROUP A</div><div class="fix-date">11 Jun '26</div></div>
+          <div class="fix-teams">🇲🇽 Mexico vs South Africa 🇿🇦</div>
+          <div class="fix-venue">📍 Estadio Azteca, Mexico City</div>
+          <div class="fix-tags"><span class="fix-tag" style="background:rgba(245,200,0,0.15);color:#F5C800;border:1px solid rgba(245,200,0,0.3);">🏁 Mexico 2-0 South Africa</span></div>
+        </div>
+        <div class="cd-writeup" id="arch-wc-open">
+          <div class="cd-writeup-title">🌍 World Cup Opener — Mexico vs South Africa</div>
+          <p><strong style="color:#F5C800;">Result: Mexico 2-0 South Africa</strong></p>
+          <p>The host nation delivered. Mexico won the opening game 2-0 in front of a packed Estadio Azteca. South Africa couldn't find a way back into the game. Mexico top Group A after matchday 1.</p>
+          <div class="cd-writeup-tag">📁 Matchday 1 — Group A</div>
+        </div>
+
+      <div class="fixture-card archive-card" onclick="toggleWriteup('arch-ucl')">
+        <div class="fix-top"><div class="fix-badge gold">🏆 UCL FINAL</div><div class="fix-date">Sat 30 May '26</div></div>
+        <div class="fix-teams">PSG vs Arsenal</div>
+        <div class="fix-venue">📍 Munich · PSG win 4-3 pens 🏆</div>
+        <div class="fix-tags"><span class="fix-tag" style="background:rgba(0,200,150,0.15);color:#00C896;border:1px solid rgba(0,200,150,0.3);">✅ WIN — BTTS Yes 1-1</span></div>
+      </div>
+      <div class="cd-writeup" id="arch-ucl">
+        <div class="cd-writeup-title">🏆 UCL Final — PSG vs Arsenal</div>
+        <p><strong style="color:#F5C800;">Result: 1-1 AET · PSG 4-3 pens · BTTS Yes ✅ WIN</strong></p>
+        <p>Havertz (6') put Arsenal ahead. Dembélé pen (65') equalised. 1-1 after 90 — BTTS landed. PSG won 4-3 on penalties to lift the Champions League trophy.</p>
+        <div class="cd-writeup-tag">📁 Archived · BTTS Yes ✅ WIN</div>
+      </div>
+
+      <div class="fixture-card archive-card" onclick="toggleWriteup('arch-l1po2')">
+        <div class="fix-top"><div class="fix-badge blue">⚽ LIGUE 1 PLAY-OFF · LEG 2</div><div class="fix-date">Fri 29 May '26</div></div>
+        <div class="fix-teams">Nice vs Saint Etienne</div>
+        <div class="fix-venue">📍 Nice · Agg 4-1 · Nice stay up</div>
+        <div class="fix-tags"><span class="fix-tag" style="background:rgba(0,200,150,0.15);color:#00C896;border:1px solid rgba(0,200,150,0.3);">✅ WIN — BTTS Yes 4-1</span></div>
+      </div>
+      <div class="cd-writeup" id="arch-l1po2">
+        <div class="cd-writeup-title">⚽ Ligue 1 Play-Off Leg 2 — Nice vs St Etienne</div>
+        <p><strong style="color:#F5C800;">Result: Nice 4-1 St Etienne · BTTS Yes ✅ WIN</strong></p>
+        <p>After a 0-0 Leg 1, Nice dominated Leg 2 with a 4-1 win. Saint Etienne relegated to Ligue 2. Both teams scored — BTTS landed.</p>
+        <div class="cd-writeup-tag">📁 Archived · BTTS Yes ✅ WIN</div>
+      </div>
+
+      <div class="fixture-card archive-card" onclick="toggleWriteup('arch-uecl')">
+        <div class="fix-top"><div class="fix-badge gold">🏆 UECL FINAL</div><div class="fix-date">Wed 28 May '26</div></div>
+        <div class="fix-teams">Crystal Palace vs Rayo Vallecano</div>
+        <div class="fix-venue">📍 Leipzig · Palace win UECL 🏆</div>
+        <div class="fix-tags"><span class="fix-tag" style="background:rgba(230,57,70,0.15);color:#e63946;border:1px solid rgba(230,57,70,0.3);">❌ LOSS — BTTS Yes 1-0</span></div>
+      </div>
+      <div class="cd-writeup" id="arch-uecl">
+        <div class="cd-writeup-title">🏆 UECL Final — Crystal Palace vs Rayo Vallecano</div>
+        <p><strong style="color:#F5C800;">Result: Palace 1-0 Rayo · BTTS Yes ❌ LOSS</strong></p>
+        <p>Mateta (51') scored the only goal. Rayo couldn't equalise. Data had BTTS at 70% — finals produce tight affairs. Crystal Palace are UECL winners.</p>
+        <div class="cd-writeup-tag">📁 Archived · BTTS Yes ❌ LOSS</div>
+      </div>
+
+      <div class="fixture-card archive-card" onclick="toggleWriteup('arch-l1po1')">
+        <div class="fix-top"><div class="fix-badge blue">⚽ LIGUE 1 PLAY-OFF · LEG 1</div><div class="fix-date">Tue 26 May '26</div></div>
+        <div class="fix-teams">Saint Etienne vs Nice</div>
+        <div class="fix-venue">📍 Stade Geoffroy-Guichard</div>
+        <div class="fix-tags"><span class="fix-tag" style="background:rgba(230,57,70,0.15);color:#e63946;border:1px solid rgba(230,57,70,0.3);">❌ LOSS — BTTS Yes 0-0</span></div>
+      </div>
+      <div class="cd-writeup" id="arch-l1po1">
+        <div class="cd-writeup-title">⚽ Ligue 1 Play-Off Leg 1 — St Etienne vs Nice</div>
+        <p><strong style="color:#F5C800;">Result: 0-0 · BTTS Yes ❌ LOSS</strong></p>
+        <p>Cagey play-off football. Both sides set up not to lose Leg 1. Data backed BTTS at 60% but the game finished goalless.</p>
+        <div class="cd-writeup-tag">📁 Archived · See Leg 2 above</div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- TAB: JOIN US -->
+  <div class="tab-content" id="tab-join">
+
+    <div class="join-hero">
+      <h2>JOIN THE <span>COMMUNITY</span></h2>
+      <p>Everything you need — all in one place on Telegram.</p>
+    </div>
+
+    <a href="https://whop.com/ai-absolute-insight-football-tips/" class="channel-card vip">
+      <div class="channel-icon blue">💎</div>
+      <div class="channel-info">
+        <div class="channel-name">VIP Tips Channel</div>
+        <div class="channel-handle">@absoluteinsight_tips · Full analysis daily</div>
+      </div>
+      <div class="channel-badge badge-gold">£9.99/mo</div>
+    </a>
+
+    <a href="https://t.me/absoluteinsight_free" class="channel-card">
+      <div class="channel-icon gold-bg">⚡</div>
+      <div class="channel-info">
+        <div class="channel-name">Free Daily Tip</div>
+        <div class="channel-handle">@absoluteinsight_free · Best tip every morning</div>
+      </div>
+      <div class="channel-badge badge-blue">FREE</div>
+    </a>
+
+    <a href="https://t.me/AbsoluteInsightSupport_bot" class="channel-card">
+      <div class="channel-icon grey">🔧</div>
+      <div class="channel-info">
+        <div class="channel-name">Member Support</div>
+        <div class="channel-handle">@AbsoluteInsightSupport_bot · We're here to help</div>
+      </div>
+      <div class="channel-badge badge-blue">24/7</div>
+    </a>
+
+    <a href="mailto:Absoluteinsight.tips@gmail.com" class="channel-card">
+      <div class="channel-icon grey">📧</div>
+      <div class="channel-info">
+        <div class="channel-name">Email Us</div>
+        <div class="channel-handle">Absoluteinsight.tips@gmail.com</div>
+      </div>
+      <div class="channel-badge badge-blue" style="font-size:10px;padding:4px 8px;">CONTACT</div>
+    </a>
+
+    <a href="https://whop.com/ai-absolute-insight-football-tips/" class="channel-card">
+      <div class="channel-icon green-bg">💰</div>
+      <div class="channel-info">
+        <div class="channel-name">Earn 10% Commission</div>
+        <div class="channel-handle">Refer a friend — earn every month they stay</div>
+      </div>
+      <div class="channel-badge badge-green">AFFILIATE</div>
+    </a>
+
+    <div class="cta-card" style="margin-top:8px">
+      <h3>START FOR FREE</h3>
+      <p>7 day free trial. No payment until your trial ends. Cancel anytime.</p>
+      <a href="https://whop.com/ai-absolute-insight-football-tips/" class="cta-btn">Start Your Free Trial 🔥</a>
+      <div class="cta-trial">Then just £9.99/month · Up to 5 tips daily · AI Double · Bonus tip</div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    Absolute Insight · @absoluteinsight_tips<br>
+    📧 <a href="mailto:Absoluteinsight.tips@gmail.com" style="color:var(--muted);text-decoration:none;">Absoluteinsight.tips@gmail.com</a><br>
+    18+ · Please gamble responsibly · BeGambleAware.org<br><br>
+    <div class="footer-links"><button class="footer-link" onclick="openModal('privacy-modal')">Privacy Policy</button><button class="footer-link" onclick="openModal('terms-modal')">Terms & Conditions</button></div><br>
+    <span style="font-size:10px;opacity:0.5;line-height:1.6;">Absolute Insight provides AI-powered statistical analysis and tips for informational and entertainment purposes only. We are not a licensed bookmaker or gambling operator. We do not guarantee any financial returns. Never bet more than you can afford to lose. If gambling is having a negative impact on your life, call the GamCare helpline: 0808 8020 133. 18+ only. BeGambleAware.org</span>
+  </div>
+
+
+  <!-- Privacy Policy Modal -->
+  <div class="modal-overlay" id="privacy-modal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('privacy-modal')">✕</button>
+      <div class="modal-title">Privacy Policy</div>
+      <div class="modal-body">
+        <p>Last updated: 24 May 2026</p>
+        <h3>Who We Are</h3>
+        <p>Absolute Insight is an AI-powered football tips service operated by Absolute Insight. We deliver daily football tips via Telegram to paying subscribers.</p>
+        <h3>Information We Collect</h3>
+        <p>We collect your Telegram username and email address when you subscribe via Whop. We do not collect payment card details — all payments are processed securely by Whop.</p>
+        <h3>How We Use Your Information</h3>
+        <p>Your information is used solely to provide access to our Telegram channels and to communicate service updates. We do not sell or share your data with third parties.</p>
+        <h3>Data Storage</h3>
+        <p>Subscriber data is stored securely by Whop in accordance with their privacy policy. We do not store personal data independently.</p>
+        <h3>Your Rights</h3>
+        <p>You can cancel your subscription and request deletion of your data at any time by contacting us via @AbsoluteInsightSupport_bot on Telegram.</p>
+        <h3>Cookies</h3>
+        <p>This website does not use cookies or tracking technologies.</p>
+        <h3>Contact</h3>
+        <p>For any privacy queries contact us via @AbsoluteInsightSupport_bot on Telegram.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Terms & Conditions Modal -->
+  <div class="modal-overlay" id="terms-modal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('terms-modal')">✕</button>
+      <div class="modal-title">Terms & Conditions</div>
+      <div class="modal-body">
+        <p>Last updated: 24 May 2026</p>
+        <h3>Service Description</h3>
+        <p>Absolute Insight provides AI-powered football tips and statistical analysis for informational and entertainment purposes only. We are not a licensed bookmaker or gambling operator.</p>
+        <h3>No Financial Guarantee</h3>
+        <p>We do not guarantee any financial returns. Past performance does not guarantee future results. All tips are provided for entertainment purposes only. Never bet more than you can afford to lose.</p>
+        <h3>Eligibility</h3>
+        <p>You must be 18 years or older to subscribe. By subscribing you confirm you are of legal gambling age in your jurisdiction.</p>
+        <h3>Subscription & Cancellation</h3>
+        <p>Subscriptions are billed monthly via Whop. A 7-day free trial is available for new members. You may cancel at any time. No refunds are provided for partial months.</p>
+        <h3>Responsible Gambling</h3>
+        <p>Absolute Insight encourages responsible gambling. If gambling is affecting your life please call the GamCare helpline: 0808 8020 133 or visit BeGambleAware.org.</p>
+        <h3>Intellectual Property</h3>
+        <p>All content provided by Absolute Insight including tips, analysis and branding is the property of Absolute Insight and may not be reproduced or shared without permission.</p>
+        <h3>Limitation of Liability</h3>
+        <p>Absolute Insight accepts no liability for any financial losses incurred as a result of acting on our tips or analysis. Use of our service is entirely at your own risk.</p>
+        <h3>Changes to Terms</h3>
+        <p>We reserve the right to update these terms at any time. Continued use of the service constitutes acceptance of the updated terms.</p>
+        <h3>Contact</h3>
+        <p>For any queries contact us via @AbsoluteInsightSupport_bot on Telegram.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+  // Countdown timers
+  function updateCountdowns() {
+    const now = new Date();
+    const wc = new Date('2026-06-11T00:00:00');
+    const ucl = new Date('2026-05-30T17:00:00');
+    const pl = new Date('2026-08-22T12:30:00');
+
+    function diff(target) {
+      const ms = target - now;
+      if (ms <= 0) return { days: 0, hrs: 0, mins: 0 };
+      const days = Math.floor(ms / 86400000);
+      const hrs = Math.floor((ms % 86400000) / 3600000);
+      const mins = Math.floor((ms % 3600000) / 60000);
+      return { days, hrs, mins };
+    }
+
+    const u = diff(ucl);
+    if(document.getElementById('ucl-days')) { document.getElementById('ucl-days').textContent = u.days; document.getElementById('ucl-hrs').textContent = String(u.hrs).padStart(2,'0'); document.getElementById('ucl-mins').textContent = String(u.mins).padStart(2,'0'); }
+
+    const w = diff(wc);
+    if(document.getElementById('wc-days')) { document.getElementById('wc-days').textContent = w.days; document.getElementById('wc-hrs').textContent = String(w.hrs).padStart(2,'0'); document.getElementById('wc-mins').textContent = String(w.mins).padStart(2,'0'); }
+
+    const p = diff(pl);
+    if(document.getElementById('pl-days')) { document.getElementById('pl-days').textContent = p.days; document.getElementById('pl-hrs').textContent = String(p.hrs).padStart(2,'0'); document.getElementById('pl-mins').textContent = String(p.mins).padStart(2,'0'); }
+  }
+  updateCountdowns();
+  setInterval(updateCountdowns, 30000);
+
+
+
+  // Auto-calculate days live from launch date
+  function updateDaysLive() {
+    const launch = new Date('2026-05-23T00:00:00');
+    const now = new Date();
+    const days = Math.floor((now - launch) / (1000 * 60 * 60 * 24)) + 1;
+    const el = document.getElementById('days-live');
+    if (el) el.textContent = days;
+  }
+  updateDaysLive();
+
+
+
+  // Auto-archive past countdown events
+  function autoArchiveEvents() {
+    const now = new Date();
+    const cards = document.querySelectorAll('.countdown-card[data-date]');
+    const archiveList = document.getElementById('past-events-list');
+    if (!archiveList) return;
+    const emptyMsg = archiveList.querySelector('.past-empty');
+
+    cards.forEach(card => {
+      const eventDate = new Date(card.getAttribute('data-date'));
+      if (now > eventDate) {
+        // Get the matching writeup
+        const cardId = card.id;
+        const writeup = document.querySelector(`.cd-writeup[data-for="${cardId}"]`);
+        const title = card.querySelector('.cd-title')?.textContent || '';
+        const sub = card.querySelector('.cd-sub')?.textContent?.replace(' · Tap to read more', '') || '';
+
+        // Build archive card
+        const archiveCard = document.createElement('div');
+        archiveCard.className = 'countdown-card';
+        archiveCard.style.cssText = 'opacity:0.65;cursor:pointer;margin-bottom:6px;';
+        archiveCard.innerHTML = `
+          <div class="cd-icon">${card.querySelector('.cd-icon')?.textContent || '📅'}</div>
+          <div class="cd-info">
+            <div class="cd-title" style="font-size:13px;">${title}</div>
+            <div class="cd-sub">${sub}</div>
+          </div>
+          <div style="font-size:10px;color:var(--muted);font-weight:700;">PAST</div>
+        `;
+
+        // Clone writeup
+        if (writeup) {
+          const writeupClone = writeup.cloneNode(true);
+          writeupClone.id = cardId + '-archived';
+          archiveCard.onclick = () => toggleWriteup(cardId + '-archived');
+          archiveList.appendChild(archiveCard);
+          archiveList.appendChild(writeupClone);
+        } else {
+          archiveList.appendChild(archiveCard);
+        }
+
+        // Hide original card and writeup
+        card.style.display = 'none';
+        if (writeup) writeup.style.display = 'none';
+
+        // Remove empty message
+        if (emptyMsg) emptyMsg.style.display = 'none';
+      }
+    });
+  }
+  autoArchiveEvents();
+
+
+  function toggleBigGamesArchive() {
+    const list = document.getElementById('big-games-archive-list');
+    const arrow = document.getElementById('bga-arrow');
+    list.classList.toggle('open');
+    arrow.classList.toggle('open');
+  }
+
+  function togglePastEvents() {
+    const list = document.getElementById('past-events-list');
+    const arrow = document.getElementById('past-arrow');
+    list.classList.toggle('open');
+    arrow.classList.toggle('open');
+  }
+
+  function toggleWriteup(id) {
+    const el = document.getElementById(id);
+    el.classList.toggle('open');
+  }
+
+  function switchTab(tab, btn) {
+    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('tab-' + tab).classList.add('active');
+    btn.classList.add('active');
+  }
+
+  let currentStake = 10;
+
+  function setStake(amount, btn) {
+    currentStake = amount;
+    document.getElementById('custom-input').value = '';
+    document.querySelectorAll('.stake-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    updateCalc();
+  }
+
+  function customStake(val) {
+    if (val && val > 0) {
+      currentStake = parseFloat(val);
+      document.querySelectorAll('.stake-btn').forEach(b => b.classList.remove('active'));
+      updateCalc();
+    }
+  }
+
+  function updateCalc() {
+    const stake = currentStake;
+    const avgOdds = 5;
+    const winRate = liveWinRate || 0.73;
+    const days = 30;
+    const winReturn = stake * avgOdds;
+    const wins = Math.round(days * winRate);
+    const monthlyProfit = Math.round((wins * winReturn) - (days * stake));
+    const roi = (monthlyProfit / 9.99).toFixed(1);
+    document.getElementById('win-return').textContent = '£' + winReturn.toLocaleString();
+    document.getElementById('monthly-profit').textContent = '£' + Math.max(0, monthlyProfit).toLocaleString();
+    document.getElementById('monthly-stake').textContent = '£' + (stake * days).toLocaleString();
+    document.getElementById('sub-roi').textContent = roi + 'x';
+    // Update win rate label on calculator
+    const winPct = Math.round(winRate * 100);
+    if (document.getElementById('calc-winrate')) document.getElementById('calc-winrate').textContent = 'At ' + winPct + '% win rate';
+  }
+
+  let liveWinRate = 0.70;
+
+  window.addEventListener('load', () => {
+    const wins = 19, settled = 27;
+    const pct = Math.round((wins / settled) * 100);
+    const circumference = 2 * Math.PI * 33;
+    const offset = circumference - (pct / 100) * circumference;
+    setTimeout(() => {
+      document.getElementById('winrate-arc').style.strokeDashoffset = offset;
+      document.getElementById('winrate-pct').textContent = pct + '%';
+      document.getElementById('rec-w').textContent = wins + 'W';
+      document.getElementById('rec-l').textContent = (settled - wins) + 'L';
+      if (document.getElementById('stat-wins')) document.getElementById('stat-wins').textContent = wins;
+      if (document.getElementById('stat-tips')) document.getElementById('stat-tips').textContent = settled;
+    }, 400);
+    updateCalc();
+  });
+  function toggleOlder(btn) {
+    const el = document.getElementById('older-results');
+    const showing = el.style.display !== 'none';
+    el.style.display = showing ? 'none' : 'block';
+    btn.textContent = showing ? '📋 View all results' : '📋 Hide older results';
+  }
+
+  function openModal(id) { document.getElementById(id).classList.add('active'); document.body.style.overflow = 'hidden'; }
+  function closeModal(id) { document.getElementById(id).classList.remove('active'); document.body.style.overflow = ''; }
+</script>
+</body>
+</html>
