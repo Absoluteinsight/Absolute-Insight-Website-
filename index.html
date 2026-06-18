@@ -571,11 +571,11 @@
 
     <div class="stats-grid">
       <div class="stat-card">
-        <div class="stat-value green" id="stat-wins">25</div>
+        <div class="stat-value green" id="stat-wins">24</div>
         <div class="stat-label">Wins</div>
       </div>
       <div class="stat-card">
-        <div class="stat-value gold" id="stat-tips">34</div>
+        <div class="stat-value gold" id="stat-tips">33</div>
         <div class="stat-label">Tips</div>
       </div>
       <div class="stat-card">
@@ -1476,7 +1476,7 @@
   let liveWinRate = 0.70;
 
   window.addEventListener('load', () => {
-    const wins = 25, settled = 34;
+    const wins = 24, settled = 33;
     const pct = Math.round((wins / settled) * 100);
     const circumference = 2 * Math.PI * 33;
     const offset = circumference - (pct / 100) * circumference;
