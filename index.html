@@ -571,11 +571,11 @@
 
     <div class="stats-grid">
       <div class="stat-card">
-        <div class="stat-value green" id="stat-wins">17</div>
+        <div class="stat-value green" id="stat-wins">24</div>
         <div class="stat-label">Wins</div>
       </div>
       <div class="stat-card">
-        <div class="stat-value gold" id="stat-tips">26</div>
+        <div class="stat-value gold" id="stat-tips">35</div>
         <div class="stat-label">Tips</div>
       </div>
       <div class="stat-card">
@@ -599,8 +599,8 @@
         <h3>Track Record</h3>
         <p>Every tip published before kickoff. Wins and losses — nothing hidden.</p>
         <div class="winrate-record">
-          <span class="rec-w" id="rec-w">17W</span>
-          <span class="rec-l" id="rec-l">9L</span>
+          <span class="rec-w" id="rec-w">19W</span>
+          <span class="rec-l" id="rec-l">8L</span>
         </div>
       </div>
     </div>
@@ -624,14 +624,19 @@
         <div style="text-align:right">Result</div>
       </div>
 
-                        <div class="day-divider">📅 Fri 19 Jun 2026</div>
+      <div class="day-divider">📅 Fri 19 Jun 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Scotland vs Morocco</div><div class="result-tip">Over 2.5</div></div>
+        <div class="result-score">—</div>
+        <div><span class="result-badge badge-pending">PENDING</span></div>
+      </div>
       <div class="result-row">
         <div><div class="result-match">USA vs Australia</div><div class="result-tip">BTTS Yes</div></div>
         <div class="result-score">2 — 0</div>
         <div><span class="result-badge badge-loss">LOSS</span></div>
       </div>
 
-<div class="day-divider">📅 Thu 18 Jun 2026</div>
+                  <div class="day-divider">📅 Thu 18 Jun 2026</div>
       <div class="result-row">
         <div><div class="result-match">Czechia vs South Africa</div><div class="result-tip">BTTS Yes</div></div>
         <div class="result-score">1 — 1</div>
@@ -646,6 +651,11 @@
       <div id="older-results" style="display:none">
 
 <div class="day-divider">📅 Wed 17 Jun 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Canada vs Qatar</div><div class="result-tip">BTTS Yes</div></div>
+        <div class="result-score">6 — 0</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
       <div class="result-row">
         <div><div class="result-match">Ghana vs Panama</div><div class="result-tip">BTTS Yes</div></div>
         <div class="result-score">1 — 0</div>
@@ -1480,10 +1490,10 @@
     if (document.getElementById('calc-winrate')) document.getElementById('calc-winrate').textContent = 'At ' + winPct + '% win rate';
   }
 
-  let liveWinRate = 0.65;
+  let liveWinRate = 0.70;
 
   window.addEventListener('load', () => {
-    const wins = 17, settled = 26;
+    const wins = 24, settled = 35;
     const pct = Math.round((wins / settled) * 100);
     const circumference = 2 * Math.PI * 33;
     const offset = circumference - (pct / 100) * circumference;
