@@ -1,33 +1,24 @@
 {
-  "date": "2026-06-18",
-  "wins": 19,
-  "losses": 8,
-  "settled": 27,
+  "date": "2026-06-19",
+  "wins": 17,
+  "losses": 9,
+  "settled": 26,
   "pending": 1,
   "tips": [
     {
-      "home": "Czechia",
-      "away": "South Africa",
+      "home": "USA",
+      "away": "Australia",
       "league": "World Cup",
       "verdict": "BTTS Yes",
       "confidence": "Medium",
-      "score": "1 — 1",
-      "result": "WIN"
+      "score": "2 — 0",
+      "result": "LOSS"
     },
     {
-      "home": "Switzerland",
-      "away": "Bosnia & Herzegovina",
+      "home": "Scotland",
+      "away": "Morocco",
       "league": "World Cup",
-      "verdict": "BTTS Yes",
-      "confidence": "Medium",
-      "score": "4 — 1",
-      "result": "WIN"
-    },
-    {
-      "home": "Canada",
-      "away": "Qatar",
-      "league": "World Cup",
-      "verdict": "BTTS Yes",
+      "verdict": "Over 2.5",
       "confidence": "Medium",
       "score": "",
       "result": "PENDING"
