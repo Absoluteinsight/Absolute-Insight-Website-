@@ -571,11 +571,11 @@
 
     <div class="stats-grid">
       <div class="stat-card">
-        <div class="stat-value green" id="stat-wins">24</div>
+        <div class="stat-value green" id="stat-wins">19</div>
         <div class="stat-label">Wins</div>
       </div>
       <div class="stat-card">
-        <div class="stat-value gold" id="stat-tips">35</div>
+        <div class="stat-value gold" id="stat-tips">27</div>
         <div class="stat-label">Tips</div>
       </div>
       <div class="stat-card">
@@ -624,7 +624,19 @@
         <div style="text-align:right">Result</div>
       </div>
 
-      <div class="day-divider">📅 Fri 19 Jun 2026</div>
+            <div class="day-divider">📅 Sat 20 Jun 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Netherlands vs Sweden</div><div class="result-tip">BTTS Yes</div></div>
+        <div class="result-score">5 — 1</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Germany vs Ivory Coast</div><div class="result-tip">Over 2.5</div></div>
+        <div class="result-score">2 — 1</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+
+<div class="day-divider">📅 Fri 19 Jun 2026</div>
       <div class="result-row">
         <div><div class="result-match">Scotland vs Morocco</div><div class="result-tip">Over 2.5</div></div>
         <div class="result-score">—</div>
@@ -1493,7 +1505,7 @@
   let liveWinRate = 0.70;
 
   window.addEventListener('load', () => {
-    const wins = 24, settled = 35;
+    const wins = 19, settled = 27;
     const pct = Math.round((wins / settled) * 100);
     const circumference = 2 * Math.PI * 33;
     const offset = circumference - (pct / 100) * circumference;
