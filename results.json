@@ -1,27 +1,27 @@
 {
-  "date": "2026-06-22",
-  "wins": 24,
+  "date": "2026-06-23",
+  "wins": 25,
   "losses": 13,
-  "settled": 37,
-  "pending": 1,
+  "settled": 38,
+  "pending": 0,
   "tips": [
     {
-      "home": "Argentina",
-      "away": "Austria",
+      "home": "Portugal",
+      "away": "Uzbekistan",
       "league": "World Cup",
-      "verdict": "Over 2.5",
-      "confidence": "Medium",
-      "score": "2 — 0",
-      "result": "LOSS"
+      "verdict": "Portugal Win",
+      "confidence": "High",
+      "score": "5 — 0",
+      "result": "WIN"
     },
     {
-      "home": "France",
-      "away": "Iraq",
+      "home": "England",
+      "away": "Ghana",
       "league": "World Cup",
-      "verdict": "BTTS Yes",
-      "confidence": "Medium",
-      "score": "",
-      "result": "PENDING"
+      "verdict": "England Win",
+      "confidence": "High",
+      "score": "0 — 0",
+      "result": "LOSS"
     }
   ]
 }
