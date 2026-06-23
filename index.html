@@ -631,6 +631,18 @@
         <div style="text-align:right">Result</div>
       </div>
 
+      <div class="day-divider">📅 Mon 22 Jun 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Argentina vs Austria</div><div class="result-tip">Over 2.5</div></div>
+        <div class="result-score">2 — 0</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">France vs Iraq</div><div class="result-tip">Over 2.5</div></div>
+        <div class="result-score">3 — 0</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+
             <div class="day-divider">📅 Sun 21 Jun 2026</div>
       <div class="result-row">
         <div><div class="result-match">Spain vs Saudi Arabia</div><div class="result-tip">BTTS Yes</div></div>
@@ -1529,7 +1541,7 @@
   let liveWinRate = 0.63;
 
   window.addEventListener('load', () => {
-    const wins = 27, settled = 41;
+    const wins = 28, settled = 43;
     const pct = Math.round((wins / settled) * 100);
     const circumference = 2 * Math.PI * 33;
     const offset = circumference - (pct / 100) * circumference;
