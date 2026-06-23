@@ -1574,6 +1574,28 @@
     btn.textContent = showing ? '📋 View all results' : '📋 Hide older results';
   }
 
+  // Auto-collapse: keep only the most recent day's results visible by default.
+  // Any day-dividers sitting loose before #older-results (e.g. newly added by the bot
+  // or a manual edit) get folded into the hidden section automatically on every page load,
+  // so this never needs manual boundary maintenance again.
+  (function autoCollapseOlderDays() {
+    const card = document.querySelector('.results-card');
+    const older = document.getElementById('older-results');
+    if (!card || !older) return;
+    const children = Array.from(card.children);
+    const dividerIndexes = children
+      .map((el, i) => (el.classList && el.classList.contains('day-divider')) ? i : -1)
+      .filter(i => i !== -1);
+    if (dividerIndexes.length < 2) return; // only one (or zero) loose day — nothing to fold
+    const secondDividerIndex = dividerIndexes[1];
+    const olderIndex = children.indexOf(older);
+    const toMove = children.slice(secondDividerIndex, olderIndex === -1 ? undefined : olderIndex);
+    // Insert at the start of #older-results, preserving order
+    for (let i = toMove.length - 1; i >= 0; i--) {
+      older.insertBefore(toMove[i], older.firstChild);
+    }
+  })();
+
   function openModal(id) { document.getElementById(id).classList.add('active'); document.body.style.overflow = 'hidden'; }
   function closeModal(id) { document.getElementById(id).classList.remove('active'); document.body.style.overflow = ''; }
 
