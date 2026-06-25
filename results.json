@@ -1,26 +1,26 @@
 {
-  "date": "2026-06-23",
+  "date": "2026-06-25",
   "wins": 25,
   "losses": 13,
   "settled": 38,
-  "pending": 0,
+  "pending": 1,
   "tips": [
     {
-      "home": "Portugal",
-      "away": "Uzbekistan",
+      "home": "Curacao",
+      "away": "Ivory Coast",
       "league": "World Cup",
-      "verdict": "Portugal Win",
+      "verdict": "Ivory Coast Win",
       "confidence": "High",
-      "score": "5 — 0",
-      "result": "WIN"
+      "score": "",
+      "result": "PENDING"
     },
     {
-      "home": "England",
-      "away": "Ghana",
+      "home": "Ecuador",
+      "away": "Germany",
       "league": "World Cup",
-      "verdict": "England Win",
+      "verdict": "Germany Win",
       "confidence": "High",
-      "score": "0 — 0",
+      "score": "2 — 1",
       "result": "LOSS"
     }
   ]
