@@ -1,45 +1,18 @@
 {
-  "date": "2026-06-27",
-  "wins": 25,
-  "losses": 17,
-  "settled": 42,
-  "pending": 4,
+  "date": "2026-06-28",
+  "wins": 35,
+  "losses": 18,
+  "settled": 53,
+  "pending": 0,
   "tips": [
     {
-      "home": "Croatia",
-      "away": "Ghana",
+      "home": "South Africa",
+      "away": "Canada",
       "league": "World Cup",
-      "verdict": "BTTS Yes",
+      "verdict": "Canada Win",
       "confidence": "Medium",
-      "score": "",
-      "result": "PENDING"
-    },
-    {
-      "home": "Colombia",
-      "away": "Portugal",
-      "league": "World Cup",
-      "verdict": "BTTS Yes",
-      "confidence": "Medium",
-      "score": "",
-      "result": "PENDING"
-    },
-    {
-      "home": "Congo DR",
-      "away": "Uzbekistan",
-      "league": "World Cup",
-      "verdict": "BTTS Yes",
-      "confidence": "Medium",
-      "score": "",
-      "result": "PENDING"
-    },
-    {
-      "home": "Panama",
-      "away": "England",
-      "league": "World Cup",
-      "verdict": "England Win",
-      "confidence": "Low",
-      "score": "",
-      "result": "PENDING"
+      "score": "0 — 1",
+      "result": "WIN"
     }
   ]
 }
