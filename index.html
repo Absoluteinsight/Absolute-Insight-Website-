@@ -349,6 +349,11 @@
   .countdown-wrap { display: flex; flex-direction: column; gap: 6px; margin: 8px 16px 4px; }
   .countdown-card { display: flex; align-items: center; gap: 10px; border-radius: 14px; padding: 10px 14px; }
   .countdown-card.wc { background: linear-gradient(135deg, #1a5fc8, #0d3a8a); border: 2px solid #F5C800; }
+  .countdown-card.wcf { background: linear-gradient(135deg, #8a6d00, #C8A010); border: 2px solid #F5C800; }
+  .countdown-card.wcf .cd-num { color: #1A1A1A; }
+  .countdown-card.wcf .cd-title { color: #1A1A1A; }
+  .countdown-card.wcf .cd-sub { color: rgba(26,26,26,0.7); }
+  .countdown-card.wcf .cd-lbl { color: rgba(26,26,26,0.6); }
   .countdown-card.ucl { background: linear-gradient(135deg, #1a5fc8, #2470d4); border: 2px solid rgba(255,255,255,0.25); }
   .countdown-card.ucl .cd-num { color: #c0a060; }
   .countdown-card.pl { background: linear-gradient(135deg, #0d2a6e, #1a5fc8); border: 2px solid rgba(255,255,255,0.2); }
@@ -462,6 +467,25 @@
 
   <!-- COUNTDOWNS -->
   <div class="countdown-wrap">
+
+    <div class="countdown-card wcf" id="cd-wcf" data-date="2026-07-19" onclick="toggleWriteup('wcf-writeup')" style="cursor:pointer;">
+      <div class="cd-icon">🏆</div>
+      <div class="cd-info">
+        <div class="cd-title">WORLD CUP FINAL</div>
+        <div class="cd-sub">MetLife Stadium, NY/NJ · Tap to read more</div>
+      </div>
+      <div class="cd-timer">
+        <div class="cd-unit"><span class="cd-num" id="wcf-days">--</span><span class="cd-lbl">days</span></div>
+        <div class="cd-unit"><span class="cd-num" id="wcf-hrs">--</span><span class="cd-lbl">hrs</span></div>
+        <div class="cd-unit"><span class="cd-num" id="wcf-mins">--</span><span class="cd-lbl">min</span></div>
+      </div>
+    </div>
+    <div class="cd-writeup" id="wcf-writeup" data-for="cd-wcf">
+      <div class="cd-writeup-title">🏆 World Cup Final — Sunday 19 July 2026</div>
+      <p>The biggest game in football. MetLife Stadium, East Rutherford, New Jersey. Kickoff 3pm ET — 8pm UK time.</p>
+      <p>Two semi-final winners book their place here on 15 July. We'll be tracking every knockout fixture along the way, with Special Analysis on every standout game as the bracket narrows.</p>
+      <div class="cd-writeup-tag">🎯 Full coverage through every knockout round — VIP & Gold tier</div>
+    </div>
 
     <div class="countdown-card ucl" id="cd-ucl" data-date="2026-05-30" onclick="toggleWriteup('ucl-writeup')" style="cursor:pointer;">
       <div class="cd-icon">🏆</div>
@@ -1190,24 +1214,24 @@
 
 
 
-    <!-- PANAMA VS ENGLAND -->
-    <div class="fixture-card" onclick="toggleWriteup('fix-pan-eng')">
+    <!-- ENGLAND VS DR CONGO -->
+    <div class="fixture-card" onclick="toggleWriteup('fix-eng-drc')">
       <div class="fix-top">
-        <div class="fix-badge gold">🌍 WORLD CUP · GROUP L</div>
-        <div class="fix-date">27 Jun · 22:00 UK</div>
+        <div class="fix-badge gold">🌍 WORLD CUP · ROUND OF 32</div>
+        <div class="fix-date">1 Jul · 17:00 UK</div>
       </div>
-      <div class="fix-teams">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Panama vs England 🏴󠁧󠁢󠁥󠁮󠁧󠁿</div>
-      <div class="fix-venue">📍 World Cup 2026 · USA</div>
+      <div class="fix-teams">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England vs DR Congo 🇨🇩</div>
+      <div class="fix-venue">📍 Atlanta, USA</div>
       <div class="fix-tags">
         <span class="fix-tag special">⭐ Special Analysis</span>
         <span class="fix-tag">Analysis drops closer to kickoff</span>
       </div>
     </div>
-    <div class="cd-writeup" id="fix-pan-eng">
-      <div class="cd-writeup-title">🇵🇦 Panama vs England — World Cup Group L</div>
-      <p>England's final group game. Panama are a host nation neighbour with incredible support. England beat Panama 6-1 at the 2018 World Cup — but tournament football is never straightforward.</p>
-      <p>Full Special Analysis with all probabilities drops closer to kickoff.</p>
-      <div class="cd-writeup-tag">🎯 Special Analysis — Coming 27 June</div>
+    <div class="cd-writeup" id="fix-eng-drc">
+      <div class="cd-writeup-title">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England vs DR Congo — Round of 32</div>
+      <p>England topped Group L unbeaten — wins over Croatia and Panama plus a draw with Ghana saw them through as group winners with 7 points. DR Congo came through as one of the best third-placed teams, fighting back from behind to beat Uzbekistan 3-1 in their final group game.</p>
+      <p>First knockout test for Tuchel's side. Win this and a potential Round of 16 clash with co-hosts Mexico awaits in Mexico City. Full Special Analysis with all probabilities drops closer to kickoff.</p>
+      <div class="cd-writeup-tag">🎯 Special Analysis — Coming 1 July</div>
     </div>
 
     <!-- ARCHIVE SECTION -->
@@ -1219,24 +1243,46 @@
     </div>
     <div class="past-events-list" id="big-games-archive-list" style="padding:0 16px;">
 
+        <!-- PANAMA VS ENGLAND -->
+        <div class="fixture-card archive-card" onclick="toggleWriteup('fix-pan-eng')">
+          <div class="fix-top"><div class="fix-badge gold">🌍 WORLD CUP · GROUP L</div><div class="fix-date">27 Jun '26</div></div>
+          <div class="fix-teams">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Panama vs England 🏴󠁧󠁢󠁥󠁮󠁧󠁿</div>
+          <div class="fix-venue">📍 New Jersey, USA · England win 2-0</div>
+          <div class="fix-tags"><span class="fix-tag" style="background:rgba(0,200,150,0.15);color:#00C896;border:1px solid rgba(0,200,150,0.3);">✅ WIN — England Win 0-2</span></div>
+        </div>
+        <div class="cd-writeup" id="fix-pan-eng">
+          <div class="cd-writeup-title">🇵🇦 Panama vs England — World Cup Group L</div>
+          <p><strong style="color:#F5C800;">Result: Panama 0-2 England · England Win ✅ WIN</strong></p>
+          <p>Jude Bellingham (62') and Harry Kane (67') scored second-half goals to seal top spot in Group L. Panama, already eliminated, finish the tournament without a win in three group games.</p>
+          <div class="cd-writeup-tag">📁 Archived · England Win ✅ WIN</div>
+        </div>
+
         <!-- ENGLAND VS GHANA -->
         <div class="fixture-card archive-card" onclick="toggleWriteup('fix-eng-gha')">
           <div class="fix-top"><div class="fix-badge gold">🌍 WORLD CUP · GROUP L</div><div class="fix-date">23 Jun '26</div></div>
           <div class="fix-teams">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England vs Ghana 🇬🇭</div>
+          <div class="fix-venue">📍 Boston, USA · Goalless draw</div>
+          <div class="fix-tags"><span class="fix-tag" style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.7);border:1px solid rgba(255,255,255,0.2);">➖ DRAW 0-0</span></div>
         </div>
         <div class="cd-writeup" id="fix-eng-gha">
           <div class="cd-writeup-title">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England vs Ghana — World Cup Group L</div>
-          <p>England's second group game. Ghana are a dangerous side — fast, direct and capable of upsets. England will be expected to win but Ghana have quality throughout.</p>
+          <p><strong style="color:#F5C800;">Result: England 0-0 Ghana</strong></p>
+          <p>A flat performance from England, who dominated possession (72%) but couldn't find a breakthrough against a well-organised Ghana side. Harry Kane's late headed chance was the closest either side came. A point apiece kept England top on goal difference.</p>
+          <div class="cd-writeup-tag">📁 Archived · Goalless draw</div>
         </div>
 
         <!-- ENGLAND VS CROATIA -->
         <div class="fixture-card archive-card" onclick="toggleWriteup('fix-eng-cro')">
           <div class="fix-top"><div class="fix-badge gold">🌍 WORLD CUP · GROUP L</div><div class="fix-date">17 Jun '26</div></div>
           <div class="fix-teams">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England vs Croatia 🇭🇷</div>
+          <div class="fix-venue">📍 Dallas, USA · England win 4-2</div>
+          <div class="fix-tags"><span class="fix-tag" style="background:rgba(0,200,150,0.15);color:#00C896;border:1px solid rgba(0,200,150,0.3);">✅ WIN — BTTS Yes 4-2</span></div>
         </div>
         <div class="cd-writeup" id="fix-eng-cro">
           <div class="cd-writeup-title">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England vs Croatia — World Cup Group L</div>
-          <p>A rematch of the 2018 World Cup semi-final and Euro 2020 group stage. England beat Croatia 1-0 at Euro 2020 — Croatia knocked England out at Russia 2018. History between these two runs deep.</p>
+          <p><strong style="color:#F5C800;">Result: England 4-2 Croatia · BTTS Yes ✅ WIN</strong></p>
+          <p>A first-half thriller — Kane scored twice (12' pen, 42') either side of Baturina (36') and Musa (45+5') for Croatia. Bellingham (47') restored the lead immediately after the break and Rashford (85') made it four. England's best attacking display of the group stage.</p>
+          <div class="cd-writeup-tag">📁 Archived · BTTS Yes ✅ WIN</div>
         </div>
 
 
@@ -1442,6 +1488,7 @@
   function updateCountdowns() {
     const now = new Date();
     const wc = new Date('2026-06-11T00:00:00');
+    const wcf = new Date('2026-07-19T20:00:00'); // 3pm ET = 8pm UK
     const ucl = new Date('2026-05-30T17:00:00');
     const pl = new Date('2026-08-22T12:30:00');
 
@@ -1453,6 +1500,9 @@
       const mins = Math.floor((ms % 3600000) / 60000);
       return { days, hrs, mins };
     }
+
+    const f = diff(wcf);
+    if(document.getElementById('wcf-days')) { document.getElementById('wcf-days').textContent = f.days; document.getElementById('wcf-hrs').textContent = String(f.hrs).padStart(2,'0'); document.getElementById('wcf-mins').textContent = String(f.mins).padStart(2,'0'); }
 
     const u = diff(ucl);
     if(document.getElementById('ucl-days')) { document.getElementById('ucl-days').textContent = u.days; document.getElementById('ucl-hrs').textContent = String(u.hrs).padStart(2,'0'); document.getElementById('ucl-mins').textContent = String(u.mins).padStart(2,'0'); }
