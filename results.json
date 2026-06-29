@@ -1,18 +1,27 @@
 {
-  "date": "2026-06-28",
-  "wins": 35,
-  "losses": 18,
-  "settled": 53,
-  "pending": 0,
+  "date": "2026-06-29",
+  "wins": 39,
+  "losses": 19,
+  "settled": 58,
+  "pending": 1,
   "tips": [
     {
-      "home": "South Africa",
-      "away": "Canada",
+      "home": "Brazil",
+      "away": "Japan",
       "league": "World Cup",
-      "verdict": "Canada Win",
+      "verdict": "Brazil Win",
       "confidence": "Medium",
-      "score": "0 — 1",
+      "score": "2 — 1",
       "result": "WIN"
+    },
+    {
+      "home": "Germany",
+      "away": "Paraguay",
+      "league": "World Cup",
+      "verdict": "Germany Win",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
     }
   ]
 }
