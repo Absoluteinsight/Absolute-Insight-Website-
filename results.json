@@ -1,27 +1,27 @@
 {
-  "date": "2026-06-30",
-  "wins": 40,
+  "date": "2026-07-01",
+  "wins": 41,
   "losses": 19,
-  "settled": 59,
+  "settled": 60,
   "pending": 1,
   "tips": [
     {
-      "home": "France",
-      "away": "Sweden",
+      "home": "England",
+      "away": "Congo DR",
       "league": "World Cup",
-      "verdict": "BTTS Yes",
-      "confidence": "High",
-      "score": "",
-      "result": "PENDING"
+      "verdict": "England Win",
+      "confidence": "Medium",
+      "score": "2 — 1",
+      "result": "WIN"
     },
     {
-      "home": "Ivory Coast",
-      "away": "Norway",
+      "home": "Belgium",
+      "away": "Senegal",
       "league": "World Cup",
-      "verdict": "BTTS Yes",
+      "verdict": "Over 2.5",
       "confidence": "Medium",
-      "score": "1 — 2",
-      "result": "WIN"
+      "score": "",
+      "result": "PENDING"
     }
   ]
 }
