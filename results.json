@@ -1,24 +1,24 @@
 {
-  "date": "2026-07-01",
-  "wins": 41,
+  "date": "2026-07-02",
+  "wins": 42,
   "losses": 19,
-  "settled": 60,
+  "settled": 61,
   "pending": 1,
   "tips": [
     {
-      "home": "England",
-      "away": "Congo DR",
+      "home": "Spain",
+      "away": "Austria",
       "league": "World Cup",
-      "verdict": "England Win",
+      "verdict": "Spain Win",
       "confidence": "Medium",
-      "score": "2 — 1",
+      "score": "3 — 0",
       "result": "WIN"
     },
     {
-      "home": "Belgium",
-      "away": "Senegal",
+      "home": "Portugal",
+      "away": "Croatia",
       "league": "World Cup",
-      "verdict": "Over 2.5",
+      "verdict": "BTTS Yes",
       "confidence": "Medium",
       "score": "",
       "result": "PENDING"
