@@ -602,11 +602,11 @@
 
     <div class="stats-grid">
       <div class="stat-card">
-        <div class="stat-value green" id="stat-wins">41</div>
+        <div class="stat-value green" id="stat-wins">42</div>
         <div class="stat-label">Wins</div>
       </div>
       <div class="stat-card">
-        <div class="stat-value gold" id="stat-tips">60</div>
+        <div class="stat-value gold" id="stat-tips">61</div>
         <div class="stat-label">Tips</div>
       </div>
       <div class="stat-card">
@@ -630,7 +630,7 @@
         <h3>Track Record</h3>
         <p>Every tip published before kickoff. Wins and losses — nothing hidden.</p>
         <div class="winrate-record">
-          <span class="rec-w" id="rec-w">41W</span>
+          <span class="rec-w" id="rec-w">42W</span>
           <span class="rec-l" id="rec-l">19L</span>
         </div>
       </div>
@@ -655,7 +655,14 @@
         <div style="text-align:right">Result</div>
       </div>
 
-                                    <div class="day-divider">📅 Wed 1 Jul 2026</div>
+                                          <div class="day-divider">📅 Thu 2 Jul 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Spain vs Austria</div><div class="result-tip">Spain Win</div></div>
+        <div class="result-score">3 — 0</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+
+<div class="day-divider">📅 Wed 1 Jul 2026</div>
       <div class="result-row">
         <div><div class="result-match">England vs Congo DR</div><div class="result-tip">England Win</div></div>
         <div class="result-score">2 — 1</div>
@@ -1672,10 +1679,10 @@
     if (document.getElementById('calc-winrate')) document.getElementById('calc-winrate').textContent = 'At ' + winPct + '% win rate';
   }
 
-  let liveWinRate = 0.68;
+  let liveWinRate = 0.69;
 
   window.addEventListener('load', () => {
-    const wins = 41, settled = 60;
+    const wins = 42, settled = 61;
     const pct = Math.round((wins / settled) * 100);
     const circumference = 2 * Math.PI * 33;
     const offset = circumference - (pct / 100) * circumference;
