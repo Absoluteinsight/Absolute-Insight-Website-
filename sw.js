@@ -2,7 +2,7 @@
 // Caches the app shell so results/stats remain visible offline.
 // Bump CACHE_VERSION whenever index.html structure changes significantly,
 // to force clients to fetch a fresh copy rather than a stale cached shell.
-const CACHE_VERSION = 'ai-v2';
+const CACHE_VERSION = 'ai-v3';
 const CACHE_NAME = `absolute-insight-${CACHE_VERSION}`;
 
 const SHELL_URLS = [
