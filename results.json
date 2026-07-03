@@ -1,24 +1,24 @@
 {
-  "date": "2026-07-02",
+  "date": "2026-07-03",
   "wins": 42,
   "losses": 19,
   "settled": 61,
-  "pending": 1,
+  "pending": 2,
   "tips": [
     {
-      "home": "Spain",
-      "away": "Austria",
-      "league": "World Cup",
-      "verdict": "Spain Win",
-      "confidence": "Medium",
-      "score": "3 — 0",
-      "result": "WIN"
-    },
-    {
-      "home": "Portugal",
-      "away": "Croatia",
+      "home": "Australia",
+      "away": "Egypt",
       "league": "World Cup",
       "verdict": "BTTS Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Argentina",
+      "away": "Cape Verde Islands",
+      "league": "World Cup",
+      "verdict": "Over 2.5",
       "confidence": "Medium",
       "score": "",
       "result": "PENDING"
