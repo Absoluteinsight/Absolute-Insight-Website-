@@ -630,7 +630,7 @@
         <h3>Track Record</h3>
         <p>Every tip published before kickoff. Wins and losses — nothing hidden.</p>
         <div class="winrate-record">
-          <span class="rec-w" id="rec-w">43W</span>
+          <span class="rec-w" id="rec-w">44W</span>
           <span class="rec-l" id="rec-l">19L</span>
         </div>
       </div>
@@ -653,6 +653,13 @@
         <div>Match & Tip</div>
         <div style="text-align:center">Score</div>
         <div style="text-align:right">Result</div>
+      </div>
+
+                                          <div class="day-divider">📅 Fri 3 Jul 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Portugal vs Croatia</div><div class="result-tip">Both Teams To Score Yes</div></div>
+        <div class="result-score">2 — 1</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
       </div>
 
                                           <div class="day-divider">📅 Thu 2 Jul 2026</div>
@@ -1684,10 +1691,10 @@
     if (document.getElementById('calc-winrate')) document.getElementById('calc-winrate').textContent = 'At ' + winPct + '% win rate';
   }
 
-  let liveWinRate = 0.69;
+  let liveWinRate = 0.70;
 
   window.addEventListener('load', () => {
-    const wins = 43, settled = 62;
+    const wins = 44, settled = 63;
     const pct = Math.round((wins / settled) * 100);
     const circumference = 2 * Math.PI * 33;
     const offset = circumference - (pct / 100) * circumference;
