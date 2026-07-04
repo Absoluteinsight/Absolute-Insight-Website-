@@ -602,11 +602,11 @@
 
     <div class="stats-grid">
       <div class="stat-card">
-        <div class="stat-value green" id="stat-wins">44</div>
+        <div class="stat-value green" id="stat-wins">45</div>
         <div class="stat-label">Wins</div>
       </div>
       <div class="stat-card">
-        <div class="stat-value gold" id="stat-tips">63</div>
+        <div class="stat-value gold" id="stat-tips">65</div>
         <div class="stat-label">Tips</div>
       </div>
       <div class="stat-card">
@@ -631,7 +631,7 @@
         <p>Every tip published before kickoff. Wins and losses — nothing hidden.</p>
         <div class="winrate-record">
           <span class="rec-w" id="rec-w">45W</span>
-          <span class="rec-l" id="rec-l">19L</span>
+          <span class="rec-l" id="rec-l">20L</span>
         </div>
       </div>
     </div>
@@ -655,7 +655,14 @@
         <div style="text-align:right">Result</div>
       </div>
 
-                                                <div class="day-divider">📅 Fri 3 Jul 2026</div>
+                                                      <div class="day-divider">📅 Sat 4 Jul 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Canada vs Morocco</div><div class="result-tip">BTTS Yes</div></div>
+        <div class="result-score">0 — 3</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+
+<div class="day-divider">📅 Fri 3 Jul 2026</div>
       <div class="result-row">
         <div><div class="result-match">Australia vs Egypt</div><div class="result-tip">Both Teams To Score Yes</div></div>
         <div class="result-score">1 — 1</div>
@@ -1696,10 +1703,10 @@
     if (document.getElementById('calc-winrate')) document.getElementById('calc-winrate').textContent = 'At ' + winPct + '% win rate';
   }
 
-  let liveWinRate = 0.70;
+  let liveWinRate = 0.69;
 
   window.addEventListener('load', () => {
-    const wins = 45, settled = 64;
+    const wins = 45, settled = 65;
     const pct = Math.round((wins / settled) * 100);
     const circumference = 2 * Math.PI * 33;
     const offset = circumference - (pct / 100) * circumference;
