@@ -1,22 +1,22 @@
 {
-  "date": "2026-07-03",
-  "wins": 42,
-  "losses": 19,
-  "settled": 61,
-  "pending": 2,
+  "date": "2026-07-04",
+  "wins": 45,
+  "losses": 20,
+  "settled": 65,
+  "pending": 1,
   "tips": [
     {
-      "home": "Australia",
-      "away": "Egypt",
+      "home": "Canada",
+      "away": "Morocco",
       "league": "World Cup",
       "verdict": "BTTS Yes",
       "confidence": "Medium",
-      "score": "",
-      "result": "PENDING"
+      "score": "0 — 3",
+      "result": "LOSS"
     },
     {
-      "home": "Argentina",
-      "away": "Cape Verde Islands",
+      "home": "Paraguay",
+      "away": "France",
       "league": "World Cup",
       "verdict": "Over 2.5",
       "confidence": "Medium",
