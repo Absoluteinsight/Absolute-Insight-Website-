@@ -1,24 +1,15 @@
 {
-  "date": "2026-07-04",
+  "date": "2026-07-05",
   "wins": 45,
-  "losses": 20,
-  "settled": 65,
+  "losses": 19,
+  "settled": 64,
   "pending": 1,
   "tips": [
     {
-      "home": "Canada",
-      "away": "Morocco",
+      "home": "Brazil",
+      "away": "Norway",
       "league": "World Cup",
-      "verdict": "BTTS Yes",
-      "confidence": "Medium",
-      "score": "0 — 3",
-      "result": "LOSS"
-    },
-    {
-      "home": "Paraguay",
-      "away": "France",
-      "league": "World Cup",
-      "verdict": "Over 2.5",
+      "verdict": "Both Teams To Score Yes",
       "confidence": "Medium",
       "score": "",
       "result": "PENDING"
