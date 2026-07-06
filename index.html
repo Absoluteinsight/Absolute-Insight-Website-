@@ -606,7 +606,7 @@
         <div class="stat-label">Wins</div>
       </div>
       <div class="stat-card">
-        <div class="stat-value gold" id="stat-tips">65</div>
+        <div class="stat-value gold" id="stat-tips">66</div>
         <div class="stat-label">Tips</div>
       </div>
       <div class="stat-card">
@@ -631,7 +631,7 @@
         <p>Every tip published before kickoff. Wins and losses — nothing hidden.</p>
         <div class="winrate-record">
           <span class="rec-w" id="rec-w">45W</span>
-          <span class="rec-l" id="rec-l">20L</span>
+          <span class="rec-l" id="rec-l">21L</span>
         </div>
       </div>
     </div>
@@ -655,7 +655,14 @@
         <div style="text-align:right">Result</div>
       </div>
 
-                                                            <div class="day-divider">📅 Sun 5 Jul 2026</div>
+                                                                  <div class="day-divider">📅 Mon 6 Jul 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Portugal vs Spain</div><div class="result-tip">Over 2.5 Goals</div></div>
+        <div class="result-score">0 — 1</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+
+<div class="day-divider">📅 Sun 5 Jul 2026</div>
 
 <div class="day-divider">📅 Sat 4 Jul 2026</div>
       <div class="result-row">
@@ -1705,10 +1712,10 @@
     if (document.getElementById('calc-winrate')) document.getElementById('calc-winrate').textContent = 'At ' + winPct + '% win rate';
   }
 
-  let liveWinRate = 0.69;
+  let liveWinRate = 0.68;
 
   window.addEventListener('load', () => {
-    const wins = 45, settled = 65;
+    const wins = 45, settled = 66;
     const pct = Math.round((wins / settled) * 100);
     const circumference = 2 * Math.PI * 33;
     const offset = circumference - (pct / 100) * circumference;
