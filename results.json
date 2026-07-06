@@ -1,18 +1,18 @@
 {
-  "date": "2026-07-05",
+  "date": "2026-07-06",
   "wins": 45,
-  "losses": 19,
-  "settled": 64,
-  "pending": 1,
+  "losses": 21,
+  "settled": 66,
+  "pending": 0,
   "tips": [
     {
-      "home": "Brazil",
-      "away": "Norway",
+      "home": "Portugal",
+      "away": "Spain",
       "league": "World Cup",
-      "verdict": "Both Teams To Score Yes",
+      "verdict": "Over 2.5 Goals",
       "confidence": "Medium",
-      "score": "",
-      "result": "PENDING"
+      "score": "0 — 1",
+      "result": "LOSS"
     }
   ]
 }
