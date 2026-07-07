@@ -1,17 +1,53 @@
 {
-  "date": "2026-07-06",
-  "wins": 45,
-  "losses": 21,
-  "settled": 66,
+  "date": "2026-07-07",
+  "wins": 47,
+  "losses": 24,
+  "settled": 71,
   "pending": 0,
   "tips": [
     {
-      "home": "Portugal",
-      "away": "Spain",
-      "league": "World Cup",
+      "home": "Ararat-Armenia",
+      "away": "Riga",
+      "league": "UEFA Champions League",
       "verdict": "Over 2.5 Goals",
       "confidence": "Medium",
-      "score": "0 — 1",
+      "score": "2 — 0",
+      "result": "LOSS"
+    },
+    {
+      "home": "Kauno Žalgiris",
+      "away": "Drita",
+      "league": "UEFA Champions League",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "Lincoln Red Imps FC",
+      "away": "Inter Club d'Escaldes",
+      "league": "UEFA Champions League",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "Medium",
+      "score": "3 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "Sabah FA",
+      "away": "The New Saints",
+      "league": "UEFA Champions League",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "Medium",
+      "score": "2 — 0",
+      "result": "LOSS"
+    },
+    {
+      "home": "Vardar Skopje",
+      "away": "KuPS",
+      "league": "UEFA Champions League",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "Medium",
+      "score": "0 — 2",
       "result": "LOSS"
     }
   ]
