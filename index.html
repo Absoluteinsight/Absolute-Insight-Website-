@@ -602,11 +602,11 @@
 
     <div class="stats-grid">
       <div class="stat-card">
-        <div class="stat-value green" id="stat-wins">46</div>
+        <div class="stat-value green" id="stat-wins">48</div>
         <div class="stat-label">Wins</div>
       </div>
       <div class="stat-card">
-        <div class="stat-value gold" id="stat-tips">67</div>
+        <div class="stat-value gold" id="stat-tips">72</div>
         <div class="stat-label">Tips</div>
       </div>
       <div class="stat-card">
@@ -630,8 +630,8 @@
         <h3>Track Record</h3>
         <p>Every tip published before kickoff. Wins and losses — nothing hidden.</p>
         <div class="winrate-record">
-          <span class="rec-w" id="rec-w">46W</span>
-          <span class="rec-l" id="rec-l">21L</span>
+          <span class="rec-w" id="rec-w">48W</span>
+          <span class="rec-l" id="rec-l">24L</span>
         </div>
       </div>
     </div>
@@ -655,7 +655,34 @@
         <div style="text-align:right">Result</div>
       </div>
 
-                                                                  <div class="day-divider">📅 Mon 6 Jul 2026</div>
+                                                                        <div class="day-divider">📅 Tue 7 Jul 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Ararat-Armenia vs Riga</div><div class="result-tip">Over 2.5 Goals</div></div>
+        <div class="result-score">2 — 0</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Kauno Žalgiris vs Drita</div><div class="result-tip">Both Teams To Score Yes</div></div>
+        <div class="result-score">1 — 1</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Lincoln Red Imps FC vs Inter Club d'Escaldes</div><div class="result-tip">Both Teams To Score Yes</div></div>
+        <div class="result-score">3 — 1</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Sabah FA vs The New Saints</div><div class="result-tip">Both Teams To Score Yes</div></div>
+        <div class="result-score">2 — 0</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Vardar Skopje vs KuPS</div><div class="result-tip">Both Teams To Score Yes</div></div>
+        <div class="result-score">0 — 2</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+
+<div class="day-divider">📅 Mon 6 Jul 2026</div>
       <div class="result-row">
         <div><div class="result-match">Portugal vs Spain</div><div class="result-tip">Over 2.5 Goals</div></div>
         <div class="result-score">0 — 1</div>
@@ -1717,10 +1744,10 @@
     if (document.getElementById('calc-winrate')) document.getElementById('calc-winrate').textContent = 'At ' + winPct + '% win rate';
   }
 
-  let liveWinRate = 0.69;
+  let liveWinRate = 0.67;
 
   window.addEventListener('load', () => {
-    const wins = 46, settled = 67;
+    const wins = 48, settled = 72;
     const pct = Math.round((wins / settled) * 100);
     const circumference = 2 * Math.PI * 33;
     const offset = circumference - (pct / 100) * circumference;
