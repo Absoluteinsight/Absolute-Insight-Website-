@@ -602,11 +602,11 @@
 
     <div class="stats-grid">
       <div class="stat-card">
-        <div class="stat-value green" id="stat-wins">48</div>
+        <div class="stat-value green" id="stat-wins">52</div>
         <div class="stat-label">Wins</div>
       </div>
       <div class="stat-card">
-        <div class="stat-value gold" id="stat-tips">72</div>
+        <div class="stat-value gold" id="stat-tips">77</div>
         <div class="stat-label">Tips</div>
       </div>
       <div class="stat-card">
@@ -630,8 +630,8 @@
         <h3>Track Record</h3>
         <p>Every tip published before kickoff. Wins and losses — nothing hidden.</p>
         <div class="winrate-record">
-          <span class="rec-w" id="rec-w">48W</span>
-          <span class="rec-l" id="rec-l">24L</span>
+          <span class="rec-w" id="rec-w">52W</span>
+          <span class="rec-l" id="rec-l">25L</span>
         </div>
       </div>
     </div>
@@ -655,7 +655,34 @@
         <div style="text-align:right">Result</div>
       </div>
 
-                                                                        <div class="day-divider">📅 Tue 7 Jul 2026</div>
+                                                                              <div class="day-divider">📅 Wed 8 Jul 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Kairat Almaty vs Sutjeska</div><div class="result-tip">Kairat Almaty Win</div></div>
+        <div class="result-score">2 — 1</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Flora Tallinn vs Saburtalo</div><div class="result-tip">Both Teams To Score Yes</div></div>
+        <div class="result-score">2 — 3</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">ML Vitebsk vs Universitatea Craiova</div><div class="result-tip">Both Teams To Score Yes</div></div>
+        <div class="result-score">1 — 4</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Petrocub vs Egnatia Rrogozhinë</div><div class="result-tip">Both Teams To Score Yes</div></div>
+        <div class="result-score">1 — 1</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Zira vs Torpedo Kutaisi</div><div class="result-tip">Both Teams To Score Yes</div></div>
+        <div class="result-score">3 — 0</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+
+<div class="day-divider">📅 Tue 7 Jul 2026</div>
       <div class="result-row">
         <div><div class="result-match">Ararat-Armenia vs Riga</div><div class="result-tip">Over 2.5 Goals</div></div>
         <div class="result-score">2 — 0</div>
@@ -1744,10 +1771,10 @@
     if (document.getElementById('calc-winrate')) document.getElementById('calc-winrate').textContent = 'At ' + winPct + '% win rate';
   }
 
-  let liveWinRate = 0.67;
+  let liveWinRate = 0.68;
 
   window.addEventListener('load', () => {
-    const wins = 48, settled = 72;
+    const wins = 52, settled = 77;
     const pct = Math.round((wins / settled) * 100);
     const circumference = 2 * Math.PI * 33;
     const offset = circumference - (pct / 100) * circumference;
