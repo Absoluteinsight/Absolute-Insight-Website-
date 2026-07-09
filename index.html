@@ -602,11 +602,11 @@
 
     <div class="stats-grid">
       <div class="stat-card">
-        <div class="stat-value green" id="stat-wins">52</div>
+        <div class="stat-value green" id="stat-wins">55</div>
         <div class="stat-label">Wins</div>
       </div>
       <div class="stat-card">
-        <div class="stat-value gold" id="stat-tips">77</div>
+        <div class="stat-value gold" id="stat-tips">82</div>
         <div class="stat-label">Tips</div>
       </div>
       <div class="stat-card">
@@ -630,8 +630,8 @@
         <h3>Track Record</h3>
         <p>Every tip published before kickoff. Wins and losses — nothing hidden.</p>
         <div class="winrate-record">
-          <span class="rec-w" id="rec-w">52W</span>
-          <span class="rec-l" id="rec-l">25L</span>
+          <span class="rec-w" id="rec-w">55W</span>
+          <span class="rec-l" id="rec-l">27L</span>
         </div>
       </div>
     </div>
@@ -655,7 +655,34 @@
         <div style="text-align:right">Result</div>
       </div>
 
-                                                                              <div class="day-divider">📅 Wed 8 Jul 2026</div>
+                                                                                    <div class="day-divider">📅 Thu 9 Jul 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Qarabag vs Vestri</div><div class="result-tip">Over 2.5 Goals</div></div>
+        <div class="result-score">3 — 0</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Dynamo Kyiv vs Universitatea Cluj</div><div class="result-tip">Over 2.5 Goals</div></div>
+        <div class="result-score">0 — 0</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Sheriff Tiraspol vs Aluminij</div><div class="result-tip">Sheriff Tiraspol Win</div></div>
+        <div class="result-score">0 — 0</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">CSKA Sofia vs Derry City</div><div class="result-tip">Over 2.5 Goals</div></div>
+        <div class="result-score">3 — 2</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">HNK Hajduk Split vs Žilina</div><div class="result-tip">HNK Hajduk Split Win</div></div>
+        <div class="result-score">2 — 0</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+
+<div class="day-divider">📅 Wed 8 Jul 2026</div>
       <div class="result-row">
         <div><div class="result-match">Kairat Almaty vs Sutjeska</div><div class="result-tip">Kairat Almaty Win</div></div>
         <div class="result-score">2 — 1</div>
@@ -1771,10 +1798,10 @@
     if (document.getElementById('calc-winrate')) document.getElementById('calc-winrate').textContent = 'At ' + winPct + '% win rate';
   }
 
-  let liveWinRate = 0.68;
+  let liveWinRate = 0.67;
 
   window.addEventListener('load', () => {
-    const wins = 52, settled = 77;
+    const wins = 55, settled = 82;
     const pct = Math.round((wins / settled) * 100);
     const circumference = 2 * Math.PI * 33;
     const offset = circumference - (pct / 100) * circumference;
