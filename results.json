@@ -1,54 +1,54 @@
 {
-  "date": "2026-07-08",
-  "wins": 52,
-  "losses": 25,
-  "settled": 77,
+  "date": "2026-07-09",
+  "wins": 55,
+  "losses": 27,
+  "settled": 82,
   "pending": 0,
   "tips": [
     {
-      "home": "Kairat Almaty",
-      "away": "Sutjeska",
-      "league": "UEFA Champions League",
-      "verdict": "Kairat Almaty Win",
-      "confidence": "Medium",
-      "score": "2 — 1",
-      "result": "WIN"
-    },
-    {
-      "home": "Flora Tallinn",
-      "away": "Saburtalo",
-      "league": "UEFA Champions League",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "Medium",
-      "score": "2 — 3",
-      "result": "WIN"
-    },
-    {
-      "home": "ML Vitebsk",
-      "away": "Universitatea Craiova",
-      "league": "UEFA Champions League",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "Medium",
-      "score": "1 — 4",
-      "result": "WIN"
-    },
-    {
-      "home": "Petrocub",
-      "away": "Egnatia Rrogozhinë",
-      "league": "UEFA Champions League",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "Medium",
-      "score": "1 — 1",
-      "result": "WIN"
-    },
-    {
-      "home": "Zira",
-      "away": "Torpedo Kutaisi",
-      "league": "UEFA Europa Conference League",
-      "verdict": "Both Teams To Score Yes",
+      "home": "Qarabag",
+      "away": "Vestri",
+      "league": "UEFA Europa League",
+      "verdict": "Over 2.5 Goals",
       "confidence": "Medium",
       "score": "3 — 0",
+      "result": "WIN"
+    },
+    {
+      "home": "Dynamo Kyiv",
+      "away": "Universitatea Cluj",
+      "league": "UEFA Europa League",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "Medium",
+      "score": "0 — 0",
       "result": "LOSS"
+    },
+    {
+      "home": "Sheriff Tiraspol",
+      "away": "Aluminij",
+      "league": "UEFA Europa League",
+      "verdict": "Sheriff Tiraspol Win",
+      "confidence": "Medium",
+      "score": "0 — 0",
+      "result": "LOSS"
+    },
+    {
+      "home": "CSKA Sofia",
+      "away": "Derry City",
+      "league": "UEFA Europa League",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "Medium",
+      "score": "3 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "HNK Hajduk Split",
+      "away": "Žilina",
+      "league": "UEFA Europa League",
+      "verdict": "HNK Hajduk Split Win",
+      "confidence": "Medium",
+      "score": "2 — 0",
+      "result": "WIN"
     }
   ]
 }
