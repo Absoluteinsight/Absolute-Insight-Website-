@@ -602,11 +602,11 @@
 
     <div class="stats-grid">
       <div class="stat-card">
-        <div class="stat-value green" id="stat-wins">55</div>
+        <div class="stat-value green" id="stat-wins">56</div>
         <div class="stat-label">Wins</div>
       </div>
       <div class="stat-card">
-        <div class="stat-value gold" id="stat-tips">82</div>
+        <div class="stat-value gold" id="stat-tips">83</div>
         <div class="stat-label">Tips</div>
       </div>
       <div class="stat-card">
@@ -630,7 +630,7 @@
         <h3>Track Record</h3>
         <p>Every tip published before kickoff. Wins and losses — nothing hidden.</p>
         <div class="winrate-record">
-          <span class="rec-w" id="rec-w">55W</span>
+          <span class="rec-w" id="rec-w">56W</span>
           <span class="rec-l" id="rec-l">27L</span>
         </div>
       </div>
@@ -655,7 +655,14 @@
         <div style="text-align:right">Result</div>
       </div>
 
-                                                                                    <div class="day-divider">📅 Thu 9 Jul 2026</div>
+                                                                                          <div class="day-divider">📅 Fri 10 Jul 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Spain vs Belgium</div><div class="result-tip">Spain Win</div></div>
+        <div class="result-score">2 — 1</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+
+<div class="day-divider">📅 Thu 9 Jul 2026</div>
       <div class="result-row">
         <div><div class="result-match">Qarabag vs Vestri</div><div class="result-tip">Over 2.5 Goals</div></div>
         <div class="result-score">3 — 0</div>
@@ -1801,7 +1808,7 @@
   let liveWinRate = 0.67;
 
   window.addEventListener('load', () => {
-    const wins = 55, settled = 82;
+    const wins = 56, settled = 83;
     const pct = Math.round((wins / settled) * 100);
     const circumference = 2 * Math.PI * 33;
     const offset = circumference - (pct / 100) * circumference;
