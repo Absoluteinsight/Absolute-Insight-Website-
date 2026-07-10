@@ -1,53 +1,17 @@
 {
-  "date": "2026-07-09",
-  "wins": 55,
+  "date": "2026-07-10",
+  "wins": 56,
   "losses": 27,
-  "settled": 82,
+  "settled": 83,
   "pending": 0,
   "tips": [
     {
-      "home": "Qarabag",
-      "away": "Vestri",
-      "league": "UEFA Europa League",
-      "verdict": "Over 2.5 Goals",
+      "home": "Spain",
+      "away": "Belgium",
+      "league": "World Cup",
+      "verdict": "Spain Win",
       "confidence": "Medium",
-      "score": "3 — 0",
-      "result": "WIN"
-    },
-    {
-      "home": "Dynamo Kyiv",
-      "away": "Universitatea Cluj",
-      "league": "UEFA Europa League",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "Medium",
-      "score": "0 — 0",
-      "result": "LOSS"
-    },
-    {
-      "home": "Sheriff Tiraspol",
-      "away": "Aluminij",
-      "league": "UEFA Europa League",
-      "verdict": "Sheriff Tiraspol Win",
-      "confidence": "Medium",
-      "score": "0 — 0",
-      "result": "LOSS"
-    },
-    {
-      "home": "CSKA Sofia",
-      "away": "Derry City",
-      "league": "UEFA Europa League",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "Medium",
-      "score": "3 — 2",
-      "result": "WIN"
-    },
-    {
-      "home": "HNK Hajduk Split",
-      "away": "Žilina",
-      "league": "UEFA Europa League",
-      "verdict": "HNK Hajduk Split Win",
-      "confidence": "Medium",
-      "score": "2 — 0",
+      "score": "2 — 1",
       "result": "WIN"
     }
   ]
