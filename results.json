@@ -1,18 +1,18 @@
 {
-  "date": "2026-07-10",
+  "date": "2026-07-11",
   "wins": 56,
   "losses": 27,
   "settled": 83,
-  "pending": 0,
+  "pending": 1,
   "tips": [
     {
-      "home": "Spain",
-      "away": "Belgium",
+      "home": "Norway",
+      "away": "England",
       "league": "World Cup",
-      "verdict": "Spain Win",
+      "verdict": "Both Teams To Score Yes",
       "confidence": "Medium",
-      "score": "2 — 1",
-      "result": "WIN"
+      "score": "",
+      "result": "PENDING"
     }
   ]
 }
