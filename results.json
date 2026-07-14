@@ -1,18 +1,54 @@
 {
-  "date": "2026-07-11",
-  "wins": 56,
+  "date": "2026-07-14",
+  "wins": 60,
   "losses": 27,
-  "settled": 83,
+  "settled": 87,
   "pending": 1,
   "tips": [
     {
-      "home": "Norway",
-      "away": "England",
-      "league": "World Cup",
-      "verdict": "Both Teams To Score Yes",
+      "home": "KuPS",
+      "away": "Vardar Skopje",
+      "league": "UEFA Champions League",
+      "verdict": "KuPS Win",
       "confidence": "Medium",
       "score": "",
       "result": "PENDING"
+    },
+    {
+      "home": "Saburtalo",
+      "away": "Flora Tallinn",
+      "league": "UEFA Champions League",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "Medium",
+      "score": "2 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Inter Club d'Escaldes",
+      "away": "Lincoln Red Imps FC",
+      "league": "UEFA Champions League",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "Gyori ETO FC",
+      "away": "Vikingur Reykjavik",
+      "league": "UEFA Champions League",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "Medium",
+      "score": "2 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Riga",
+      "away": "Ararat-Armenia",
+      "league": "UEFA Champions League",
+      "verdict": "Riga Win",
+      "confidence": "Medium",
+      "score": "3 — 2",
+      "result": "WIN"
     }
   ]
 }
