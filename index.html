@@ -602,11 +602,11 @@
 
     <div class="stats-grid">
       <div class="stat-card">
-        <div class="stat-value green" id="stat-wins">56</div>
+        <div class="stat-value green" id="stat-wins">60</div>
         <div class="stat-label">Wins</div>
       </div>
       <div class="stat-card">
-        <div class="stat-value gold" id="stat-tips">83</div>
+        <div class="stat-value gold" id="stat-tips">87</div>
         <div class="stat-label">Tips</div>
       </div>
       <div class="stat-card">
@@ -630,7 +630,7 @@
         <h3>Track Record</h3>
         <p>Every tip published before kickoff. Wins and losses — nothing hidden.</p>
         <div class="winrate-record">
-          <span class="rec-w" id="rec-w">56W</span>
+          <span class="rec-w" id="rec-w">60W</span>
           <span class="rec-l" id="rec-l">27L</span>
         </div>
       </div>
@@ -655,7 +655,29 @@
         <div style="text-align:right">Result</div>
       </div>
 
-                                                                                                <div class="day-divider">📅 Sat 11 Jul 2026</div>
+                                                                                                      <div class="day-divider">📅 Tue 14 Jul 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Saburtalo vs Flora Tallinn</div><div class="result-tip">Both Teams To Score Yes</div></div>
+        <div class="result-score">2 — 2</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Inter Club d'Escaldes vs Lincoln Red Imps FC</div><div class="result-tip">Both Teams To Score Yes</div></div>
+        <div class="result-score">1 — 1</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Gyori ETO FC vs Vikingur Reykjavik</div><div class="result-tip">Over 2.5 Goals</div></div>
+        <div class="result-score">2 — 2</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Riga vs Ararat-Armenia</div><div class="result-tip">Riga Win</div></div>
+        <div class="result-score">3 — 2</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+
+<div class="day-divider">📅 Sat 11 Jul 2026</div>
 
 <div class="day-divider">📅 Fri 10 Jul 2026</div>
       <div class="result-row">
@@ -1807,10 +1829,10 @@
     if (document.getElementById('calc-winrate')) document.getElementById('calc-winrate').textContent = 'At ' + winPct + '% win rate';
   }
 
-  let liveWinRate = 0.67;
+  let liveWinRate = 0.69;
 
   window.addEventListener('load', () => {
-    const wins = 56, settled = 83;
+    const wins = 60, settled = 87;
     const pct = Math.round((wins / settled) * 100);
     const circumference = 2 * Math.PI * 33;
     const offset = circumference - (pct / 100) * circumference;
