@@ -1,53 +1,53 @@
 {
-  "date": "2026-07-14",
-  "wins": 60,
-  "losses": 27,
-  "settled": 87,
-  "pending": 1,
+  "date": "2026-07-15",
+  "wins": 63,
+  "losses": 29,
+  "settled": 92,
+  "pending": 0,
   "tips": [
     {
-      "home": "KuPS",
-      "away": "Vardar Skopje",
-      "league": "UEFA Champions League",
-      "verdict": "KuPS Win",
-      "confidence": "Medium",
-      "score": "",
-      "result": "PENDING"
-    },
-    {
-      "home": "Saburtalo",
-      "away": "Flora Tallinn",
+      "home": "Universitatea Craiova",
+      "away": "ML Vitebsk",
       "league": "UEFA Champions League",
       "verdict": "Both Teams To Score Yes",
       "confidence": "Medium",
-      "score": "2 — 2",
-      "result": "WIN"
+      "score": "1 — 0",
+      "result": "LOSS"
     },
     {
-      "home": "Inter Club d'Escaldes",
-      "away": "Lincoln Red Imps FC",
+      "home": "Atert Bissen",
+      "away": "KI Klaksvik",
       "league": "UEFA Champions League",
       "verdict": "Both Teams To Score Yes",
       "confidence": "Medium",
-      "score": "1 — 1",
+      "score": "1 — 2",
       "result": "WIN"
     },
     {
-      "home": "Gyori ETO FC",
-      "away": "Vikingur Reykjavik",
+      "home": "Egnatia Rrogozhinë",
+      "away": "Petrocub",
+      "league": "UEFA Champions League",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "Medium",
+      "score": "6 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "Sutjeska",
+      "away": "Kairat Almaty",
       "league": "UEFA Champions League",
       "verdict": "Over 2.5 Goals",
       "confidence": "Medium",
-      "score": "2 — 2",
-      "result": "WIN"
+      "score": "0 — 2",
+      "result": "LOSS"
     },
     {
-      "home": "Riga",
-      "away": "Ararat-Armenia",
-      "league": "UEFA Champions League",
-      "verdict": "Riga Win",
+      "home": "England",
+      "away": "Argentina",
+      "league": "World Cup",
+      "verdict": "Both Teams To Score Yes",
       "confidence": "Medium",
-      "score": "3 — 2",
+      "score": "1 — 2",
       "result": "WIN"
     }
   ]
