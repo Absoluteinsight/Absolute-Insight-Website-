@@ -1,54 +1,54 @@
 {
-  "date": "2026-07-15",
-  "wins": 63,
+  "date": "2026-07-16",
+  "wins": 65,
   "losses": 29,
-  "settled": 92,
-  "pending": 0,
+  "settled": 94,
+  "pending": 1,
   "tips": [
     {
-      "home": "Universitatea Craiova",
-      "away": "ML Vitebsk",
-      "league": "UEFA Champions League",
+      "home": "Botafogo",
+      "away": "Santos",
+      "league": "Brazilian Serie A",
       "verdict": "Both Teams To Score Yes",
-      "confidence": "Medium",
+      "confidence": "High",
       "score": "1 — 0",
       "result": "LOSS"
     },
     {
-      "home": "Atert Bissen",
-      "away": "KI Klaksvik",
-      "league": "UEFA Champions League",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "Medium",
-      "score": "1 — 2",
-      "result": "WIN"
-    },
-    {
-      "home": "Egnatia Rrogozhinë",
-      "away": "Petrocub",
-      "league": "UEFA Champions League",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "Medium",
-      "score": "6 — 1",
-      "result": "WIN"
-    },
-    {
-      "home": "Sutjeska",
-      "away": "Kairat Almaty",
-      "league": "UEFA Champions League",
+      "home": "Derry City",
+      "away": "CSKA Sofia",
+      "league": "UEFA Europa League",
       "verdict": "Over 2.5 Goals",
       "confidence": "Medium",
-      "score": "0 — 2",
-      "result": "LOSS"
-    },
-    {
-      "home": "England",
-      "away": "Argentina",
-      "league": "World Cup",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "Medium",
       "score": "1 — 2",
       "result": "WIN"
+    },
+    {
+      "home": "Universitatea Cluj",
+      "away": "Dynamo Kyiv",
+      "league": "UEFA Europa League",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Ferencvarosi TC",
+      "away": "Vojvodina",
+      "league": "UEFA Europa League",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "Medium",
+      "score": "3 — 0",
+      "result": "WIN"
+    },
+    {
+      "home": "Žilina",
+      "away": "HNK Hajduk Split",
+      "league": "UEFA Europa League",
+      "verdict": "HNK Hajduk Split Win",
+      "confidence": "Medium",
+      "score": "2 — 1",
+      "result": "LOSS"
     }
   ]
 }
