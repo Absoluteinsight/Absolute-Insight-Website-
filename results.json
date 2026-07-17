@@ -1,54 +1,18 @@
 {
-  "date": "2026-07-16",
-  "wins": 65,
-  "losses": 29,
-  "settled": 94,
+  "date": "2026-07-17",
+  "wins": 66,
+  "losses": 31,
+  "settled": 97,
   "pending": 1,
   "tips": [
     {
-      "home": "Botafogo",
-      "away": "Santos",
+      "home": "Bahia",
+      "away": "Chapecoense-sc",
       "league": "Brazilian Serie A",
       "verdict": "Both Teams To Score Yes",
       "confidence": "High",
-      "score": "1 — 0",
-      "result": "LOSS"
-    },
-    {
-      "home": "Derry City",
-      "away": "CSKA Sofia",
-      "league": "UEFA Europa League",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "Medium",
-      "score": "1 — 2",
-      "result": "WIN"
-    },
-    {
-      "home": "Universitatea Cluj",
-      "away": "Dynamo Kyiv",
-      "league": "UEFA Europa League",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "Medium",
       "score": "",
       "result": "PENDING"
-    },
-    {
-      "home": "Ferencvarosi TC",
-      "away": "Vojvodina",
-      "league": "UEFA Europa League",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "Medium",
-      "score": "3 — 0",
-      "result": "WIN"
-    },
-    {
-      "home": "Žilina",
-      "away": "HNK Hajduk Split",
-      "league": "UEFA Europa League",
-      "verdict": "HNK Hajduk Split Win",
-      "confidence": "Medium",
-      "score": "2 — 1",
-      "result": "LOSS"
     }
   ]
 }
