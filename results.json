@@ -1,16 +1,16 @@
 {
-  "date": "2026-07-17",
+  "date": "2026-07-18",
   "wins": 66,
   "losses": 31,
   "settled": 97,
   "pending": 1,
   "tips": [
     {
-      "home": "Bahia",
-      "away": "Chapecoense-sc",
-      "league": "Brazilian Serie A",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "High",
+      "home": "France",
+      "away": "England",
+      "league": "World Cup",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "Medium",
       "score": "",
       "result": "PENDING"
     }
