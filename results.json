@@ -1,13 +1,13 @@
 {
-  "date": "2026-07-18",
+  "date": "2026-07-19",
   "wins": 66,
   "losses": 31,
   "settled": 97,
   "pending": 1,
   "tips": [
     {
-      "home": "France",
-      "away": "England",
+      "home": "Spain",
+      "away": "Argentina",
       "league": "World Cup",
       "verdict": "Over 2.5 Goals",
       "confidence": "Medium",
