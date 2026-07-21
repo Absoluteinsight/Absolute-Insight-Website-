@@ -602,11 +602,11 @@
 
     <div class="stats-grid">
       <div class="stat-card">
-        <div class="stat-value green" id="stat-wins">66</div>
+        <div class="stat-value green" id="stat-wins">67</div>
         <div class="stat-label">Wins</div>
       </div>
       <div class="stat-card">
-        <div class="stat-value gold" id="stat-tips">97</div>
+        <div class="stat-value gold" id="stat-tips">102</div>
         <div class="stat-label">Tips</div>
       </div>
       <div class="stat-card">
@@ -630,8 +630,8 @@
         <h3>Track Record</h3>
         <p>Every tip published before kickoff. Wins and losses — nothing hidden.</p>
         <div class="winrate-record">
-          <span class="rec-w" id="rec-w">66W</span>
-          <span class="rec-l" id="rec-l">31L</span>
+          <span class="rec-w" id="rec-w">67W</span>
+          <span class="rec-l" id="rec-l">35L</span>
         </div>
       </div>
     </div>
@@ -655,7 +655,34 @@
         <div style="text-align:right">Result</div>
       </div>
 
-                                                                                                                                    <div class="day-divider">📅 Sun 19 Jul 2026</div>
+                                                                                                                                          <div class="day-divider">📅 Tue 21 Jul 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Ararat-Armenia vs Shamrock Rovers</div><div class="result-tip">Both Teams To Score Yes</div></div>
+        <div class="result-score">2 — 0</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Saburtalo vs Slovan Bratislava</div><div class="result-tip">Both Teams To Score Yes</div></div>
+        <div class="result-score">0 — 2</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Mjallby AIF vs Lincoln Red Imps FC</div><div class="result-tip">Both Teams To Score Yes</div></div>
+        <div class="result-score">3 — 0</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Sabah FA vs KuPS</div><div class="result-tip">Both Teams To Score Yes</div></div>
+        <div class="result-score">1 — 0</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Aarhus vs Lech Poznan</div><div class="result-tip">Both Teams To Score Yes</div></div>
+        <div class="result-score">1 — 4</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+
+<div class="day-divider">📅 Sun 19 Jul 2026</div>
 
 <div class="day-divider">📅 Sat 18 Jul 2026</div>
 
@@ -1889,10 +1916,10 @@
     if (document.getElementById('calc-winrate')) document.getElementById('calc-winrate').textContent = 'At ' + winPct + '% win rate';
   }
 
-  let liveWinRate = 0.68;
+  let liveWinRate = 0.66;
 
   window.addEventListener('load', () => {
-    const wins = 66, settled = 97;
+    const wins = 67, settled = 102;
     const pct = Math.round((wins / settled) * 100);
     const circumference = 2 * Math.PI * 33;
     const offset = circumference - (pct / 100) * circumference;
