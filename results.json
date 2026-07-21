@@ -1,18 +1,54 @@
 {
-  "date": "2026-07-19",
-  "wins": 66,
-  "losses": 31,
-  "settled": 97,
-  "pending": 1,
+  "date": "2026-07-21",
+  "wins": 67,
+  "losses": 35,
+  "settled": 102,
+  "pending": 0,
   "tips": [
     {
-      "home": "Spain",
-      "away": "Argentina",
-      "league": "World Cup",
-      "verdict": "Over 2.5 Goals",
+      "home": "Ararat-Armenia",
+      "away": "Shamrock Rovers",
+      "league": "UEFA Champions League",
+      "verdict": "Both Teams To Score Yes",
       "confidence": "Medium",
-      "score": "",
-      "result": "PENDING"
+      "score": "2 — 0",
+      "result": "LOSS"
+    },
+    {
+      "home": "Saburtalo",
+      "away": "Slovan Bratislava",
+      "league": "UEFA Champions League",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "Medium",
+      "score": "0 — 2",
+      "result": "LOSS"
+    },
+    {
+      "home": "Mjallby AIF",
+      "away": "Lincoln Red Imps FC",
+      "league": "UEFA Champions League",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "Medium",
+      "score": "3 — 0",
+      "result": "LOSS"
+    },
+    {
+      "home": "Sabah FA",
+      "away": "KuPS",
+      "league": "UEFA Champions League",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "Medium",
+      "score": "1 — 0",
+      "result": "LOSS"
+    },
+    {
+      "home": "Aarhus",
+      "away": "Lech Poznan",
+      "league": "UEFA Champions League",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "Medium",
+      "score": "1 — 4",
+      "result": "WIN"
     }
   ]
 }
