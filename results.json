@@ -1,40 +1,22 @@
 {
-  "date": "2026-07-21",
-  "wins": 67,
-  "losses": 35,
-  "settled": 102,
+  "date": "2026-07-22",
+  "wins": 70,
+  "losses": 37,
+  "settled": 107,
   "pending": 0,
   "tips": [
     {
-      "home": "Ararat-Armenia",
-      "away": "Shamrock Rovers",
+      "home": "Omonia Nicosia",
+      "away": "Kairat Almaty",
       "league": "UEFA Champions League",
-      "verdict": "Both Teams To Score Yes",
+      "verdict": "Over 2.5 Goals",
       "confidence": "Medium",
-      "score": "2 — 0",
+      "score": "1 — 0",
       "result": "LOSS"
     },
     {
-      "home": "Saburtalo",
-      "away": "Slovan Bratislava",
-      "league": "UEFA Champions League",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "Medium",
-      "score": "0 — 2",
-      "result": "LOSS"
-    },
-    {
-      "home": "Mjallby AIF",
-      "away": "Lincoln Red Imps FC",
-      "league": "UEFA Champions League",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "Medium",
-      "score": "3 — 0",
-      "result": "LOSS"
-    },
-    {
-      "home": "Sabah FA",
-      "away": "KuPS",
+      "home": "Levski Sofia",
+      "away": "Universitatea Craiova",
       "league": "UEFA Champions League",
       "verdict": "Both Teams To Score Yes",
       "confidence": "Medium",
@@ -42,12 +24,30 @@
       "result": "LOSS"
     },
     {
-      "home": "Aarhus",
-      "away": "Lech Poznan",
+      "home": "Egnatia Rrogozhinë",
+      "away": "Celje",
       "league": "UEFA Champions League",
       "verdict": "Both Teams To Score Yes",
       "confidence": "Medium",
-      "score": "1 — 4",
+      "score": "3 — 3",
+      "result": "WIN"
+    },
+    {
+      "home": "Bohemians",
+      "away": "Ballkani",
+      "league": "UEFA Europa Conference League",
+      "verdict": "Bohemians Win",
+      "confidence": "Medium",
+      "score": "2 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "Başakşehir",
+      "away": "Inter Turku",
+      "league": "UEFA Europa Conference League",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
       "result": "WIN"
     }
   ]
