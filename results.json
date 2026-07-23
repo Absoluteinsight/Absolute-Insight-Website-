@@ -1,53 +1,53 @@
 {
-  "date": "2026-07-22",
-  "wins": 70,
-  "losses": 37,
-  "settled": 107,
-  "pending": 0,
+  "date": "2026-07-23",
+  "wins": 71,
+  "losses": 40,
+  "settled": 111,
+  "pending": 1,
   "tips": [
     {
-      "home": "Omonia Nicosia",
-      "away": "Kairat Almaty",
-      "league": "UEFA Champions League",
+      "home": "Qarabag",
+      "away": "CSKA Sofia",
+      "league": "UEFA Europa League",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "High",
+      "score": "0 — 0",
+      "result": "LOSS"
+    },
+    {
+      "home": "Botafogo",
+      "away": "Vitoria",
+      "league": "Brazilian Serie A",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "High",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Hammarby FF",
+      "away": "Anderlecht",
+      "league": "UEFA Europa League",
       "verdict": "Over 2.5 Goals",
       "confidence": "Medium",
-      "score": "1 — 0",
-      "result": "LOSS"
-    },
-    {
-      "home": "Levski Sofia",
-      "away": "Universitatea Craiova",
-      "league": "UEFA Champions League",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "Medium",
-      "score": "1 — 0",
-      "result": "LOSS"
-    },
-    {
-      "home": "Egnatia Rrogozhinë",
-      "away": "Celje",
-      "league": "UEFA Champions League",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "Medium",
-      "score": "3 — 3",
-      "result": "WIN"
-    },
-    {
-      "home": "Bohemians",
-      "away": "Ballkani",
-      "league": "UEFA Europa Conference League",
-      "verdict": "Bohemians Win",
-      "confidence": "Medium",
-      "score": "2 — 1",
-      "result": "WIN"
-    },
-    {
-      "home": "Başakşehir",
-      "away": "Inter Turku",
-      "league": "UEFA Europa Conference League",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "Medium",
       "score": "1 — 1",
+      "result": "LOSS"
+    },
+    {
+      "home": "Tromso",
+      "away": "Hradec Králové",
+      "league": "UEFA Europa League",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "Medium",
+      "score": "0 — 1",
+      "result": "LOSS"
+    },
+    {
+      "home": "Dynamo Kyiv",
+      "away": "PAOK",
+      "league": "UEFA Europa League",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "Medium",
+      "score": "2 — 3",
       "result": "WIN"
     }
   ]
