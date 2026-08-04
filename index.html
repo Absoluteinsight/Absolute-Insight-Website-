@@ -602,11 +602,11 @@
 
     <div class="stats-grid">
       <div class="stat-card">
-        <div class="stat-value green" id="stat-wins">72</div>
+        <div class="stat-value green" id="stat-wins">74</div>
         <div class="stat-label">Wins</div>
       </div>
       <div class="stat-card">
-        <div class="stat-value gold" id="stat-tips">113</div>
+        <div class="stat-value gold" id="stat-tips">117</div>
         <div class="stat-label">Tips</div>
       </div>
       <div class="stat-card">
@@ -630,8 +630,8 @@
         <h3>Track Record</h3>
         <p>Every tip published before kickoff. Wins and losses — nothing hidden.</p>
         <div class="winrate-record">
-          <span class="rec-w" id="rec-w">72W</span>
-          <span class="rec-l" id="rec-l">41L</span>
+          <span class="rec-w" id="rec-w">74W</span>
+          <span class="rec-l" id="rec-l">43L</span>
         </div>
       </div>
     </div>
@@ -655,7 +655,29 @@
         <div style="text-align:right">Result</div>
       </div>
 
-                                                                                                                                                            <div class="day-divider">📅 Mon 3 Aug 2026</div>
+                                                                                                                                                                  <div class="day-divider">📅 Tue 4 Aug 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Levski Sofia vs Kairat Almaty</div><div class="result-tip">Levski Sofia Win</div></div>
+        <div class="result-score">1 — 0</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Olympiakos Piraeus vs NEC Nijmegen</div><div class="result-tip">Olympiakos Piraeus Win</div></div>
+        <div class="result-score">0 — 0</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Dinamo Zagreb vs Kauno Žalgiris</div><div class="result-tip">Dinamo Zagreb Win</div></div>
+        <div class="result-score">5 — 0</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Sparta Praha vs Lyon</div><div class="result-tip">Lyon Win</div></div>
+        <div class="result-score">2 — 1</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+
+<div class="day-divider">📅 Mon 3 Aug 2026</div>
       <div class="result-row">
         <div><div class="result-match">Celtic vs Dundee</div><div class="result-tip">Celtic Win</div></div>
         <div class="result-score">1 — 0</div>
@@ -1977,10 +1999,10 @@
     if (document.getElementById('calc-winrate')) document.getElementById('calc-winrate').textContent = 'At ' + winPct + '% win rate';
   }
 
-  let liveWinRate = 0.64;
+  let liveWinRate = 0.63;
 
   window.addEventListener('load', () => {
-    const wins = 72, settled = 113;
+    const wins = 74, settled = 117;
     const pct = Math.round((wins / settled) * 100);
     const circumference = 2 * Math.PI * 33;
     const offset = circumference - (pct / 100) * circumference;
