@@ -602,11 +602,11 @@
 
     <div class="stats-grid">
       <div class="stat-card">
-        <div class="stat-value green" id="stat-wins">74</div>
+        <div class="stat-value green" id="stat-wins">76</div>
         <div class="stat-label">Wins</div>
       </div>
       <div class="stat-card">
-        <div class="stat-value gold" id="stat-tips">117</div>
+        <div class="stat-value gold" id="stat-tips">119</div>
         <div class="stat-label">Tips</div>
       </div>
       <div class="stat-card">
@@ -630,7 +630,7 @@
         <h3>Track Record</h3>
         <p>Every tip published before kickoff. Wins and losses — nothing hidden.</p>
         <div class="winrate-record">
-          <span class="rec-w" id="rec-w">74W</span>
+          <span class="rec-w" id="rec-w">76W</span>
           <span class="rec-l" id="rec-l">43L</span>
         </div>
       </div>
@@ -655,7 +655,19 @@
         <div style="text-align:right">Result</div>
       </div>
 
-                                                                                                                                                                  <div class="day-divider">📅 Tue 4 Aug 2026</div>
+                                                                                                                                                                        <div class="day-divider">📅 Wed 5 Aug 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Aarhus vs Sabah FA</div><div class="result-tip">Aarhus Win</div></div>
+        <div class="result-score">2 — 1</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Fenerbahçe vs Sturm Graz</div><div class="result-tip">Fenerbahçe Win</div></div>
+        <div class="result-score">2 — 0</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+
+<div class="day-divider">📅 Tue 4 Aug 2026</div>
       <div class="result-row">
         <div><div class="result-match">Levski Sofia vs Kairat Almaty</div><div class="result-tip">Levski Sofia Win</div></div>
         <div class="result-score">1 — 0</div>
@@ -1999,10 +2011,10 @@
     if (document.getElementById('calc-winrate')) document.getElementById('calc-winrate').textContent = 'At ' + winPct + '% win rate';
   }
 
-  let liveWinRate = 0.63;
+  let liveWinRate = 0.64;
 
   window.addEventListener('load', () => {
-    const wins = 74, settled = 117;
+    const wins = 76, settled = 119;
     const pct = Math.round((wins / settled) * 100);
     const circumference = 2 * Math.PI * 33;
     const offset = circumference - (pct / 100) * circumference;
