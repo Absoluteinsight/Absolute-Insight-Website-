@@ -1,45 +1,27 @@
 {
-  "date": "2026-08-04",
-  "wins": 74,
+  "date": "2026-08-05",
+  "wins": 76,
   "losses": 43,
-  "settled": 117,
+  "settled": 119,
   "pending": 0,
   "tips": [
     {
-      "home": "Levski Sofia",
-      "away": "Kairat Almaty",
+      "home": "Aarhus",
+      "away": "Sabah FA",
       "league": "UEFA Champions League",
-      "verdict": "Levski Sofia Win",
+      "verdict": "Aarhus Win",
       "confidence": "Medium",
-      "score": "1 — 0",
-      "result": "WIN"
-    },
-    {
-      "home": "Olympiakos Piraeus",
-      "away": "NEC Nijmegen",
-      "league": "UEFA Champions League",
-      "verdict": "Olympiakos Piraeus Win",
-      "confidence": "Medium",
-      "score": "0 — 0",
-      "result": "LOSS"
-    },
-    {
-      "home": "Dinamo Zagreb",
-      "away": "Kauno Žalgiris",
-      "league": "UEFA Champions League",
-      "verdict": "Dinamo Zagreb Win",
-      "confidence": "Medium",
-      "score": "5 — 0",
-      "result": "WIN"
-    },
-    {
-      "home": "Sparta Praha",
-      "away": "Lyon",
-      "league": "UEFA Champions League",
-      "verdict": "Lyon Win",
-      "confidence": "Low",
       "score": "2 — 1",
-      "result": "LOSS"
+      "result": "WIN"
+    },
+    {
+      "home": "Fenerbahçe",
+      "away": "Sturm Graz",
+      "league": "UEFA Champions League",
+      "verdict": "Fenerbahçe Win",
+      "confidence": "Medium",
+      "score": "2 — 0",
+      "result": "WIN"
     }
   ]
 }
