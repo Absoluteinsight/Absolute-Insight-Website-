@@ -606,7 +606,7 @@
         <div class="stat-label">Wins</div>
       </div>
       <div class="stat-card">
-        <div class="stat-value gold" id="stat-tips">119</div>
+        <div class="stat-value gold" id="stat-tips">120</div>
         <div class="stat-label">Tips</div>
       </div>
       <div class="stat-card">
@@ -631,7 +631,7 @@
         <p>Every tip published before kickoff. Wins and losses — nothing hidden.</p>
         <div class="winrate-record">
           <span class="rec-w" id="rec-w">76W</span>
-          <span class="rec-l" id="rec-l">43L</span>
+          <span class="rec-l" id="rec-l">44L</span>
         </div>
       </div>
     </div>
@@ -655,7 +655,14 @@
         <div style="text-align:right">Result</div>
       </div>
 
-                                                                                                                                                                        <div class="day-divider">📅 Wed 5 Aug 2026</div>
+                                                                                                                                                                              <div class="day-divider">📅 Thu 6 Aug 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Bristol City vs Walsall</div><div class="result-tip">Bristol City Win</div></div>
+        <div class="result-score">0 — 1</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+
+<div class="day-divider">📅 Wed 5 Aug 2026</div>
       <div class="result-row">
         <div><div class="result-match">Aarhus vs Sabah FA</div><div class="result-tip">Aarhus Win</div></div>
         <div class="result-score">2 — 1</div>
@@ -2011,10 +2018,10 @@
     if (document.getElementById('calc-winrate')) document.getElementById('calc-winrate').textContent = 'At ' + winPct + '% win rate';
   }
 
-  let liveWinRate = 0.64;
+  let liveWinRate = 0.63;
 
   window.addEventListener('load', () => {
-    const wins = 76, settled = 119;
+    const wins = 76, settled = 120;
     const pct = Math.round((wins / settled) * 100);
     const circumference = 2 * Math.PI * 33;
     const offset = circumference - (pct / 100) * circumference;
