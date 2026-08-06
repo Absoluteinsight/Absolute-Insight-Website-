@@ -1,27 +1,18 @@
 {
-  "date": "2026-08-05",
+  "date": "2026-08-06",
   "wins": 76,
-  "losses": 43,
-  "settled": 119,
+  "losses": 44,
+  "settled": 120,
   "pending": 0,
   "tips": [
     {
-      "home": "Aarhus",
-      "away": "Sabah FA",
-      "league": "UEFA Champions League",
-      "verdict": "Aarhus Win",
+      "home": "Bristol City",
+      "away": "Walsall",
+      "league": "League Cup",
+      "verdict": "Bristol City Win",
       "confidence": "Medium",
-      "score": "2 — 1",
-      "result": "WIN"
-    },
-    {
-      "home": "Fenerbahçe",
-      "away": "Sturm Graz",
-      "league": "UEFA Champions League",
-      "verdict": "Fenerbahçe Win",
-      "confidence": "Medium",
-      "score": "2 — 0",
-      "result": "WIN"
+      "score": "0 — 1",
+      "result": "LOSS"
     }
   ]
 }
