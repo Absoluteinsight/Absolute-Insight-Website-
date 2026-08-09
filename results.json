@@ -1,18 +1,18 @@
 {
-  "date": "2026-08-06",
-  "wins": 76,
+  "date": "2026-08-09",
+  "wins": 77,
   "losses": 44,
-  "settled": 120,
+  "settled": 121,
   "pending": 0,
   "tips": [
     {
-      "home": "Bristol City",
-      "away": "Walsall",
-      "league": "League Cup",
-      "verdict": "Bristol City Win",
+      "home": "Sparta Rotterdam",
+      "away": "Feyenoord",
+      "league": "Eredivisie",
+      "verdict": "Feyenoord Win",
       "confidence": "Medium",
       "score": "0 — 1",
-      "result": "LOSS"
+      "result": "WIN"
     }
   ]
 }
