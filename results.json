@@ -1,18 +1,27 @@
 {
-  "date": "2026-08-09",
-  "wins": 77,
-  "losses": 44,
-  "settled": 121,
+  "date": "2026-08-10",
+  "wins": 78,
+  "losses": 45,
+  "settled": 123,
   "pending": 0,
   "tips": [
     {
-      "home": "Sparta Rotterdam",
-      "away": "Feyenoord",
-      "league": "Eredivisie",
-      "verdict": "Feyenoord Win",
+      "home": "Plymouth",
+      "away": "Exeter City",
+      "league": "League Cup",
+      "verdict": "Plymouth Win",
       "confidence": "Medium",
-      "score": "0 — 1",
+      "score": "2 — 0",
       "result": "WIN"
+    },
+    {
+      "home": "Santa Clara",
+      "away": "Nacional",
+      "league": "Primeira Liga",
+      "verdict": "Santa Clara Win",
+      "confidence": "Medium",
+      "score": "2 — 2",
+      "result": "LOSS"
     }
   ]
 }
