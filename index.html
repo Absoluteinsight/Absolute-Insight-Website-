@@ -602,11 +602,11 @@
 
     <div class="stats-grid">
       <div class="stat-card">
-        <div class="stat-value green" id="stat-wins">78</div>
+        <div class="stat-value green" id="stat-wins">81</div>
         <div class="stat-label">Wins</div>
       </div>
       <div class="stat-card">
-        <div class="stat-value gold" id="stat-tips">123</div>
+        <div class="stat-value gold" id="stat-tips">126</div>
         <div class="stat-label">Tips</div>
       </div>
       <div class="stat-card">
@@ -630,7 +630,7 @@
         <h3>Track Record</h3>
         <p>Every tip published before kickoff. Wins and losses — nothing hidden.</p>
         <div class="winrate-record">
-          <span class="rec-w" id="rec-w">78W</span>
+          <span class="rec-w" id="rec-w">81W</span>
           <span class="rec-l" id="rec-l">45L</span>
         </div>
       </div>
@@ -655,7 +655,24 @@
         <div style="text-align:right">Result</div>
       </div>
 
-                                                                                                                                                                                          <div class="day-divider">📅 Mon 10 Aug 2026</div>
+                                                                                                                                                                                                <div class="day-divider">📅 Tue 11 Aug 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Sabah FA vs Aarhus</div><div class="result-tip">Sabah FA Win</div></div>
+        <div class="result-score">4 — 0</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Kauno Žalgiris vs Dinamo Zagreb</div><div class="result-tip">Dinamo Zagreb Win</div></div>
+        <div class="result-score">1 — 2</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Celje vs Ararat-Armenia</div><div class="result-tip">Celje Win</div></div>
+        <div class="result-score">2 — 0</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+
+<div class="day-divider">📅 Mon 10 Aug 2026</div>
       <div class="result-row">
         <div><div class="result-match">Plymouth vs Exeter City</div><div class="result-tip">Plymouth Win</div></div>
         <div class="result-score">2 — 0</div>
@@ -2037,10 +2054,10 @@
     if (document.getElementById('calc-winrate')) document.getElementById('calc-winrate').textContent = 'At ' + winPct + '% win rate';
   }
 
-  let liveWinRate = 0.63;
+  let liveWinRate = 0.64;
 
   window.addEventListener('load', () => {
-    const wins = 78, settled = 123;
+    const wins = 81, settled = 126;
     const pct = Math.round((wins / settled) * 100);
     const circumference = 2 * Math.PI * 33;
     const offset = circumference - (pct / 100) * circumference;
