@@ -1,27 +1,36 @@
 {
-  "date": "2026-08-10",
-  "wins": 78,
+  "date": "2026-08-11",
+  "wins": 81,
   "losses": 45,
-  "settled": 123,
+  "settled": 126,
   "pending": 0,
   "tips": [
     {
-      "home": "Plymouth",
-      "away": "Exeter City",
-      "league": "League Cup",
-      "verdict": "Plymouth Win",
+      "home": "Sabah FA",
+      "away": "Aarhus",
+      "league": "UEFA Champions League",
+      "verdict": "Sabah FA Win",
       "confidence": "Medium",
-      "score": "2 — 0",
+      "score": "4 — 0",
       "result": "WIN"
     },
     {
-      "home": "Santa Clara",
-      "away": "Nacional",
-      "league": "Primeira Liga",
-      "verdict": "Santa Clara Win",
+      "home": "Kauno Žalgiris",
+      "away": "Dinamo Zagreb",
+      "league": "UEFA Champions League",
+      "verdict": "Dinamo Zagreb Win",
       "confidence": "Medium",
-      "score": "2 — 2",
-      "result": "LOSS"
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Celje",
+      "away": "Ararat-Armenia",
+      "league": "UEFA Champions League",
+      "verdict": "Celje Win",
+      "confidence": "Medium",
+      "score": "2 — 0",
+      "result": "WIN"
     }
   ]
 }
