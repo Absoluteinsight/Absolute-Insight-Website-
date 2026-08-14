@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Welcome to VIP — Absolute Insight</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family:'DM Sans',sans-serif;
+    background:#1a1a2e;
+    color:#fff;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:24px;
+  }
+  .card {
+    max-width:420px;
+    width:100%;
+    text-align:center;
+  }
+  .logo-img { width:220px; border-radius:16px; margin-bottom:24px; }
+  h1 {
+    font-family:'Bebas Neue',sans-serif;
+    font-size:36px;
+    letter-spacing:0.5px;
+    color:#F5C518;
+    margin-bottom:12px;
+  }
+  p { font-size:15px; line-height:1.5; color:rgba(255,255,255,0.75); margin-bottom:28px; }
+  .btn {
+    display:inline-block;
+    background:#2B5CE6;
+    color:#fff;
+    font-family:'Montserrat',sans-serif;
+    font-weight:700;
+    font-size:16px;
+    text-decoration:none;
+    padding:16px 40px;
+    border-radius:12px;
+    box-shadow:0 4px 20px rgba(43,92,230,0.4);
+  }
+  .btn:active { transform:scale(0.98); }
+  .spinner {
+    width:32px; height:32px;
+    border:3px solid rgba(255,255,255,0.15);
+    border-top-color:#F5C518;
+    border-radius:50%;
+    margin:0 auto 20px;
+    animation:spin 0.8s linear infinite;
+  }
+  @keyframes spin { to { transform:rotate(360deg); } }
+  .error { color:#ff6b6b; font-size:14px; margin-top:16px; }
+  .disclaimer { font-size:11px; color:rgba(255,255,255,0.35); margin-top:32px; line-height:1.5; }
+</style>
+</head>
+<body>
+<div class="card">
+  <img class="logo-img" src="logo-vip.png" alt="Absolute Insight VIP">
+
+  <div id="loading-state">
+    <div class="spinner"></div>
+    <h1>Setting up your VIP access...</h1>
+    <p>This only takes a second.</p>
+  </div>
+
+  <div id="success-state" style="display:none;">
+    <h1>You're in! 🎉</h1>
+    <p>Tap below to join the VIP Telegram channel. This link is single-use and just for you.</p>
+    <a id="join-link" class="btn" href="#">Join VIP Channel</a>
+  </div>
+
+  <div id="error-state" style="display:none;">
+    <h1>Almost there</h1>
+    <p>We couldn't verify your payment automatically just yet — this can take a minute. Message <strong>@AbsoluteInsightSupport_bot</strong> and we'll get you added right away.</p>
+  </div>
+
+  <div class="disclaimer">18+ Please gamble responsibly. For entertainment only.</div>
+</div>
+
+<script>
+  const BOT_ENDPOINT = 'https://absolute-insights-bot-production.up.railway.app/generate-invite';
+
+  function getSessionId() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('session_id');
+  }
+
+  function show(stateId) {
+    ['loading-state', 'success-state', 'error-state'].forEach(id => {
+      document.getElementById(id).style.display = id === stateId ? 'block' : 'none';
+    });
+  }
+
+  async function init() {
+    const sessionId = getSessionId();
+    if (!sessionId) { show('error-state'); return; }
+
+    try {
+      const res = await fetch(`${BOT_ENDPOINT}?session_id=${encodeURIComponent(sessionId)}`);
+      const data = await res.json();
+      if (data.inviteLink) {
+        document.getElementById('join-link').href = data.inviteLink;
+        show('success-state');
+      } else {
+        show('error-state');
+      }
+    } catch (err) {
+      show('error-state');
+    }
+  }
+
+  init();
+</script>
+</body>
+</html>
