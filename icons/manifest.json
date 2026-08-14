@@ -1,0 +1,37 @@
+{
+  "name": "Absolute Insight \u2014 Football Tips",
+  "short_name": "Absolute Insight",
+  "description": "AI analysis and bookmakers odds backed football tips. Up to 5 daily picks, transparent results, BTTS, Over 2.5, and full match analysis.",
+  "start_url": "/Absolute-Insight-Website-/",
+  "scope": "/Absolute-Insight-Website-/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1A2E9E",
+  "theme_color": "#1A2E9E",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
