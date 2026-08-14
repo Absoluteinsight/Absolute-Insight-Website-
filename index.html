@@ -602,11 +602,11 @@
 
     <div class="stats-grid">
       <div class="stat-card">
-        <div class="stat-value green" id="stat-wins">81</div>
+        <div class="stat-value green" id="stat-wins">82</div>
         <div class="stat-label">Wins</div>
       </div>
       <div class="stat-card">
-        <div class="stat-value gold" id="stat-tips">126</div>
+        <div class="stat-value gold" id="stat-tips">129</div>
         <div class="stat-label">Tips</div>
       </div>
       <div class="stat-card">
@@ -630,8 +630,8 @@
         <h3>Track Record</h3>
         <p>Every tip published before kickoff. Wins and losses — nothing hidden.</p>
         <div class="winrate-record">
-          <span class="rec-w" id="rec-w">81W</span>
-          <span class="rec-l" id="rec-l">45L</span>
+          <span class="rec-w" id="rec-w">82W</span>
+          <span class="rec-l" id="rec-l">47L</span>
         </div>
       </div>
     </div>
@@ -821,10 +821,25 @@
       </div>
 
 <div class="day-divider">📅 Sun 19 Jul 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Spain vs Argentina</div><div class="result-tip">Over 2.5 Goals</div></div>
+        <div class="result-score">0 — 0</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
 
 <div class="day-divider">📅 Sat 18 Jul 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">France vs England</div><div class="result-tip">Over 2.5 Goals</div></div>
+        <div class="result-score">4 — 6</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
 
 <div class="day-divider">📅 Fri 17 Jul 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Bahia vs Chapecoense-SC</div><div class="result-tip">Both Teams To Score Yes</div></div>
+        <div class="result-score">2 — 0</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
 
 <div class="day-divider">📅 Thu 16 Jul 2026</div>
       <div class="result-row">
@@ -2057,7 +2072,7 @@
   let liveWinRate = 0.64;
 
   window.addEventListener('load', () => {
-    const wins = 81, settled = 126;
+    const wins = 82, settled = 129;
     const pct = Math.round((wins / settled) * 100);
     const circumference = 2 * Math.PI * 33;
     const offset = circumference - (pct / 100) * circumference;
