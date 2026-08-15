@@ -465,6 +465,7 @@
 
   <!-- COUNTDOWNS -->
   <div class="countdown-wrap">
+    <!-- NOTE: data-date on each card below must match SITE_CONFIG.events dates in the <script> near the bottom of this file if event dates ever change -->
 
     <div class="countdown-card wcf" id="cd-wcf" data-date="2026-07-19" onclick="toggleWriteup('wcf-writeup')" style="cursor:pointer;">
       <div class="cd-icon">🏆</div>
@@ -1867,13 +1868,24 @@
 
 <script>
 
+  // ── SITE CONFIG — edit dates here, nowhere else ──
+  const SITE_CONFIG = {
+    launchDate: '2026-05-23T00:00:00',
+    events: {
+      wc:  { date: '2026-06-11T00:00:00' },                    // World Cup 2026 opens
+      wcf: { date: '2026-07-19T20:00:00', note: '3pm ET = 8pm UK' }, // World Cup Final
+      ucl: { date: '2026-05-30T17:00:00' },                     // UCL Final
+      pl:  { date: '2026-08-22T12:30:00' },                     // Premier League 2026/27 opens
+    }
+  };
+
   // Countdown timers
   function updateCountdowns() {
     const now = new Date();
-    const wc = new Date('2026-06-11T00:00:00');
-    const wcf = new Date('2026-07-19T20:00:00'); // 3pm ET = 8pm UK
-    const ucl = new Date('2026-05-30T17:00:00');
-    const pl = new Date('2026-08-22T12:30:00');
+    const wc = new Date(SITE_CONFIG.events.wc.date);
+    const wcf = new Date(SITE_CONFIG.events.wcf.date);
+    const ucl = new Date(SITE_CONFIG.events.ucl.date);
+    const pl = new Date(SITE_CONFIG.events.pl.date);
 
     function diff(target) {
       const ms = target - now;
@@ -1903,7 +1915,7 @@
 
   // Auto-calculate days live from launch date
   function updateDaysLive() {
-    const launch = new Date('2026-05-23T00:00:00');
+    const launch = new Date(SITE_CONFIG.launchDate);
     const now = new Date();
     const days = Math.floor((now - launch) / (1000 * 60 * 60 * 24)) + 1;
     const el = document.getElementById('days-live');
