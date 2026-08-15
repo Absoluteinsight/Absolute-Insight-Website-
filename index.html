@@ -1418,46 +1418,6 @@
       </div>
     </div>
 
-    <div class="section-title">💰 Stake Calculator</div>
-
-    <div class="calc-card">
-      <div class="calc-title">What could you have made?</div>
-      <div class="calc-sub">Every tip includes Outright, BTTS and Over 2.5 markets. Mix and match across all tips — up to 15 markets to choose from. Based on avg odds of 5/1.</div>
-      <div class="stake-buttons">
-        <button class="stake-btn" onclick="setStake(2, this)">£2</button>
-        <button class="stake-btn" onclick="setStake(5, this)">£5</button>
-        <button class="stake-btn active" onclick="setStake(10, this)">£10</button>
-        <button class="stake-btn" onclick="setStake(25, this)">£25</button>
-      </div>
-      <div class="custom-stake">
-        <span>£</span>
-        <input type="number" id="custom-input" placeholder="Custom stake" oninput="customStake(this.value)"/>
-      </div>
-      <div class="calc-results">
-        <div class="calc-box">
-          <div class="calc-box-label">Est. Monthly Profit</div>
-          <div class="calc-box-value" id="monthly-profit">£168</div>
-          <div class="calc-box-sub" id="calc-winrate">Live win rate</div>
-        </div>
-        <div class="calc-box">
-          <div class="calc-box-label">Subscription ROI</div>
-          <div class="calc-box-value gold" id="sub-roi">16.8x</div>
-          <div class="calc-box-sub">vs £9.99/month</div>
-        </div>
-        <div class="calc-box">
-          <div class="calc-box-label">Winning Bet</div>
-          <div class="calc-box-value" id="win-return">£80</div>
-          <div class="calc-box-sub">Per winning bet</div>
-        </div>
-        <div class="calc-box">
-          <div class="calc-box-label">Monthly Stake</div>
-          <div class="calc-box-value gold" id="monthly-stake">£300</div>
-          <div class="calc-box-sub">30 bets/month</div>
-        </div>
-      </div>
-      <div class="disclaimer">⚠️ Estimated figures based on our live win rate and avg odds of 5/1. Past performance does not guarantee future returns. Bet responsibly. 18+</div>
-    </div>
-
     <div class="cta-card">
       <h3>JOIN VIP TODAY</h3>
       <p>5 AI tips every morning. Daily double. Bonus tip at 5pm. Full results every night.</p>
@@ -2032,44 +1992,6 @@
     btn.classList.add('active');
   }
 
-  let currentStake = 10;
-
-  function setStake(amount, btn) {
-    currentStake = amount;
-    document.getElementById('custom-input').value = '';
-    document.querySelectorAll('.stake-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    updateCalc();
-  }
-
-  function customStake(val) {
-    if (val && val > 0) {
-      currentStake = parseFloat(val);
-      document.querySelectorAll('.stake-btn').forEach(b => b.classList.remove('active'));
-      updateCalc();
-    }
-  }
-
-  function updateCalc() {
-    const stake = currentStake;
-    const avgOdds = 5;
-    const winRate = liveWinRate || 0.73;
-    const days = 30;
-    const winReturn = stake * avgOdds;
-    const wins = Math.round(days * winRate);
-    const monthlyProfit = Math.round((wins * winReturn) - (days * stake));
-    const roi = (monthlyProfit / 9.99).toFixed(1);
-    document.getElementById('win-return').textContent = '£' + winReturn.toLocaleString();
-    document.getElementById('monthly-profit').textContent = '£' + Math.max(0, monthlyProfit).toLocaleString();
-    document.getElementById('monthly-stake').textContent = '£' + (stake * days).toLocaleString();
-    document.getElementById('sub-roi').textContent = roi + 'x';
-    // Update win rate label on calculator
-    const winPct = Math.round(winRate * 100);
-    if (document.getElementById('calc-winrate')) document.getElementById('calc-winrate').textContent = 'At ' + winPct + '% win rate';
-  }
-
-  let liveWinRate = 0.64;
-
   window.addEventListener('load', () => {
     const wins = 82, settled = 129;
     const pct = Math.round((wins / settled) * 100);
@@ -2083,7 +2005,6 @@
       if (document.getElementById('stat-wins')) document.getElementById('stat-wins').textContent = wins;
       if (document.getElementById('stat-tips')) document.getElementById('stat-tips').textContent = settled;
     }, 400);
-    updateCalc();
   });
   function toggleOlder(btn) {
     const el = document.getElementById('older-results');
