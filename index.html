@@ -358,14 +358,14 @@
   .countdown-card.ucl .cd-num { color: #c0a060; }
   .countdown-card.pl { background: linear-gradient(135deg, #0d2a6e, #1a5fc8); border: 2px solid rgba(255,255,255,0.2); }
   .cd-icon { font-size: 22px; flex-shrink: 0; }
-  .cd-info { flex: 1; }
-  .cd-title { font-family: 'Bebas Neue', sans-serif; font-size: 14px; letter-spacing: 1.5px; color: white; line-height: 1; }
-  .cd-sub { font-size: 9px; color: var(--muted); font-weight: 600; letter-spacing: 0.5px; margin-top: 2px; }
-  .cd-timer { display: flex; gap: 6px; flex-shrink: 0; }
-  .cd-unit { text-align: center; }
-  .cd-num { display: block; font-family: 'Bebas Neue', sans-serif; font-size: 20px; color: var(--gold); line-height: 1; }
+  .cd-info { flex: 1; min-width: 0; }
+  .cd-title { font-family: 'Bebas Neue', sans-serif; font-size: 14px; letter-spacing: 1.5px; color: white; line-height: 1.2; overflow-wrap: break-word; }
+  .cd-sub { font-size: 9px; color: var(--muted); font-weight: 600; letter-spacing: 0.5px; margin-top: 2px; overflow-wrap: break-word; }
+  .cd-timer { display: flex; gap: 4px; flex-shrink: 0; }
+  .cd-unit { text-align: center; min-width: 24px; }
+  .cd-num { display: block; font-family: 'Bebas Neue', sans-serif; font-size: 18px; color: var(--gold); line-height: 1; }
   .countdown-card.pl .cd-num { color: #6fa3ef; }
-  .cd-lbl { display: block; font-size: 7px; color: var(--muted); font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; }
+  .cd-lbl { display: block; font-size: 7px; color: var(--muted); font-weight: 700; letter-spacing: 0.3px; text-transform: uppercase; }
 
 
   .cd-writeup { display: none; background: rgba(13,42,110,0.95); border: 1px solid rgba(255,255,255,0.15); border-radius: 12px; padding: 14px 16px; margin-top: -4px; margin-bottom: 4px; }
@@ -534,7 +534,7 @@
     </div>
 
     <div class="countdown-card pl" id="cd-pl" data-date="2026-08-22" onclick="toggleWriteup('pl-writeup')" style="cursor:pointer;">
-      <div class="cd-icon">🏴󠁧󠁢󠁥󠁮󠁧󠁿</div>
+      <div class="cd-icon">⚽</div>
       <div class="cd-info">
         <div class="cd-title">NEW PL SEASON</div>
         <div class="cd-sub">Premier League 2026/27 · Tap to read more</div>
@@ -546,7 +546,7 @@
       </div>
     </div>
     <div class="cd-writeup" id="pl-writeup" data-for="cd-pl">
-      <div class="cd-writeup-title">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League 2026/27 — Fresh Season, Fresh Data</div>
+      <div class="cd-writeup-title">🇬🇧 Premier League 2026/27 — Fresh Season, Fresh Data</div>
       <p>The new Premier League season kicks off 22 August 2026 — a week later than usual to give players recovery time after the World Cup. Fixtures are released on 19 June.</p>
       <p><strong style="color:#F5C800;">25/26 Final Standings (top 6):</strong><br>
       🥇 Arsenal — 85pts 🏆⭐ Champions<br>
@@ -1613,12 +1613,12 @@
         <!-- ENGLAND VS DR CONGO -->
         <div class="fixture-card archive-card" onclick="toggleWriteup('fix-eng-drc')">
           <div class="fix-top"><div class="fix-badge gold">🌍 WORLD CUP · ROUND OF 32</div><div class="fix-date">1 Jul '26</div></div>
-          <div class="fix-teams">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England vs DR Congo 🇨🇩</div>
+          <div class="fix-teams">🇬🇧 England vs DR Congo 🇨🇩</div>
           <div class="fix-venue">📍 Atlanta, USA · England win 2-1</div>
           <div class="fix-tags"><span class="fix-tag" style="background:rgba(245,200,0,0.15);color:#F5C800;border:1px solid rgba(245,200,0,0.3);">🏁 England 2-1 DR Congo</span></div>
         </div>
         <div class="cd-writeup" id="fix-eng-drc">
-          <div class="cd-writeup-title">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England vs DR Congo — World Cup Round of 32</div>
+          <div class="cd-writeup-title">🇬🇧 England vs DR Congo — World Cup Round of 32</div>
           <p><strong style="color:#F5C800;">Result: England 2-1 DR Congo</strong></p>
           <p>DR Congo shocked England with Brian Cipenga's 7th-minute strike, and it took until the 75th minute for Harry Kane to level, before adding a second in the 86th to complete the comeback and send England through to face Mexico in the Round of 16.</p>
           <div class="cd-writeup-tag">📁 Archived · England Win 2-1</div>
@@ -1627,7 +1627,7 @@
         <!-- PANAMA VS ENGLAND -->
         <div class="fixture-card archive-card" onclick="toggleWriteup('fix-pan-eng')">
           <div class="fix-top"><div class="fix-badge gold">🌍 WORLD CUP · GROUP L</div><div class="fix-date">27 Jun '26</div></div>
-          <div class="fix-teams">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Panama vs England 🏴󠁧󠁢󠁥󠁮󠁧󠁿</div>
+          <div class="fix-teams">🇬🇧 Panama vs England 🇬🇧</div>
           <div class="fix-venue">📍 New Jersey, USA · England win 2-0</div>
           <div class="fix-tags"><span class="fix-tag" style="background:rgba(0,200,150,0.15);color:#00C896;border:1px solid rgba(0,200,150,0.3);">✅ WIN — England Win 0-2</span></div>
         </div>
@@ -1641,12 +1641,12 @@
         <!-- ENGLAND VS GHANA -->
         <div class="fixture-card archive-card" onclick="toggleWriteup('fix-eng-gha')">
           <div class="fix-top"><div class="fix-badge gold">🌍 WORLD CUP · GROUP L</div><div class="fix-date">23 Jun '26</div></div>
-          <div class="fix-teams">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England vs Ghana 🇬🇭</div>
+          <div class="fix-teams">🇬🇧 England vs Ghana 🇬🇭</div>
           <div class="fix-venue">📍 Boston, USA · Goalless draw</div>
           <div class="fix-tags"><span class="fix-tag" style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.7);border:1px solid rgba(255,255,255,0.2);">➖ DRAW 0-0</span></div>
         </div>
         <div class="cd-writeup" id="fix-eng-gha">
-          <div class="cd-writeup-title">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England vs Ghana — World Cup Group L</div>
+          <div class="cd-writeup-title">🇬🇧 England vs Ghana — World Cup Group L</div>
           <p><strong style="color:#F5C800;">Result: England 0-0 Ghana</strong></p>
           <p>A flat performance from England, who dominated possession (72%) but couldn't find a breakthrough against a well-organised Ghana side. Harry Kane's late headed chance was the closest either side came. A point apiece kept England top on goal difference.</p>
           <div class="cd-writeup-tag">📁 Archived · Goalless draw</div>
@@ -1655,12 +1655,12 @@
         <!-- ENGLAND VS CROATIA -->
         <div class="fixture-card archive-card" onclick="toggleWriteup('fix-eng-cro')">
           <div class="fix-top"><div class="fix-badge gold">🌍 WORLD CUP · GROUP L</div><div class="fix-date">17 Jun '26</div></div>
-          <div class="fix-teams">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England vs Croatia 🇭🇷</div>
+          <div class="fix-teams">🇬🇧 England vs Croatia 🇭🇷</div>
           <div class="fix-venue">📍 Dallas, USA · England win 4-2</div>
           <div class="fix-tags"><span class="fix-tag" style="background:rgba(0,200,150,0.15);color:#00C896;border:1px solid rgba(0,200,150,0.3);">✅ WIN — BTTS Yes 4-2</span></div>
         </div>
         <div class="cd-writeup" id="fix-eng-cro">
-          <div class="cd-writeup-title">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England vs Croatia — World Cup Group L</div>
+          <div class="cd-writeup-title">🇬🇧 England vs Croatia — World Cup Group L</div>
           <p><strong style="color:#F5C800;">Result: England 4-2 Croatia · BTTS Yes ✅ WIN</strong></p>
           <p>A first-half thriller — Kane scored twice (12' pen, 42') either side of Baturina (36') and Musa (45+5') for Croatia. Bellingham (47') restored the lead immediately after the break and Rashford (85') made it four. England's best attacking display of the group stage.</p>
           <div class="cd-writeup-tag">📁 Archived · BTTS Yes ✅ WIN</div>
