@@ -601,11 +601,11 @@
 
     <div class="stats-grid">
       <div class="stat-card">
-        <div class="stat-value green" id="stat-wins">91</div>
+        <div class="stat-value green" id="stat-wins">92</div>
         <div class="stat-label">Wins</div>
       </div>
       <div class="stat-card">
-        <div class="stat-value gold" id="stat-tips">139</div>
+        <div class="stat-value gold" id="stat-tips">140</div>
         <div class="stat-label">Tips</div>
       </div>
       <div class="stat-card">
@@ -629,7 +629,7 @@
         <h3>Track Record</h3>
         <p>Every tip published before kickoff. Wins and losses — nothing hidden.</p>
         <div class="winrate-record">
-          <span class="rec-w" id="rec-w">91W</span>
+          <span class="rec-w" id="rec-w">92W</span>
           <span class="rec-l" id="rec-l">48L</span>
         </div>
       </div>
@@ -678,6 +678,13 @@
       <div class="result-row">
         <div><div class="result-match">Twente vs PEC Zwolle</div><div class="result-tip">Over 2.5 Goals</div></div>
         <div class="result-score">3 — 1</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+
+      <div class="day-divider">⚡ Bonus Tip — Sun 16 Aug 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Chicago Fire vs Portland Timbers</div><div class="result-tip">Both Teams To Score Yes (90%)</div></div>
+        <div class="result-score">2 — 1</div>
         <div><span class="result-badge badge-win">WIN</span></div>
       </div>
 
@@ -2059,7 +2066,7 @@
   }
 
   window.addEventListener('load', () => {
-    const wins = 91, settled = 139;
+    const wins = 92, settled = 140;
     const pct = Math.round((wins / settled) * 100);
     const circumference = 2 * Math.PI * 33;
     const offset = circumference - (pct / 100) * circumference;
