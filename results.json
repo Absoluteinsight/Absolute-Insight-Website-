@@ -1,63 +1,36 @@
 {
-  "date": "2026-08-16",
-  "wins": 91,
-  "losses": 48,
-  "settled": 139,
-  "pending": 1,
+  "date": "2026-08-17",
+  "wins": 92,
+  "losses": 50,
+  "settled": 142,
+  "pending": 0,
   "tips": [
     {
-      "home": "Racing Santander",
-      "away": "Villarreal",
+      "home": "Deportivo La Coruna",
+      "away": "Elche",
       "league": "La Liga",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "High",
-      "score": "2 — 2",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "Medium",
+      "score": "1 — 1",
       "result": "WIN"
     },
     {
-      "home": "Espanyol",
-      "away": "Levante",
-      "league": "La Liga",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "High",
-      "score": "3 — 0",
+      "home": "Cardiff",
+      "away": "Wrexham",
+      "league": "Championship",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "Medium",
+      "score": "1 — 1",
       "result": "LOSS"
     },
     {
-      "home": "Burnley",
-      "away": "West Ham",
-      "league": "Championship",
+      "home": "Casa Pia",
+      "away": "Benfica",
+      "league": "Primeira Liga",
       "verdict": "Both Teams To Score Yes",
-      "confidence": "High",
-      "score": "2 — 2",
-      "result": "WIN"
-    },
-    {
-      "home": "Feyenoord",
-      "away": "GO Ahead Eagles",
-      "league": "Eredivisie",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "High",
-      "score": "2 — 2",
-      "result": "WIN"
-    },
-    {
-      "home": "Twente",
-      "away": "PEC Zwolle",
-      "league": "Eredivisie",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "High",
-      "score": "3 — 1",
-      "result": "WIN"
-    },
-    {
-      "home": "Chicago Fire",
-      "away": "Portland Timbers",
-      "league": "Major League Soccer",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "High",
-      "score": "",
-      "result": "PENDING"
+      "confidence": "Medium",
+      "score": "0 — 7",
+      "result": "LOSS"
     }
   ]
 }
