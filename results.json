@@ -1,35 +1,35 @@
 {
-  "date": "2026-08-17",
-  "wins": 92,
-  "losses": 50,
-  "settled": 142,
+  "date": "2026-08-18",
+  "wins": 94,
+  "losses": 52,
+  "settled": 146,
   "pending": 0,
   "tips": [
     {
-      "home": "Deportivo La Coruna",
-      "away": "Elche",
-      "league": "La Liga",
-      "verdict": "Both Teams To Score Yes",
+      "home": "Dinamo Zagreb",
+      "away": "Viking",
+      "league": "UEFA Champions League",
+      "verdict": "Over 2.5 Goals",
       "confidence": "Medium",
-      "score": "1 — 1",
+      "score": "2 — 2",
       "result": "WIN"
     },
     {
-      "home": "Cardiff",
-      "away": "Wrexham",
-      "league": "Championship",
+      "home": "Levski Sofia",
+      "away": "AEK Athens FC",
+      "league": "UEFA Champions League",
       "verdict": "Over 2.5 Goals",
       "confidence": "Medium",
-      "score": "1 — 1",
+      "score": "0 — 0",
       "result": "LOSS"
     },
     {
-      "home": "Casa Pia",
-      "away": "Benfica",
-      "league": "Primeira Liga",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "Medium",
-      "score": "0 — 7",
+      "home": "Fenerbahçe",
+      "away": "Lyon",
+      "league": "UEFA Champions League",
+      "verdict": "Fenerbahçe Win",
+      "confidence": "Low",
+      "score": "1 — 1",
       "result": "LOSS"
     }
   ]
