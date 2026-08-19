@@ -1,35 +1,53 @@
 {
-  "date": "2026-08-18",
-  "wins": 94,
-  "losses": 52,
-  "settled": 146,
+  "date": "2026-08-19",
+  "wins": 96,
+  "losses": 55,
+  "settled": 151,
   "pending": 0,
   "tips": [
     {
-      "home": "Dinamo Zagreb",
-      "away": "Viking",
-      "league": "UEFA Champions League",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "Medium",
-      "score": "2 — 2",
-      "result": "WIN"
-    },
-    {
-      "home": "Levski Sofia",
-      "away": "AEK Athens FC",
-      "league": "UEFA Champions League",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "Medium",
-      "score": "0 — 0",
+      "home": "Atletico Madrid",
+      "away": "Malaga",
+      "league": "La Liga",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "High",
+      "score": "2 — 0",
       "result": "LOSS"
     },
     {
-      "home": "Fenerbahçe",
-      "away": "Lyon",
+      "home": "Celtic",
+      "away": "Lask Linz",
       "league": "UEFA Champions League",
-      "verdict": "Fenerbahçe Win",
-      "confidence": "Low",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "Medium",
+      "score": "3 — 0",
+      "result": "WIN"
+    },
+    {
+      "home": "NEC Nijmegen",
+      "away": "Bodo/Glimt",
+      "league": "UEFA Champions League",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "Medium",
+      "score": "1 — 3",
+      "result": "WIN"
+    },
+    {
+      "home": "Slovan Bratislava",
+      "away": "Celje",
+      "league": "UEFA Champions League",
+      "verdict": "Slovan Bratislava Win",
+      "confidence": "Medium",
       "score": "1 — 1",
+      "result": "LOSS"
+    },
+    {
+      "home": "Hapoel Beer Sheva",
+      "away": "Sabah FA",
+      "league": "UEFA Champions League",
+      "verdict": "Sabah FA Win",
+      "confidence": "Low",
+      "score": "2 — 1",
       "result": "LOSS"
     }
   ]
