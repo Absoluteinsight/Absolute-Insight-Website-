@@ -1,53 +1,53 @@
 {
-  "date": "2026-08-19",
-  "wins": 96,
-  "losses": 55,
-  "settled": 151,
-  "pending": 0,
+  "date": "2026-08-20",
+  "wins": 97,
+  "losses": 58,
+  "settled": 155,
+  "pending": 1,
   "tips": [
     {
-      "home": "Atletico Madrid",
-      "away": "Malaga",
+      "home": "Rayo Vallecano",
+      "away": "Alaves",
       "league": "La Liga",
-      "verdict": "Both Teams To Score Yes",
+      "verdict": "Over 2.5 Goals",
       "confidence": "High",
-      "score": "2 — 0",
+      "score": "1 — 1",
       "result": "LOSS"
     },
     {
-      "home": "Celtic",
-      "away": "Lask Linz",
-      "league": "UEFA Champions League",
-      "verdict": "Over 2.5 Goals",
+      "home": "Kairat Almaty",
+      "away": "Anderlecht",
+      "league": "UEFA Europa League",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "Medium",
+      "score": "0 — 3",
+      "result": "LOSS"
+    },
+    {
+      "home": "Jagiellonia",
+      "away": "Saburtalo",
+      "league": "UEFA Europa League",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Beşiktaş",
+      "away": "Kauno Žalgiris",
+      "league": "UEFA Europa League",
+      "verdict": "Beşiktaş Win",
       "confidence": "Medium",
       "score": "3 — 0",
       "result": "WIN"
     },
     {
-      "home": "NEC Nijmegen",
-      "away": "Bodo/Glimt",
-      "league": "UEFA Champions League",
-      "verdict": "Over 2.5 Goals",
+      "home": "Egnatia Rrogozhinë",
+      "away": "Lillestrom",
+      "league": "UEFA Europa League",
+      "verdict": "Both Teams To Score Yes",
       "confidence": "Medium",
-      "score": "1 — 3",
-      "result": "WIN"
-    },
-    {
-      "home": "Slovan Bratislava",
-      "away": "Celje",
-      "league": "UEFA Champions League",
-      "verdict": "Slovan Bratislava Win",
-      "confidence": "Medium",
-      "score": "1 — 1",
-      "result": "LOSS"
-    },
-    {
-      "home": "Hapoel Beer Sheva",
-      "away": "Sabah FA",
-      "league": "UEFA Champions League",
-      "verdict": "Sabah FA Win",
-      "confidence": "Low",
-      "score": "2 — 1",
+      "score": "0 — 0",
       "result": "LOSS"
     }
   ]
