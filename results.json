@@ -1,54 +1,36 @@
 {
-  "date": "2026-08-20",
-  "wins": 97,
-  "losses": 58,
-  "settled": 155,
-  "pending": 1,
+  "date": "2026-08-21",
+  "wins": 99,
+  "losses": 59,
+  "settled": 158,
+  "pending": 0,
   "tips": [
     {
-      "home": "Rayo Vallecano",
-      "away": "Alaves",
+      "home": "Real Betis",
+      "away": "Real Sociedad",
       "league": "La Liga",
       "verdict": "Over 2.5 Goals",
       "confidence": "High",
-      "score": "1 — 1",
+      "score": "1 — 0",
       "result": "LOSS"
     },
     {
-      "home": "Kairat Almaty",
-      "away": "Anderlecht",
-      "league": "UEFA Europa League",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "Medium",
-      "score": "0 — 3",
-      "result": "LOSS"
-    },
-    {
-      "home": "Jagiellonia",
-      "away": "Saburtalo",
-      "league": "UEFA Europa League",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "Medium",
-      "score": "",
-      "result": "PENDING"
-    },
-    {
-      "home": "Beşiktaş",
-      "away": "Kauno Žalgiris",
-      "league": "UEFA Europa League",
-      "verdict": "Beşiktaş Win",
-      "confidence": "Medium",
-      "score": "3 — 0",
+      "home": "Marseille",
+      "away": "Strasbourg",
+      "league": "Ligue 1",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "High",
+      "score": "4 — 0",
       "result": "WIN"
     },
     {
-      "home": "Egnatia Rrogozhinë",
-      "away": "Lillestrom",
-      "league": "UEFA Europa League",
-      "verdict": "Both Teams To Score Yes",
+      "home": "Arsenal",
+      "away": "Coventry",
+      "league": "Premier League",
+      "verdict": "Over 2.5 Goals",
       "confidence": "Medium",
-      "score": "0 — 0",
-      "result": "LOSS"
+      "score": "3 — 0",
+      "result": "WIN"
     }
   ]
 }
