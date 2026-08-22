@@ -1,36 +1,63 @@
 {
-  "date": "2026-08-21",
-  "wins": 99,
-  "losses": 59,
-  "settled": 158,
+  "date": "2026-08-22",
+  "wins": 102,
+  "losses": 62,
+  "settled": 164,
   "pending": 0,
   "tips": [
     {
-      "home": "Real Betis",
-      "away": "Real Sociedad",
-      "league": "La Liga",
+      "home": "Everton",
+      "away": "Crystal Palace",
+      "league": "Premier League",
       "verdict": "Over 2.5 Goals",
       "confidence": "High",
-      "score": "1 — 0",
+      "score": "2 — 0",
       "result": "LOSS"
     },
     {
-      "home": "Marseille",
-      "away": "Strasbourg",
-      "league": "Ligue 1",
+      "home": "Brentford",
+      "away": "Tottenham",
+      "league": "Premier League",
       "verdict": "Over 2.5 Goals",
       "confidence": "High",
-      "score": "4 — 0",
+      "score": "3 — 0",
       "result": "WIN"
     },
     {
-      "home": "Arsenal",
-      "away": "Coventry",
-      "league": "Premier League",
+      "home": "Athletic Club",
+      "away": "Sevilla",
+      "league": "La Liga",
       "verdict": "Over 2.5 Goals",
-      "confidence": "Medium",
-      "score": "3 — 0",
+      "confidence": "High",
+      "score": "1 — 3",
       "result": "WIN"
+    },
+    {
+      "home": "Valencia",
+      "away": "Celta Vigo",
+      "league": "La Liga",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "High",
+      "score": "0 — 0",
+      "result": "LOSS"
+    },
+    {
+      "home": "Espanyol",
+      "away": "Real Madrid",
+      "league": "La Liga",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "High",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Heerenveen",
+      "away": "PEC Zwolle",
+      "league": "Eredivisie",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "High",
+      "score": "0 — 2",
+      "result": "LOSS"
     }
   ]
 }
