@@ -1,63 +1,54 @@
 {
-  "date": "2026-08-23",
-  "wins": 107,
-  "losses": 63,
-  "settled": 170,
+  "date": "2026-08-24",
+  "wins": 109,
+  "losses": 66,
+  "settled": 175,
   "pending": 0,
   "tips": [
     {
-      "home": "Brighton",
-      "away": "Aston Villa",
+      "home": "Fulham",
+      "away": "Chelsea",
       "league": "Premier League",
-      "verdict": "Over 2.5 Goals",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "High",
+      "score": "2 — 3",
+      "result": "WIN"
+    },
+    {
+      "home": "Malaga",
+      "away": "Deportivo La Coruna",
+      "league": "La Liga",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "High",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "AS Roma",
+      "away": "Fiorentina",
+      "league": "Serie A",
+      "verdict": "Both Teams To Score Yes",
       "confidence": "High",
       "score": "4 — 0",
-      "result": "WIN"
-    },
-    {
-      "home": "Manchester City",
-      "away": "Bournemouth",
-      "league": "Premier League",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "High",
-      "score": "2 — 1",
-      "result": "WIN"
-    },
-    {
-      "home": "Newcastle",
-      "away": "Liverpool",
-      "league": "Premier League",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "High",
-      "score": "2 — 2",
-      "result": "WIN"
-    },
-    {
-      "home": "Atletico Madrid",
-      "away": "Villarreal",
-      "league": "La Liga",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "High",
-      "score": "2 — 2",
-      "result": "WIN"
-    },
-    {
-      "home": "Getafe",
-      "away": "Racing Santander",
-      "league": "La Liga",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "High",
-      "score": "1 — 0",
       "result": "LOSS"
     },
     {
-      "home": "Rennes",
-      "away": "Paris Saint Germain",
-      "league": "Ligue 1",
+      "home": "Osasuna",
+      "away": "Levante",
+      "league": "La Liga",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "Medium",
+      "score": "0 — 0",
+      "result": "LOSS"
+    },
+    {
+      "home": "Bologna",
+      "away": "Lazio",
+      "league": "Serie A",
       "verdict": "Both Teams To Score Yes",
-      "confidence": "High",
-      "score": "2 — 2",
-      "result": "WIN"
+      "confidence": "Medium",
+      "score": "0 — 1",
+      "result": "LOSS"
     }
   ]
 }
