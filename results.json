@@ -1,54 +1,54 @@
 {
-  "date": "2026-08-24",
-  "wins": 109,
+  "date": "2026-08-25",
+  "wins": 112,
   "losses": 66,
-  "settled": 175,
-  "pending": 0,
+  "settled": 178,
+  "pending": 2,
   "tips": [
     {
-      "home": "Fulham",
-      "away": "Chelsea",
-      "league": "Premier League",
+      "home": "Cardiff",
+      "away": "Norwich",
+      "league": "League Cup",
       "verdict": "Both Teams To Score Yes",
       "confidence": "High",
-      "score": "2 — 3",
+      "score": "1 — 2",
       "result": "WIN"
     },
     {
-      "home": "Malaga",
-      "away": "Deportivo La Coruna",
-      "league": "La Liga",
+      "home": "Southampton",
+      "away": "West Ham",
+      "league": "League Cup",
       "verdict": "Both Teams To Score Yes",
       "confidence": "High",
-      "score": "1 — 1",
+      "score": "1 — 4",
       "result": "WIN"
     },
     {
-      "home": "AS Roma",
-      "away": "Fiorentina",
-      "league": "Serie A",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "High",
-      "score": "4 — 0",
-      "result": "LOSS"
-    },
-    {
-      "home": "Osasuna",
-      "away": "Levante",
-      "league": "La Liga",
+      "home": "Sabah FA",
+      "away": "Hapoel Beer Sheva",
+      "league": "UEFA Champions League",
       "verdict": "Over 2.5 Goals",
       "confidence": "Medium",
-      "score": "0 — 0",
-      "result": "LOSS"
+      "score": "",
+      "result": "PENDING"
     },
     {
-      "home": "Bologna",
-      "away": "Lazio",
-      "league": "Serie A",
-      "verdict": "Both Teams To Score Yes",
+      "home": "Lask Linz",
+      "away": "Celtic",
+      "league": "UEFA Champions League",
+      "verdict": "Over 2.5 Goals",
       "confidence": "Medium",
-      "score": "0 — 1",
-      "result": "LOSS"
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Bodo/Glimt",
+      "away": "NEC Nijmegen",
+      "league": "UEFA Champions League",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "Medium",
+      "score": "3 — 0",
+      "result": "WIN"
     }
   ]
 }
