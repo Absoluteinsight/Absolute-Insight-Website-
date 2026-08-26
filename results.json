@@ -1,53 +1,53 @@
 {
-  "date": "2026-08-25",
-  "wins": 112,
+  "date": "2026-08-26",
+  "wins": 116,
   "losses": 66,
-  "settled": 178,
-  "pending": 2,
+  "settled": 182,
+  "pending": 1,
   "tips": [
     {
-      "home": "Cardiff",
-      "away": "Norwich",
+      "home": "Real Madrid",
+      "away": "Real Sociedad",
+      "league": "La Liga",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "High",
+      "score": "4 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "Newcastle",
+      "away": "West Brom",
       "league": "League Cup",
       "verdict": "Both Teams To Score Yes",
       "confidence": "High",
+      "score": "3 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Celje",
+      "away": "Slovan Bratislava",
+      "league": "UEFA Champions League",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "Medium",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "AEK Athens FC",
+      "away": "Levski Sofia",
+      "league": "UEFA Champions League",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "Medium",
+      "score": "4 — 0",
+      "result": "WIN"
+    },
+    {
+      "home": "Lyon",
+      "away": "Fenerbahçe",
+      "league": "UEFA Champions League",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "Medium",
       "score": "1 — 2",
-      "result": "WIN"
-    },
-    {
-      "home": "Southampton",
-      "away": "West Ham",
-      "league": "League Cup",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "High",
-      "score": "1 — 4",
-      "result": "WIN"
-    },
-    {
-      "home": "Sabah FA",
-      "away": "Hapoel Beer Sheva",
-      "league": "UEFA Champions League",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "Medium",
-      "score": "",
-      "result": "PENDING"
-    },
-    {
-      "home": "Lask Linz",
-      "away": "Celtic",
-      "league": "UEFA Champions League",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "Medium",
-      "score": "",
-      "result": "PENDING"
-    },
-    {
-      "home": "Bodo/Glimt",
-      "away": "NEC Nijmegen",
-      "league": "UEFA Champions League",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "Medium",
-      "score": "3 — 0",
       "result": "WIN"
     }
   ]
