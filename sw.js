@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'ai-v18';
+const CACHE_VERSION = 'ai-v19';
 const CACHE_NAME = `absolute-insight-${CACHE_VERSION}`;
 const SHELL_URLS = ['./', './index.html', './manifest.json'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE_NAME).then(c => c.addAll(SHELL_URLS))); self.skipWaiting(); });
