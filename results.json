@@ -1,54 +1,63 @@
 {
-  "date": "2026-08-28",
-  "wins": 124,
-  "losses": 70,
-  "settled": 194,
+  "date": "2026-08-29",
+  "wins": 128,
+  "losses": 72,
+  "settled": 200,
   "pending": 0,
   "tips": [
     {
-      "home": "Crystal Palace",
-      "away": "Manchester City",
+      "home": "Bournemouth",
+      "away": "Everton",
       "league": "Premier League",
-      "verdict": "Over 2.5 Goals",
+      "verdict": "Both Teams To Score Yes",
       "confidence": "High",
-      "score": "1 — 4",
+      "score": "1 — 1",
       "result": "WIN"
     },
     {
-      "home": "Racing Santander",
-      "away": "Elche",
+      "home": "Tottenham",
+      "away": "Newcastle",
+      "league": "Premier League",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "High",
+      "score": "0 — 2",
+      "result": "LOSS"
+    },
+    {
+      "home": "Real Sociedad",
+      "away": "Espanyol",
       "league": "La Liga",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "High",
+      "score": "2 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "Sevilla",
+      "away": "Atletico Madrid",
+      "league": "La Liga",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "High",
+      "score": "1 — 3",
+      "result": "WIN"
+    },
+    {
+      "home": "1. FC Köln",
+      "away": "1899 Hoffenheim",
+      "league": "Bundesliga",
       "verdict": "Over 2.5 Goals",
       "confidence": "High",
       "score": "3 — 2",
       "result": "WIN"
     },
     {
-      "home": "Bayern München",
-      "away": "VfB Stuttgart",
+      "home": "Borussia Dortmund",
+      "away": "Hamburger SV",
       "league": "Bundesliga",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "High",
-      "score": "5 — 1",
-      "result": "WIN"
-    },
-    {
-      "home": "AC Milan",
-      "away": "Venezia",
-      "league": "Serie A",
       "verdict": "Over 2.5 Goals",
       "confidence": "High",
       "score": "2 — 0",
       "result": "LOSS"
-    },
-    {
-      "home": "Lille",
-      "away": "Paris Saint Germain",
-      "league": "Ligue 1",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "High",
-      "score": "2 — 2",
-      "result": "WIN"
     }
   ]
 }
