@@ -601,11 +601,11 @@
 
     <div class="stats-grid">
       <div class="stat-card">
-        <div class="stat-value green" id="stat-wins">128</div>
+        <div class="stat-value green" id="stat-wins">131</div>
         <div class="stat-label">Wins</div>
       </div>
       <div class="stat-card">
-        <div class="stat-value gold" id="stat-tips">200</div>
+        <div class="stat-value gold" id="stat-tips">206</div>
         <div class="stat-label">Tips</div>
       </div>
       <div class="stat-card">
@@ -629,8 +629,8 @@
         <h3>Track Record</h3>
         <p>Every tip published before kickoff. Wins and losses — nothing hidden.</p>
         <div class="winrate-record">
-          <span class="rec-w" id="rec-w">128W</span>
-          <span class="rec-l" id="rec-l">72L</span>
+          <span class="rec-w" id="rec-w">131W</span>
+          <span class="rec-l" id="rec-l">75L</span>
         </div>
       </div>
     </div>
@@ -654,7 +654,39 @@
         <div style="text-align:right">Result</div>
       </div>
 
-                                                                                                                                                                                                                                                                                          <div class="day-divider">📅 Sat 29 Aug 2026</div>
+                                                                                                                                                                                                                                                                                                <div class="day-divider">📅 Sun 30 Aug 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Chelsea vs Brighton</div><div class="result-tip">Over 2.5 Goals</div></div>
+        <div class="result-score">4 — 3</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Manchester United vs Ipswich</div><div class="result-tip">Over 2.5 Goals</div></div>
+        <div class="result-score">5 — 2</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Real Madrid vs Malaga</div><div class="result-tip">Both Teams To Score Yes</div></div>
+        <div class="result-score">4 — 0</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Celta Vigo vs Athletic Club</div><div class="result-tip">Both Teams To Score Yes</div></div>
+        <div class="result-score">0 — 2</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">SC Freiburg vs Werder Bremen</div><div class="result-tip">Over 2.5 Goals</div></div>
+        <div class="result-score">4 — 1</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Monaco vs Marseille</div><div class="result-tip">Over 2.5 Goals</div></div>
+        <div class="result-score">2 — 0</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+
+<div class="day-divider">📅 Sat 29 Aug 2026</div>
       <div class="result-row">
         <div><div class="result-match">Bournemouth vs Everton</div><div class="result-tip">Both Teams To Score Yes</div></div>
         <div class="result-score">1 — 1</div>
@@ -2390,7 +2422,7 @@
   }
 
   window.addEventListener('load', () => {
-    const wins = 128, settled = 200;
+    const wins = 131, settled = 206;
     const pct = Math.round((wins / settled) * 100);
     const circumference = 2 * Math.PI * 33;
     const offset = circumference - (pct / 100) * circumference;
