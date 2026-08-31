@@ -1,63 +1,54 @@
 {
-  "date": "2026-08-30",
-  "wins": 131,
-  "losses": 75,
-  "settled": 206,
+  "date": "2026-08-31",
+  "wins": 134,
+  "losses": 77,
+  "settled": 211,
   "pending": 0,
   "tips": [
     {
-      "home": "Chelsea",
-      "away": "Brighton",
+      "home": "Aston Villa",
+      "away": "Arsenal",
       "league": "Premier League",
       "verdict": "Over 2.5 Goals",
       "confidence": "High",
-      "score": "4 — 3",
-      "result": "WIN"
+      "score": "0 — 1",
+      "result": "LOSS"
     },
     {
-      "home": "Manchester United",
-      "away": "Ipswich",
-      "league": "Premier League",
+      "home": "Barcelona",
+      "away": "Rayo Vallecano",
+      "league": "La Liga",
       "verdict": "Over 2.5 Goals",
       "confidence": "High",
       "score": "5 — 2",
       "result": "WIN"
     },
     {
-      "home": "Real Madrid",
-      "away": "Malaga",
-      "league": "La Liga",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "High",
-      "score": "4 — 0",
-      "result": "LOSS"
-    },
-    {
-      "home": "Celta Vigo",
-      "away": "Athletic Club",
-      "league": "La Liga",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "High",
-      "score": "0 — 2",
-      "result": "LOSS"
-    },
-    {
-      "home": "SC Freiburg",
-      "away": "Werder Bremen",
-      "league": "Bundesliga",
+      "home": "Lecce",
+      "away": "AS Roma",
+      "league": "Serie A",
       "verdict": "Over 2.5 Goals",
       "confidence": "High",
-      "score": "4 — 1",
+      "score": "0 — 4",
       "result": "WIN"
     },
     {
-      "home": "Monaco",
-      "away": "Marseille",
-      "league": "Ligue 1",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "High",
-      "score": "2 — 0",
+      "home": "Osasuna",
+      "away": "Getafe",
+      "league": "La Liga",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "Medium",
+      "score": "1 — 0",
       "result": "LOSS"
+    },
+    {
+      "home": "Atalanta",
+      "away": "Bologna",
+      "league": "Serie A",
+      "verdict": "Atalanta Win",
+      "confidence": "Medium",
+      "score": "1 — 0",
+      "result": "WIN"
     }
   ]
 }
