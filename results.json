@@ -1,53 +1,62 @@
 {
-  "date": "2026-08-31",
-  "wins": 134,
-  "losses": 77,
-  "settled": 211,
+  "date": "2026-09-01",
+  "wins": 137,
+  "losses": 80,
+  "settled": 217,
   "pending": 0,
   "tips": [
     {
-      "home": "Aston Villa",
-      "away": "Arsenal",
-      "league": "Premier League",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "High",
-      "score": "0 — 1",
-      "result": "LOSS"
-    },
-    {
-      "home": "Barcelona",
-      "away": "Rayo Vallecano",
-      "league": "La Liga",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "High",
-      "score": "5 — 2",
-      "result": "WIN"
-    },
-    {
-      "home": "Lecce",
-      "away": "AS Roma",
-      "league": "Serie A",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "High",
-      "score": "0 — 4",
-      "result": "WIN"
-    },
-    {
-      "home": "Osasuna",
-      "away": "Getafe",
-      "league": "La Liga",
+      "home": "Portsmouth",
+      "away": "Derby",
+      "league": "Championship",
       "verdict": "Both Teams To Score Yes",
-      "confidence": "Medium",
+      "confidence": "High",
+      "score": "0 — 2",
+      "result": "LOSS"
+    },
+    {
+      "home": "West Ham",
+      "away": "Wolves",
+      "league": "Championship",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "High",
+      "score": "4 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Birmingham",
+      "away": "Southampton",
+      "league": "Championship",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "High",
+      "score": "1 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "Stoke City",
+      "away": "Norwich",
+      "league": "Championship",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "High",
       "score": "1 — 0",
       "result": "LOSS"
     },
     {
-      "home": "Atalanta",
-      "away": "Bologna",
-      "league": "Serie A",
-      "verdict": "Atalanta Win",
-      "confidence": "Medium",
-      "score": "1 — 0",
+      "home": "Peterborough",
+      "away": "Stevenage",
+      "league": "League One",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "High",
+      "score": "0 — 0",
+      "result": "LOSS"
+    },
+    {
+      "home": "Cheltenham",
+      "away": "York",
+      "league": "League Two",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "High",
+      "score": "3 — 2",
       "result": "WIN"
     }
   ]
