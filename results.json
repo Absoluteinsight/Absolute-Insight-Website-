@@ -1,31 +1,22 @@
 {
-  "date": "2026-09-01",
-  "wins": 137,
-  "losses": 80,
-  "settled": 217,
+  "date": "2026-09-02",
+  "wins": 142,
+  "losses": 81,
+  "settled": 223,
   "pending": 0,
   "tips": [
     {
-      "home": "Portsmouth",
-      "away": "Derby",
+      "home": "QPR",
+      "away": "Cardiff",
       "league": "Championship",
       "verdict": "Both Teams To Score Yes",
       "confidence": "High",
-      "score": "0 — 2",
-      "result": "LOSS"
-    },
-    {
-      "home": "West Ham",
-      "away": "Wolves",
-      "league": "Championship",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "High",
-      "score": "4 — 2",
+      "score": "2 — 1",
       "result": "WIN"
     },
     {
-      "home": "Birmingham",
-      "away": "Southampton",
+      "home": "West Brom",
+      "away": "Charlton",
       "league": "Championship",
       "verdict": "Both Teams To Score Yes",
       "confidence": "High",
@@ -33,31 +24,40 @@
       "result": "WIN"
     },
     {
-      "home": "Stoke City",
-      "away": "Norwich",
+      "home": "Burnley",
+      "away": "Middlesbrough",
       "league": "Championship",
       "verdict": "Both Teams To Score Yes",
       "confidence": "High",
-      "score": "1 — 0",
-      "result": "LOSS"
+      "score": "1 — 1",
+      "result": "WIN"
     },
     {
-      "home": "Peterborough",
-      "away": "Stevenage",
+      "home": "Celtic",
+      "away": "Aberdeen",
+      "league": "Premiership",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "High",
+      "score": "3 — 0",
+      "result": "WIN"
+    },
+    {
+      "home": "Barnsley",
+      "away": "Blackpool",
+      "league": "League One",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "High",
+      "score": "2 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "Luton",
+      "away": "Stockport County",
       "league": "League One",
       "verdict": "Over 2.5 Goals",
       "confidence": "High",
-      "score": "0 — 0",
+      "score": "2 — 0",
       "result": "LOSS"
-    },
-    {
-      "home": "Cheltenham",
-      "away": "York",
-      "league": "League Two",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "High",
-      "score": "3 — 2",
-      "result": "WIN"
     }
   ]
 }
