@@ -1,63 +1,36 @@
 {
-  "date": "2026-09-02",
-  "wins": 142,
-  "losses": 81,
-  "settled": 223,
+  "date": "2026-09-03",
+  "wins": 143,
+  "losses": 83,
+  "settled": 226,
   "pending": 0,
   "tips": [
     {
-      "home": "QPR",
-      "away": "Cardiff",
-      "league": "Championship",
+      "home": "Real Sociedad",
+      "away": "Celta Vigo",
+      "league": "La Liga",
       "verdict": "Both Teams To Score Yes",
       "confidence": "High",
-      "score": "2 — 1",
-      "result": "WIN"
-    },
-    {
-      "home": "West Brom",
-      "away": "Charlton",
-      "league": "Championship",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "High",
-      "score": "1 — 1",
-      "result": "WIN"
-    },
-    {
-      "home": "Burnley",
-      "away": "Middlesbrough",
-      "league": "Championship",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "High",
-      "score": "1 — 1",
-      "result": "WIN"
-    },
-    {
-      "home": "Celtic",
-      "away": "Aberdeen",
-      "league": "Premiership",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "High",
-      "score": "3 — 0",
-      "result": "WIN"
-    },
-    {
-      "home": "Barnsley",
-      "away": "Blackpool",
-      "league": "League One",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "High",
-      "score": "2 — 1",
-      "result": "WIN"
-    },
-    {
-      "home": "Luton",
-      "away": "Stockport County",
-      "league": "League One",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "High",
-      "score": "2 — 0",
+      "score": "0 — 0",
       "result": "LOSS"
+    },
+    {
+      "home": "Toulouse",
+      "away": "Lille",
+      "league": "Ligue 1",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "High",
+      "score": "0 — 1",
+      "result": "LOSS"
+    },
+    {
+      "home": "Hibernian",
+      "away": "Heart Of Midlothian",
+      "league": "Premiership",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "Medium",
+      "score": "1 — 3",
+      "result": "WIN"
     }
   ]
 }
