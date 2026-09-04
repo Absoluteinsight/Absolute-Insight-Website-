@@ -1,36 +1,54 @@
 {
-  "date": "2026-09-03",
-  "wins": 143,
-  "losses": 83,
-  "settled": 226,
-  "pending": 0,
+  "date": "2026-09-04",
+  "wins": 145,
+  "losses": 84,
+  "settled": 229,
+  "pending": 2,
   "tips": [
     {
-      "home": "Real Sociedad",
-      "away": "Celta Vigo",
-      "league": "La Liga",
-      "verdict": "Both Teams To Score Yes",
+      "home": "VfB Stuttgart",
+      "away": "1. FC Köln",
+      "league": "Bundesliga",
+      "verdict": "Over 2.5 Goals",
       "confidence": "High",
-      "score": "0 — 0",
-      "result": "LOSS"
+      "score": "4 — 1",
+      "result": "WIN"
     },
     {
-      "home": "Toulouse",
-      "away": "Lille",
+      "home": "Lyon",
+      "away": "Auxerre",
       "league": "Ligue 1",
       "verdict": "Both Teams To Score Yes",
       "confidence": "High",
-      "score": "0 — 1",
-      "result": "LOSS"
+      "score": "3 — 1",
+      "result": "WIN"
     },
     {
-      "home": "Hibernian",
-      "away": "Heart Of Midlothian",
-      "league": "Premiership",
+      "home": "Ossett United",
+      "away": "Pontefract Collieries",
+      "league": "FA Cup",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "High",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Quorn",
+      "away": "Shepshed Dynamo",
+      "league": "FA Cup",
       "verdict": "Both Teams To Score Yes",
+      "confidence": "High",
+      "score": "",
+      "result": "PENDING"
+    },
+    {
+      "home": "Ipswich",
+      "away": "Liverpool",
+      "league": "Premier League",
+      "verdict": "Over 2.5 Goals",
       "confidence": "Medium",
-      "score": "1 — 3",
-      "result": "WIN"
+      "score": "0 — 2",
+      "result": "LOSS"
     }
   ]
 }
