@@ -601,11 +601,11 @@
 
     <div class="stats-grid">
       <div class="stat-card">
-        <div class="stat-value green" id="stat-wins">143</div>
+        <div class="stat-value green" id="stat-wins">145</div>
         <div class="stat-label">Wins</div>
       </div>
       <div class="stat-card">
-        <div class="stat-value gold" id="stat-tips">226</div>
+        <div class="stat-value gold" id="stat-tips">229</div>
         <div class="stat-label">Tips</div>
       </div>
       <div class="stat-card">
@@ -629,8 +629,8 @@
         <h3>Track Record</h3>
         <p>Every tip published before kickoff. Wins and losses — nothing hidden.</p>
         <div class="winrate-record">
-          <span class="rec-w" id="rec-w">143W</span>
-          <span class="rec-l" id="rec-l">83L</span>
+          <span class="rec-w" id="rec-w">145W</span>
+          <span class="rec-l" id="rec-l">84L</span>
         </div>
       </div>
     </div>
@@ -654,7 +654,24 @@
         <div style="text-align:right">Result</div>
       </div>
 
-                                                                                                                                                                                                                                                                                                                        <div class="day-divider">📅 Thu 3 Sep 2026</div>
+                                                                                                                                                                                                                                                                                                                              <div class="day-divider">📅 Fri 4 Sep 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">VfB Stuttgart vs 1. FC Köln</div><div class="result-tip">Over 2.5 Goals</div></div>
+        <div class="result-score">4 — 1</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Lyon vs Auxerre</div><div class="result-tip">Both Teams To Score Yes</div></div>
+        <div class="result-score">3 — 1</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Ipswich vs Liverpool</div><div class="result-tip">Over 2.5 Goals</div></div>
+        <div class="result-score">0 — 2</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+
+<div class="day-divider">📅 Thu 3 Sep 2026</div>
       <div class="result-row">
         <div><div class="result-match">Real Sociedad vs Celta Vigo</div><div class="result-tip">Both Teams To Score Yes</div></div>
         <div class="result-score">0 — 0</div>
@@ -2530,7 +2547,7 @@
   }
 
   window.addEventListener('load', () => {
-    const wins = 143, settled = 226;
+    const wins = 145, settled = 229;
     const pct = Math.round((wins / settled) * 100);
     const circumference = 2 * Math.PI * 33;
     const offset = circumference - (pct / 100) * circumference;
