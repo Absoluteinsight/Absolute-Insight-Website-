@@ -1,53 +1,62 @@
 {
-  "date": "2026-09-04",
-  "wins": 145,
-  "losses": 84,
-  "settled": 229,
-  "pending": 2,
+  "date": "2026-09-05",
+  "wins": 149,
+  "losses": 86,
+  "settled": 235,
+  "pending": 0,
   "tips": [
     {
-      "home": "VfB Stuttgart",
-      "away": "1. FC Köln",
+      "home": "Newcastle",
+      "away": "Bournemouth",
+      "league": "Premier League",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "High",
+      "score": "2 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Fulham",
+      "away": "Crystal Palace",
+      "league": "Premier League",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "High",
+      "score": "2 — 3",
+      "result": "WIN"
+    },
+    {
+      "home": "Rayo Vallecano",
+      "away": "Racing Santander",
+      "league": "La Liga",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "High",
+      "score": "3 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "1899 Hoffenheim",
+      "away": "Borussia Dortmund",
       "league": "Bundesliga",
       "verdict": "Over 2.5 Goals",
       "confidence": "High",
-      "score": "4 — 1",
+      "score": "2 — 3",
       "result": "WIN"
     },
     {
-      "home": "Lyon",
-      "away": "Auxerre",
-      "league": "Ligue 1",
+      "home": "Bayer Leverkusen",
+      "away": "Union Berlin",
+      "league": "Bundesliga",
       "verdict": "Both Teams To Score Yes",
       "confidence": "High",
-      "score": "3 — 1",
-      "result": "WIN"
+      "score": "4 — 0",
+      "result": "LOSS"
     },
     {
-      "home": "Ossett United",
-      "away": "Pontefract Collieries",
-      "league": "FA Cup",
+      "home": "FC Schalke 04",
+      "away": "Bayern München",
+      "league": "Bundesliga",
       "verdict": "Over 2.5 Goals",
       "confidence": "High",
-      "score": "",
-      "result": "PENDING"
-    },
-    {
-      "home": "Quorn",
-      "away": "Shepshed Dynamo",
-      "league": "FA Cup",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "High",
-      "score": "",
-      "result": "PENDING"
-    },
-    {
-      "home": "Ipswich",
-      "away": "Liverpool",
-      "league": "Premier League",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "Medium",
-      "score": "0 — 2",
+      "score": "0 — 0",
       "result": "LOSS"
     }
   ]
