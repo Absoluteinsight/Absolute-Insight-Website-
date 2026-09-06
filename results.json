@@ -1,13 +1,13 @@
 {
-  "date": "2026-09-05",
-  "wins": 149,
-  "losses": 86,
-  "settled": 235,
+  "date": "2026-09-06",
+  "wins": 154,
+  "losses": 87,
+  "settled": 241,
   "pending": 0,
   "tips": [
     {
-      "home": "Newcastle",
-      "away": "Bournemouth",
+      "home": "Everton",
+      "away": "Manchester United",
       "league": "Premier League",
       "verdict": "Both Teams To Score Yes",
       "confidence": "High",
@@ -15,49 +15,49 @@
       "result": "WIN"
     },
     {
-      "home": "Fulham",
-      "away": "Crystal Palace",
+      "home": "Arsenal",
+      "away": "Chelsea",
       "league": "Premier League",
       "verdict": "Over 2.5 Goals",
       "confidence": "High",
-      "score": "2 — 3",
+      "score": "2 — 1",
       "result": "WIN"
     },
     {
-      "home": "Rayo Vallecano",
-      "away": "Racing Santander",
+      "home": "Espanyol",
+      "away": "Sevilla",
       "league": "La Liga",
       "verdict": "Over 2.5 Goals",
       "confidence": "High",
-      "score": "3 — 2",
-      "result": "WIN"
+      "score": "1 — 1",
+      "result": "LOSS"
     },
     {
-      "home": "1899 Hoffenheim",
-      "away": "Borussia Dortmund",
+      "home": "Hamburger SV",
+      "away": "FSV Mainz 05",
       "league": "Bundesliga",
       "verdict": "Over 2.5 Goals",
       "confidence": "High",
-      "score": "2 — 3",
+      "score": "0 — 5",
       "result": "WIN"
     },
     {
-      "home": "Bayer Leverkusen",
-      "away": "Union Berlin",
+      "home": "Eintracht Frankfurt",
+      "away": "FC Augsburg",
       "league": "Bundesliga",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "High",
+      "score": "1 — 4",
+      "result": "WIN"
+    },
+    {
+      "home": "Cruzeiro",
+      "away": "Atletico Paranaense",
+      "league": "Brazilian Serie A",
       "verdict": "Both Teams To Score Yes",
       "confidence": "High",
-      "score": "4 — 0",
-      "result": "LOSS"
-    },
-    {
-      "home": "FC Schalke 04",
-      "away": "Bayern München",
-      "league": "Bundesliga",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "High",
-      "score": "0 — 0",
-      "result": "LOSS"
+      "score": "3 — 1",
+      "result": "WIN"
     }
   ]
 }
