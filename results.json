@@ -1,61 +1,52 @@
 {
-  "date": "2026-09-06",
-  "wins": 154,
-  "losses": 87,
-  "settled": 241,
+  "date": "2026-09-07",
+  "wins": 157,
+  "losses": 89,
+  "settled": 246,
   "pending": 0,
   "tips": [
     {
-      "home": "Everton",
-      "away": "Manchester United",
-      "league": "Premier League",
+      "home": "Elche",
+      "away": "Real Sociedad",
+      "league": "La Liga",
       "verdict": "Both Teams To Score Yes",
       "confidence": "High",
-      "score": "2 — 2",
+      "score": "2 — 3",
       "result": "WIN"
     },
     {
-      "home": "Arsenal",
-      "away": "Chelsea",
-      "league": "Premier League",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "High",
-      "score": "2 — 1",
-      "result": "WIN"
-    },
-    {
-      "home": "Espanyol",
-      "away": "Sevilla",
-      "league": "La Liga",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "High",
-      "score": "1 — 1",
+      "home": "Udinese",
+      "away": "Lazio",
+      "league": "Serie A",
+      "verdict": "Udinese Win",
+      "confidence": "Medium",
+      "score": "1 — 2",
       "result": "LOSS"
     },
     {
-      "home": "Hamburger SV",
-      "away": "FSV Mainz 05",
-      "league": "Bundesliga",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "High",
-      "score": "0 — 5",
-      "result": "WIN"
-    },
-    {
-      "home": "Eintracht Frankfurt",
-      "away": "FC Augsburg",
-      "league": "Bundesliga",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "High",
-      "score": "1 — 4",
-      "result": "WIN"
-    },
-    {
-      "home": "Cruzeiro",
-      "away": "Atletico Paranaense",
-      "league": "Brazilian Serie A",
+      "home": "Carshalton Athletic",
+      "away": "Chertsey Town",
+      "league": "FA Cup",
       "verdict": "Both Teams To Score Yes",
-      "confidence": "High",
+      "confidence": "Medium",
+      "score": "1 — 2",
+      "result": "WIN"
+    },
+    {
+      "home": "Redditch United",
+      "away": "Malvern Town",
+      "league": "FA Cup",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "Medium",
+      "score": "4 — 0",
+      "result": "LOSS"
+    },
+    {
+      "home": "Swindon Supermarine",
+      "away": "Winslow United",
+      "league": "FA Cup",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "Medium",
       "score": "3 — 1",
       "result": "WIN"
     }
