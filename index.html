@@ -601,11 +601,11 @@
 
     <div class="stats-grid">
       <div class="stat-card">
-        <div class="stat-value green" id="stat-wins">157</div>
+        <div class="stat-value green" id="stat-wins">162</div>
         <div class="stat-label">Wins</div>
       </div>
       <div class="stat-card">
-        <div class="stat-value gold" id="stat-tips">246</div>
+        <div class="stat-value gold" id="stat-tips">252</div>
         <div class="stat-label">Tips</div>
       </div>
       <div class="stat-card">
@@ -629,8 +629,8 @@
         <h3>Track Record</h3>
         <p>Every tip published before kickoff. Wins and losses — nothing hidden.</p>
         <div class="winrate-record">
-          <span class="rec-w" id="rec-w">157W</span>
-          <span class="rec-l" id="rec-l">89L</span>
+          <span class="rec-w" id="rec-w">162W</span>
+          <span class="rec-l" id="rec-l">90L</span>
         </div>
       </div>
     </div>
@@ -654,7 +654,39 @@
         <div style="text-align:right">Result</div>
       </div>
 
-                                                                                                                                                                                                                                                                                                                                                <div class="day-divider">📅 Mon 7 Sep 2026</div>
+                                                                                                                                                                                                                                                                                                                                                      <div class="day-divider">📅 Tue 8 Sep 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Borussia Dortmund vs Villarreal</div><div class="result-tip">Over 2.5 Goals</div></div>
+        <div class="result-score">2 — 3</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Real Madrid vs Inter</div><div class="result-tip">Over 2.5 Goals</div></div>
+        <div class="result-score">3 — 0</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Blackburn vs Sheffield Utd</div><div class="result-tip">Both Teams To Score Yes</div></div>
+        <div class="result-score">1 — 2</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Cardiff vs Stoke City</div><div class="result-tip">Over 2.5 Goals</div></div>
+        <div class="result-score">1 — 1</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Bolton vs West Ham</div><div class="result-tip">Over 2.5 Goals</div></div>
+        <div class="result-score">2 — 3</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Boldmere St. Michaels vs Bourne Town</div><div class="result-tip">Both Teams To Score Yes</div></div>
+        <div class="result-score">2 — 1</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+
+<div class="day-divider">📅 Mon 7 Sep 2026</div>
       <div class="result-row">
         <div><div class="result-match">Elche vs Real Sociedad</div><div class="result-tip">Both Teams To Score Yes</div></div>
         <div class="result-score">2 — 3</div>
@@ -2638,7 +2670,7 @@
   }
 
   window.addEventListener('load', () => {
-    const wins = 157, settled = 246;
+    const wins = 162, settled = 252;
     const pct = Math.round((wins / settled) * 100);
     const circumference = 2 * Math.PI * 33;
     const offset = circumference - (pct / 100) * circumference;
