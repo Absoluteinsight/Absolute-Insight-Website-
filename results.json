@@ -1,53 +1,62 @@
 {
-  "date": "2026-09-07",
-  "wins": 157,
-  "losses": 89,
-  "settled": 246,
+  "date": "2026-09-08",
+  "wins": 162,
+  "losses": 90,
+  "settled": 252,
   "pending": 0,
   "tips": [
     {
-      "home": "Elche",
-      "away": "Real Sociedad",
-      "league": "La Liga",
-      "verdict": "Both Teams To Score Yes",
+      "home": "Borussia Dortmund",
+      "away": "Villarreal",
+      "league": "UEFA Champions League",
+      "verdict": "Over 2.5 Goals",
       "confidence": "High",
       "score": "2 — 3",
       "result": "WIN"
     },
     {
-      "home": "Udinese",
-      "away": "Lazio",
-      "league": "Serie A",
-      "verdict": "Udinese Win",
-      "confidence": "Medium",
-      "score": "1 — 2",
-      "result": "LOSS"
+      "home": "Real Madrid",
+      "away": "Inter",
+      "league": "UEFA Champions League",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "High",
+      "score": "3 — 0",
+      "result": "WIN"
     },
     {
-      "home": "Carshalton Athletic",
-      "away": "Chertsey Town",
-      "league": "FA Cup",
+      "home": "Blackburn",
+      "away": "Sheffield Utd",
+      "league": "Championship",
       "verdict": "Both Teams To Score Yes",
-      "confidence": "Medium",
+      "confidence": "High",
       "score": "1 — 2",
       "result": "WIN"
     },
     {
-      "home": "Redditch United",
-      "away": "Malvern Town",
-      "league": "FA Cup",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "Medium",
-      "score": "4 — 0",
+      "home": "Cardiff",
+      "away": "Stoke City",
+      "league": "Championship",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "High",
+      "score": "1 — 1",
       "result": "LOSS"
     },
     {
-      "home": "Swindon Supermarine",
-      "away": "Winslow United",
+      "home": "Bolton",
+      "away": "West Ham",
+      "league": "Championship",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "High",
+      "score": "2 — 3",
+      "result": "WIN"
+    },
+    {
+      "home": "Boldmere St. Michaels",
+      "away": "Bourne Town",
       "league": "FA Cup",
       "verdict": "Both Teams To Score Yes",
-      "confidence": "Medium",
-      "score": "3 — 1",
+      "confidence": "High",
+      "score": "2 — 1",
       "result": "WIN"
     }
   ]
