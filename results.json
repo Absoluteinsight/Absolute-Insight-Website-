@@ -1,63 +1,54 @@
 {
-  "date": "2026-09-09",
-  "wins": 165,
-  "losses": 93,
-  "settled": 258,
+  "date": "2026-09-10",
+  "wins": 168,
+  "losses": 95,
+  "settled": 263,
   "pending": 0,
   "tips": [
     {
-      "home": "Liverpool",
-      "away": "Atletico Madrid",
+      "home": "Fenerbahçe",
+      "away": "AS Roma",
       "league": "UEFA Champions League",
       "verdict": "Over 2.5 Goals",
-      "confidence": "High",
-      "score": "2 — 1",
-      "result": "WIN"
-    },
-    {
-      "home": "Napoli",
-      "away": "Arsenal",
-      "league": "UEFA Champions League",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "High",
-      "score": "1 — 2",
-      "result": "WIN"
-    },
-    {
-      "home": "Derby",
-      "away": "West Brom",
-      "league": "Championship",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "High",
-      "score": "0 — 1",
+      "confidence": "Medium",
+      "score": "1 — 1",
       "result": "LOSS"
     },
     {
-      "home": "Norwich",
-      "away": "Birmingham",
-      "league": "Championship",
+      "home": "PSV Eindhoven",
+      "away": "Shakhtar Donetsk",
+      "league": "UEFA Champions League",
       "verdict": "Both Teams To Score Yes",
-      "confidence": "High",
-      "score": "2 — 1",
+      "confidence": "Medium",
+      "score": "1 — 1",
       "result": "WIN"
     },
     {
-      "home": "ST Johnstone",
-      "away": "Celtic",
-      "league": "Premiership",
+      "home": "Bayern München",
+      "away": "Bodo/Glimt",
+      "league": "UEFA Champions League",
       "verdict": "Over 2.5 Goals",
-      "confidence": "High",
-      "score": "0 — 1",
+      "confidence": "Medium",
+      "score": "5 — 0",
+      "result": "WIN"
+    },
+    {
+      "home": "Como",
+      "away": "RB Leipzig",
+      "league": "UEFA Champions League",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "Medium",
+      "score": "1 — 1",
       "result": "LOSS"
     },
     {
-      "home": "Twente",
-      "away": "Telstar",
-      "league": "Eredivisie",
+      "home": "Manchester United",
+      "away": "Sabah FA",
+      "league": "UEFA Champions League",
       "verdict": "Over 2.5 Goals",
-      "confidence": "High",
-      "score": "1 — 0",
-      "result": "LOSS"
+      "confidence": "Medium",
+      "score": "5 — 0",
+      "result": "WIN"
     }
   ]
 }
