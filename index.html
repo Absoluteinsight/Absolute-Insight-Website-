@@ -601,11 +601,11 @@
 
     <div class="stats-grid">
       <div class="stat-card">
-        <div class="stat-value green" id="stat-wins">168</div>
+        <div class="stat-value green" id="stat-wins">170</div>
         <div class="stat-label">Wins</div>
       </div>
       <div class="stat-card">
-        <div class="stat-value gold" id="stat-tips">263</div>
+        <div class="stat-value gold" id="stat-tips">268</div>
         <div class="stat-label">Tips</div>
       </div>
       <div class="stat-card">
@@ -629,8 +629,8 @@
         <h3>Track Record</h3>
         <p>Every tip published before kickoff. Wins and losses — nothing hidden.</p>
         <div class="winrate-record">
-          <span class="rec-w" id="rec-w">168W</span>
-          <span class="rec-l" id="rec-l">95L</span>
+          <span class="rec-w" id="rec-w">170W</span>
+          <span class="rec-l" id="rec-l">98L</span>
         </div>
       </div>
     </div>
@@ -654,7 +654,34 @@
         <div style="text-align:right">Result</div>
       </div>
 
-                                                                                                                                                                                                                                                                                                                                                                  <div class="day-divider">📅 Thu 10 Sep 2026</div>
+                                                                                                                                                                                                                                                                                                                                                                        <div class="day-divider">📅 Fri 11 Sep 2026</div>
+      <div class="result-row">
+        <div><div class="result-match">Union Berlin vs FC Schalke 04</div><div class="result-tip">Over 2.5 Goals</div></div>
+        <div class="result-score">1 — 3</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Venezia vs Fiorentina</div><div class="result-tip">Over 2.5 Goals</div></div>
+        <div class="result-score">2 — 4</div>
+        <div><span class="result-badge badge-win">WIN</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Rennes vs Marseille</div><div class="result-tip">Over 2.5 Goals</div></div>
+        <div class="result-score">1 — 0</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">AZ Alkmaar vs Willem II</div><div class="result-tip">Over 2.5 Goals</div></div>
+        <div class="result-score">1 — 1</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+      <div class="result-row">
+        <div><div class="result-match">Sevilla vs Valencia</div><div class="result-tip">Both Teams To Score Yes</div></div>
+        <div class="result-score">1 — 0</div>
+        <div><span class="result-badge badge-loss">LOSS</span></div>
+      </div>
+
+<div class="day-divider">📅 Thu 10 Sep 2026</div>
       <div class="result-row">
         <div><div class="result-match">Fenerbahçe vs AS Roma</div><div class="result-tip">Over 2.5 Goals</div></div>
         <div class="result-score">1 — 1</div>
@@ -2729,7 +2756,7 @@
   }
 
   window.addEventListener('load', () => {
-    const wins = 168, settled = 263;
+    const wins = 170, settled = 268;
     const pct = Math.round((wins / settled) * 100);
     const circumference = 2 * Math.PI * 33;
     const offset = circumference - (pct / 100) * circumference;
