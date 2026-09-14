@@ -1,63 +1,54 @@
 {
-  "date": "2026-09-13",
-  "wins": 178,
-  "losses": 102,
-  "settled": 280,
+  "date": "2026-09-14",
+  "wins": 182,
+  "losses": 103,
+  "settled": 285,
   "pending": 0,
   "tips": [
     {
-      "home": "Manchester United",
-      "away": "Manchester City",
+      "home": "Torino",
+      "away": "AS Roma",
+      "league": "Serie A",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "High",
+      "score": "0 — 2",
+      "result": "LOSS"
+    },
+    {
+      "home": "Inter",
+      "away": "Udinese",
+      "league": "Serie A",
+      "verdict": "Both Teams To Score Yes",
+      "confidence": "High",
+      "score": "5 — 3",
+      "result": "WIN"
+    },
+    {
+      "home": "Rio Ave",
+      "away": "Estrela",
+      "league": "Primeira Liga",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "High",
+      "score": "3 — 3",
+      "result": "WIN"
+    },
+    {
+      "home": "Moreirense",
+      "away": "Maritimo",
+      "league": "Primeira Liga",
+      "verdict": "Over 2.5 Goals",
+      "confidence": "High",
+      "score": "3 — 1",
+      "result": "WIN"
+    },
+    {
+      "home": "Leeds",
+      "away": "Newcastle",
       "league": "Premier League",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "High",
-      "score": "0 — 1",
-      "result": "LOSS"
-    },
-    {
-      "home": "Levante",
-      "away": "Barcelona",
-      "league": "La Liga",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "High",
-      "score": "2 — 4",
-      "result": "WIN"
-    },
-    {
-      "home": "Getafe",
-      "away": "Deportivo La Coruna",
-      "league": "La Liga",
       "verdict": "Both Teams To Score Yes",
-      "confidence": "High",
-      "score": "1 — 1",
+      "confidence": "Medium",
+      "score": "4 — 1",
       "result": "WIN"
-    },
-    {
-      "home": "Real Sociedad",
-      "away": "Atletico Madrid",
-      "league": "La Liga",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "High",
-      "score": "0 — 3",
-      "result": "WIN"
-    },
-    {
-      "home": "RB Leipzig",
-      "away": "Hamburger SV",
-      "league": "Bundesliga",
-      "verdict": "Over 2.5 Goals",
-      "confidence": "High",
-      "score": "5 — 0",
-      "result": "WIN"
-    },
-    {
-      "home": "Stade Brestois 29",
-      "away": "Paris Saint Germain",
-      "league": "Ligue 1",
-      "verdict": "Both Teams To Score Yes",
-      "confidence": "High",
-      "score": "0 — 1",
-      "result": "LOSS"
     }
   ]
 }
